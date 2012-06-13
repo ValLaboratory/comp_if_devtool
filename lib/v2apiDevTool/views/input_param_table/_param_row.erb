@@ -1,0 +1,72 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  v2api_name -> API名
+  #             display_param_data -> (Hash)表示用パラメータ情報(1パラメータ)
+%>
+<% param_name = display_param_data["name"] %>
+<% case display_param_data["status"] %>
+<% when "required" %>
+<tr class="status_required">
+<% when "cond-required" %>
+<tr class="status_cond-required">
+<% else %>
+<tr>
+<% end %>
+  <td class="name_col"><%= param_name %></td>
+  <td class="value_col">
+    <%
+      # ========================================
+      #     アプリケーション依存パラメータ
+      # ========================================
+    %>
+    <% if display_param_data["inputType"] == "system" %>
+      <% # val_htmbの場合は表示 %>
+      <% if param_name == "val_htmb" %>
+        <%= v2api_name %>
+        <input type="hidden" class="api_input_param" name="val_htmb" value="<%= v2api_name %>" />
+      <% # val_cgi_urlの場合は、遷移先を設定して表示 %>
+      <% elsif param_name == "val_cgi_url" %>
+        <%= "#{app_root_url}/#{v2api_name}/output" %>
+        <input type="hidden" class="api_input_param" name="val_cgi_url" value="<%= "#{app_root_url}/#{v2api_name}/output" %>" />
+      <% # それ以外の場合、とりあえずhidden %>
+      <% else %>
+        <input type="hidden" class="api_input_param" name="<%= param_name %>" />
+      <% end %>
+    <%
+      # ========================================
+      #            入力不可パラメータ
+      # ========================================
+    %>
+    <% # productionの場合のみ、入力不可とする %>
+    <% elsif display_param_data["inputType"] == "disabled" && settings.environment == "production" %>
+      <input type="text" class="api_input_param" disabled="disabled" name="<%= param_name %>" />
+    <%
+      # ========================================
+      #          それ以外(入力フォーム)
+      # ========================================
+    %>
+    <% else %>
+      <% if display_param_data["isStation"] == true %>
+        <input type="text" class="api_input_param incsearch_input" name="<%= param_name %>" /><br /><div class="incsearch_result"></div>
+      <% else %>
+        <input type="text" class="api_input_param" name="<%= param_name %>" />
+      <% end %>
+    <% end %>
+  </td>
+  <td class="comment_col">
+    <%= display_param_data["comment"] %>
+    <% if display_param_data["value"] %>
+      <div class="value_comment">
+        <% split_values_comment(display_param_data["value"]).each do |value| %>
+          <%= value %><br />
+        <% end %>
+      </div>
+    <% end %>
+    <% if display_param_data["valueSkip"] %>
+      <div class="valueSkip_comment">省略時：<%= display_param_data["valueSkip"] %></div>
+    <% end %>
+    <% if display_param_data["devtoolComment"] %>
+      <div class="dev_tool_comment">※<%= display_param_data["devtoolComment"] %></div>
+    <% end %>
+  </td>
+</tr>

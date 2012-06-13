@@ -1,0 +1,2530 @@
+---
+definedParams:
+- params:
+  - countGroupComment: 経路
+    comment: 経路の数
+    name: val_route_cnt
+    responseValue: '3'
+    children:
+    - countGroupNumberComment: 経路1
+      params:
+      - comment: 経路の文字列
+        name: val_route_1
+        responseValue: 出雲市－ＪＲ特急やくも－岡山－ＪＲ新幹線のぞみ－名古屋－ＪＲ特急しなの－長野－ＪＲ妙高－直江津－ＪＲ特急北越－長岡－ＪＲ新幹線とき－新潟－ＪＲ特急いなほ－村上(新潟県)
+      - comment: 経路の所要時間合計(単位：分)
+        name: val_time_1
+        responseValue: '853'
+      - comment: 経路の乗車時間合計(単位：分)
+        name: val_board_time_1
+        responseValue: '671'
+      - comment: 経路の徒歩時間合計(単位：分)
+        name: val_walk_time_1
+        responseValue: '0'
+      - comment: 経路のその他時間合計(単位：分)
+        name: val_other_time_1
+        responseValue: '182'
+      - comment: 経路の距離(単位：100m)
+        name: val_dist_1
+        responseValue: '11104'
+      - comment: 経路の乗換回数
+        name: val_transfer_1
+        responseValue: '6'
+      - comment: 経路の運賃の合計金額
+        name: val_fare_1
+        responseValue: '12810'
+      - comment: 経路の料金の合計金額
+        name: val_surcharge_fare_1
+        responseValue: '12660'
+      - comment: 経路の1ヵ月定期代
+        name: val_teiki1_1
+        responseValue: '0'
+      - comment: 経路の3ヵ月定期代
+        name: val_teiki3_1
+        responseValue: '0'
+      - comment: 経路の6ヵ月定期代
+        name: val_teiki6_1
+        responseValue: '0'
+      - countGroupComment: 乗り入れ路線
+        comment: 経路の乗り入れ数
+        name: val_r1_connect_cnt
+        responseValue: '0'
+      - comment: 「駅すぱあと」における定期券としての利用可能判定
+        value: 0：利用不可(「駅すぱあと」に定期券として登録できない情報)&1：利用可(「駅すぱあと」に定期券として登録できる情報)
+        name: val_r1_teiki_available
+        responseValue: '0'
+      - comment: 方向性を持った経路文字列(定期券利用区間指定用)
+        name: val_restoreroute_1
+        responseValue: 出雲市_ＪＲ特急やくも_2_岡山_ＪＲ新幹線のぞみ_2_名古屋_ＪＲ特急しなの_1_長野_ＪＲ妙高_1_直江津_ＪＲ特急北越_1_長岡_ＪＲ新幹線とき_1_新潟_ＪＲ特急いなほ_1_村上(新潟県)
+      - comment: 経路の駅数(定期券利用区間指定用)
+        name: val_teiki_station_cnt_1
+        responseValue: '8'
+      - comment: 経路の駅名リスト(定期券利用区間指定用)
+        name: val_teiki_stationnamelist_1
+        responseValue: 出雲市_岡山_名古屋_長野_直江津_長岡_新潟_村上(新潟県)
+      - comment: 経路の路線数(定期券利用区間指定用)
+        name: val_teiki_rail_cnt_1
+        responseValue: '7'
+      - comment: 経路の路線数リスト(定期券利用区間指定用)
+        name: val_teiki_railnamelist_1
+        responseValue: ＪＲ特急やくも_ＪＲ新幹線のぞみ_ＪＲ特急しなの_ＪＲ妙高_ＪＲ特急北越_ＪＲ新幹線とき_ＪＲ特急いなほ
+      - countGroupComment: 路線区間
+        comment: 路線区間の数
+        name: val_r1_line_cnt
+        responseValue: '7'
+        children:
+        - countGroupNumberComment: 路線区間1
+          params:
+          - comment: 路線区間の路線名
+            name: val_r1_line_name_1
+            responseValue: ＪＲ特急やくも
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r1_line_longname_1
+            responseValue: ＪＲ特急やくも
+          - comment: 路線区間の会社名
+            name: val_r1_line_corp_name_1
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r1_line_from_1
+            responseValue: 出雲市
+          - comment: 路線区間の到着駅名
+            name: val_r1_line_to_1
+            responseValue: 岡山
+          - comment: 路線区間の時間(単位：分)
+            name: val_r1_line_time_1
+            responseValue: '178'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r1_line_dist_1
+            responseValue: '2207'
+          - comment: 路線区間の途中停車駅数
+            name: val_r1_line_stop_station_cnt_1
+            responseValue: '13'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r1_line_traffic_1
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r1_line_type_1
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間2
+          params:
+          - comment: 路線区間の路線名
+            name: val_r1_line_name_2
+            responseValue: ＪＲ新幹線のぞみ
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r1_line_longname_2
+            responseValue: ＪＲ新幹線のぞみ
+          - comment: 路線区間の会社名
+            name: val_r1_line_corp_name_2
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r1_line_from_2
+            responseValue: 岡山
+          - comment: 路線区間の到着駅名
+            name: val_r1_line_to_2
+            responseValue: 名古屋
+          - comment: 路線区間の時間(単位：分)
+            name: val_r1_line_time_2
+            responseValue: '106'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r1_line_dist_2
+            responseValue: '3669'
+          - comment: 路線区間の途中停車駅数
+            name: val_r1_line_stop_station_cnt_2
+            responseValue: '4'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r1_line_traffic_2
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r1_line_type_2
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間3
+          params:
+          - comment: 路線区間の路線名
+            name: val_r1_line_name_3
+            responseValue: ＪＲ特急しなの
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r1_line_longname_3
+            responseValue: ＪＲ特急しなの
+          - comment: 路線区間の会社名
+            name: val_r1_line_corp_name_3
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r1_line_from_3
+            responseValue: 名古屋
+          - comment: 路線区間の到着駅名
+            name: val_r1_line_to_3
+            responseValue: 長野
+          - comment: 路線区間の時間(単位：分)
+            name: val_r1_line_time_3
+            responseValue: '180'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r1_line_dist_3
+            responseValue: '2508'
+          - comment: 路線区間の途中停車駅数
+            name: val_r1_line_stop_station_cnt_3
+            responseValue: '11'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r1_line_traffic_3
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r1_line_type_3
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間4
+          params:
+          - comment: 路線区間の路線名
+            name: val_r1_line_name_4
+            responseValue: ＪＲ妙高
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r1_line_longname_4
+            responseValue: ＪＲ妙高
+          - comment: 路線区間の会社名
+            name: val_r1_line_corp_name_4
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r1_line_from_4
+            responseValue: 長野
+          - comment: 路線区間の到着駅名
+            name: val_r1_line_to_4
+            responseValue: 直江津
+          - comment: 路線区間の時間(単位：分)
+            name: val_r1_line_time_4
+            responseValue: '88'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r1_line_dist_4
+            responseValue: '750'
+          - comment: 路線区間の途中停車駅数
+            name: val_r1_line_stop_station_cnt_4
+            responseValue: '15'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r1_line_traffic_4
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r1_line_type_4
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間5
+          params:
+          - comment: 路線区間の路線名
+            name: val_r1_line_name_5
+            responseValue: ＪＲ特急北越
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r1_line_longname_5
+            responseValue: ＪＲ特急北越
+          - comment: 路線区間の会社名
+            name: val_r1_line_corp_name_5
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r1_line_from_5
+            responseValue: 直江津
+          - comment: 路線区間の到着駅名
+            name: val_r1_line_to_5
+            responseValue: 長岡
+          - comment: 路線区間の時間(単位：分)
+            name: val_r1_line_time_5
+            responseValue: '47'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r1_line_dist_5
+            responseValue: '730'
+          - comment: 路線区間の途中停車駅数
+            name: val_r1_line_stop_station_cnt_5
+            responseValue: '2'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r1_line_traffic_5
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r1_line_type_5
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間6
+          params:
+          - comment: 路線区間の路線名
+            name: val_r1_line_name_6
+            responseValue: ＪＲ新幹線とき
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r1_line_longname_6
+            responseValue: ＪＲ新幹線とき
+          - comment: 路線区間の会社名
+            name: val_r1_line_corp_name_6
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r1_line_from_6
+            responseValue: 長岡
+          - comment: 路線区間の到着駅名
+            name: val_r1_line_to_6
+            responseValue: 新潟
+          - comment: 路線区間の時間(単位：分)
+            name: val_r1_line_time_6
+            responseValue: '24'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r1_line_dist_6
+            responseValue: '633'
+          - comment: 路線区間の途中停車駅数
+            name: val_r1_line_stop_station_cnt_6
+            responseValue: '1'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r1_line_traffic_6
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r1_line_type_6
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間7
+          params:
+          - comment: 路線区間の路線名
+            name: val_r1_line_name_7
+            responseValue: ＪＲ特急いなほ
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r1_line_longname_7
+            responseValue: ＪＲ特急いなほ
+          - comment: 路線区間の会社名
+            name: val_r1_line_corp_name_7
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r1_line_from_7
+            responseValue: 新潟
+          - comment: 路線区間の到着駅名
+            name: val_r1_line_to_7
+            responseValue: 村上(新潟県)
+          - comment: 路線区間の時間(単位：分)
+            name: val_r1_line_time_7
+            responseValue: '48'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r1_line_dist_7
+            responseValue: '607'
+          - comment: 路線区間の途中停車駅数
+            name: val_r1_line_stop_station_cnt_7
+            responseValue: '4'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r1_line_traffic_7
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r1_line_type_7
+            responseValue: '0'
+      - countGroupComment: 乗車券区間
+        comment: 乗車券区間の数
+        name: val_r1_fsect_cnt
+        responseValue: '1'
+        children:
+        - countGroupNumberComment: 乗車券区間1
+          params:
+          - comment: 乗車券区間の開始路線
+            name: val_r1_fsect_from_1
+            responseValue: '1'
+          - comment: 乗車券区間の終了路線
+            name: val_r1_fsect_to_1
+            responseValue: '7'
+          - comment: 乗車券区間の運賃
+            name: val_r1_fsect_fare_1
+            responseValue: '12810'
+          - comment: 乗車券区間の割引名称
+            name: val_r1_fsect_discountname_1
+            responseValue: ''
+          - countGroupComment: 航空便
+            comment: 乗車券区間の航空便数
+            name: val_r1_fsect_airfare_1_cnt
+            responseValue: '0'
+          - countGroupComment: 運賃クラス
+            comment: 乗車券区間の運賃クラス数
+            name: val_r1_fsect_fclass_1_cnt
+            responseValue: '0'
+          - countGroupComment: システムタイプ
+            comment: 乗車券区間のシステムタイプ数
+            name: val_r1_fsect_ticketsys_1_cnt
+            responseValue: '0'
+      - countGroupComment: 料金区間
+        comment: 料金区間の数
+        name: val_r1_csect_cnt
+        responseValue: '7'
+        children:
+        - countGroupNumberComment: 料金区間1
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r1_csect_from_1
+            responseValue: '1'
+          - comment: 料金区間の終了路線
+            name: val_r1_csect_to_1
+            responseValue: '1'
+          - comment: 料金区間の選択された料金名
+            name: val_r1_csect_name_1
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r1_csect_fare_1
+            responseValue: '1310'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r1_csect_surcharge_1_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_1_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_1_fare_1
+                responseValue: '1310'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_1_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_1_fare_2
+                responseValue: '2310'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_1_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_1_fare_3
+                responseValue: '6310'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r1_csect_surcharge_1_pair
+            responseValue: '3'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r1_csect_seasontype_1
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r1_csect_sleepingcar_1_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間2
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r1_csect_from_2
+            responseValue: '2'
+          - comment: 料金区間の終了路線
+            name: val_r1_csect_to_2
+            responseValue: '2'
+          - comment: 料金区間の選択された料金名
+            name: val_r1_csect_name_2
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r1_csect_fare_2
+            responseValue: '4690'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r1_csect_surcharge_2_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_2_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_2_fare_1
+                responseValue: '4690'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_2_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_2_fare_2
+                responseValue: '3980'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_2_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_2_fare_3
+                responseValue: '8380'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r1_csect_surcharge_2_pair
+            responseValue: '0'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r1_csect_seasontype_2
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r1_csect_sleepingcar_2_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間3
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r1_csect_from_3
+            responseValue: '3'
+          - comment: 料金区間の終了路線
+            name: val_r1_csect_to_3
+            responseValue: '3'
+          - comment: 料金区間の選択された料金名
+            name: val_r1_csect_name_3
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r1_csect_fare_3
+            responseValue: '2620'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r1_csect_surcharge_3_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_3_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_3_fare_1
+                responseValue: '2620'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_3_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_3_fare_2
+                responseValue: '2310'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_3_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_3_fare_3
+                responseValue: '6310'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r1_csect_surcharge_3_pair
+            responseValue: '1'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r1_csect_seasontype_3
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r1_csect_sleepingcar_3_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間4
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r1_csect_from_4
+            responseValue: '4'
+          - comment: 料金区間の終了路線
+            name: val_r1_csect_to_4
+            responseValue: '4'
+          - comment: 料金区間の選択された料金名
+            name: val_r1_csect_name_4
+            responseValue: 自由席
+          - comment: 料金区間の選択された料金
+            name: val_r1_csect_fare_4
+            responseValue: '0'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r1_csect_surcharge_4_cnt
+            responseValue: '2'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_4_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_4_fare_1
+                responseValue: '310'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_4_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_4_fare_2
+                responseValue: '0'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r1_csect_surcharge_4_pair
+            responseValue: '0'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r1_csect_seasontype_4
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r1_csect_sleepingcar_4_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間5
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r1_csect_from_5
+            responseValue: '5'
+          - comment: 料金区間の終了路線
+            name: val_r1_csect_to_5
+            responseValue: '5'
+          - comment: 料金区間の選択された料金名
+            name: val_r1_csect_name_5
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r1_csect_fare_5
+            responseValue: '730'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r1_csect_surcharge_5_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_5_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_5_fare_1
+                responseValue: '730'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_5_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_5_fare_2
+                responseValue: '1150'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_5_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_5_fare_3
+                responseValue: '2150'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r1_csect_surcharge_5_pair
+            responseValue: '7'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r1_csect_seasontype_5
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r1_csect_sleepingcar_5_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間6
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r1_csect_from_6
+            responseValue: '6'
+          - comment: 料金区間の終了路線
+            name: val_r1_csect_to_6
+            responseValue: '6'
+          - comment: 料金区間の選択された料金名
+            name: val_r1_csect_name_6
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r1_csect_fare_6
+            responseValue: '2100'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r1_csect_surcharge_6_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_6_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_6_fare_1
+                responseValue: '2100'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_6_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_6_fare_2
+                responseValue: '1790'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_6_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_6_fare_3
+                responseValue: '2790'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r1_csect_surcharge_6_pair
+            responseValue: '0'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r1_csect_seasontype_6
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r1_csect_sleepingcar_6_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間7
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r1_csect_from_7
+            responseValue: '7'
+          - comment: 料金区間の終了路線
+            name: val_r1_csect_to_7
+            responseValue: '7'
+          - comment: 料金区間の選択された料金名
+            name: val_r1_csect_name_7
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r1_csect_fare_7
+            responseValue: '1210'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r1_csect_surcharge_7_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_7_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_7_fare_1
+                responseValue: '1210'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_7_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_7_fare_2
+                responseValue: '900'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r1_csect_surcharge_7_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r1_csect_surcharge_7_fare_3
+                responseValue: '1900'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r1_csect_surcharge_7_pair
+            responseValue: '5'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r1_csect_seasontype_7
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r1_csect_sleepingcar_7_cnt
+            responseValue: '0'
+      - comment: 乗継割引相対組み合わせ連番
+        name: val_r1_csect1_3
+        responseValue: '1'
+      - comment: 乗継割引相対組み合わせ連番
+        name: val_r1_csect5_7
+        responseValue: '2'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect1_1_1
+        responseValue: '1310,2620'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect1_1_2
+        responseValue: '1310,2310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect1_1_3
+        responseValue: '1310,6310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect1_2_1
+        responseValue: '2310,1310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect1_2_2
+        responseValue: '1150,2310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect1_2_3
+        responseValue: '1150,6310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect1_3_1
+        responseValue: '6310,1310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect1_3_2
+        responseValue: '5150,2310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect1_3_3
+        responseValue: '5150,6310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect2_1_1
+        responseValue: '730,1210'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect2_1_2
+        responseValue: '730,900'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect2_1_3
+        responseValue: '730,1900'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect2_2_1
+        responseValue: '1150,600'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect2_2_2
+        responseValue: '570,900'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect2_2_3
+        responseValue: '570,1900'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect2_3_1
+        responseValue: '2150,600'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect2_3_2
+        responseValue: '1570,900'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r1_csect2_3_3
+        responseValue: '1570,1900'
+      - countGroupComment: 定期券区間
+        comment: 定期券区間の数
+        name: val_r1_tsect_cnt
+        responseValue: '0'
+      - comment: 定期券利用計算の有無
+        value: 0：無&1：有
+        name: val_r1_teikiuse_include
+        responseValue: '0'
+      - countGroupComment: 定期券利用時の路線区間
+        comment: 定期券利用時の路線区間数
+        name: val_r1_teikiuse_cnt
+        responseValue: '0'
+      - comment: 分割定期計算の有無
+        value: 0：無&1：有
+        name: val_r1_stsect
+        responseValue: '0'
+    - countGroupNumberComment: 経路2
+      params:
+      - comment: 経路の文字列
+        name: val_route_2
+        responseValue: 出雲市－ＪＲ特急やくも－岡山－ＪＲ新幹線のぞみ－名古屋－ＪＲ特急しなの－長野－ＪＲ妙高－直江津－ＪＲ特急はくたか－越後湯沢－ＪＲ新幹線とき－新潟－ＪＲ特急いなほ－村上(新潟県)
+      - comment: 経路の所要時間合計(単位：分)
+        name: val_time_2
+        responseValue: '885'
+      - comment: 経路の乗車時間合計(単位：分)
+        name: val_board_time_2
+        responseValue: '703'
+      - comment: 経路の徒歩時間合計(単位：分)
+        name: val_walk_time_2
+        responseValue: '0'
+      - comment: 経路のその他時間合計(単位：分)
+        name: val_other_time_2
+        responseValue: '182'
+      - comment: 経路の距離(単位：100m)
+        name: val_dist_2
+        responseValue: '11930'
+      - comment: 経路の乗換回数
+        name: val_transfer_2
+        responseValue: '6'
+      - comment: 経路の運賃の合計金額
+        name: val_fare_2
+        responseValue: '15870'
+      - comment: 経路の料金の合計金額
+        name: val_surcharge_fare_2
+        responseValue: '13590'
+      - comment: 経路の1ヵ月定期代
+        name: val_teiki1_2
+        responseValue: '0'
+      - comment: 経路の3ヵ月定期代
+        name: val_teiki3_2
+        responseValue: '0'
+      - comment: 経路の6ヵ月定期代
+        name: val_teiki6_2
+        responseValue: '0'
+      - countGroupComment: 乗り入れ路線
+        comment: 経路の乗り入れ数
+        name: val_r2_connect_cnt
+        responseValue: '0'
+      - comment: 「駅すぱあと」における定期券としての利用可能判定
+        value: 0：利用不可(「駅すぱあと」に定期券として登録できない情報)&1：利用可(「駅すぱあと」に定期券として登録できる情報)
+        name: val_r2_teiki_available
+        responseValue: '0'
+      - comment: 方向性を持った経路文字列(定期券利用区間指定用)
+        name: val_restoreroute_2
+        responseValue: 出雲市_ＪＲ特急やくも_2_岡山_ＪＲ新幹線のぞみ_2_名古屋_ＪＲ特急しなの_1_長野_ＪＲ妙高_1_直江津_ＪＲ特急はくたか_1_越後湯沢_ＪＲ新幹線とき_1_新潟_ＪＲ特急いなほ_1_村上(新潟県)
+      - comment: 経路の駅数(定期券利用区間指定用)
+        name: val_teiki_station_cnt_2
+        responseValue: '8'
+      - comment: 経路の駅名リスト(定期券利用区間指定用)
+        name: val_teiki_stationnamelist_2
+        responseValue: 出雲市_岡山_名古屋_長野_直江津_越後湯沢_新潟_村上(新潟県)
+      - comment: 経路の路線数(定期券利用区間指定用)
+        name: val_teiki_rail_cnt_2
+        responseValue: '7'
+      - comment: 経路の路線数リスト(定期券利用区間指定用)
+        name: val_teiki_railnamelist_2
+        responseValue: ＪＲ特急やくも_ＪＲ新幹線のぞみ_ＪＲ特急しなの_ＪＲ妙高_ＪＲ特急はくたか_ＪＲ新幹線とき_ＪＲ特急いなほ
+      - countGroupComment: 路線区間
+        comment: 路線区間の数
+        name: val_r2_line_cnt
+        responseValue: '7'
+        children:
+        - countGroupNumberComment: 路線区間1
+          params:
+          - comment: 路線区間の路線名
+            name: val_r2_line_name_1
+            responseValue: ＪＲ特急やくも
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r2_line_longname_1
+            responseValue: ＪＲ特急やくも
+          - comment: 路線区間の会社名
+            name: val_r2_line_corp_name_1
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r2_line_from_1
+            responseValue: 出雲市
+          - comment: 路線区間の到着駅名
+            name: val_r2_line_to_1
+            responseValue: 岡山
+          - comment: 路線区間の時間(単位：分)
+            name: val_r2_line_time_1
+            responseValue: '178'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r2_line_dist_1
+            responseValue: '2207'
+          - comment: 路線区間の途中停車駅数
+            name: val_r2_line_stop_station_cnt_1
+            responseValue: '13'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r2_line_traffic_1
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r2_line_type_1
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間2
+          params:
+          - comment: 路線区間の路線名
+            name: val_r2_line_name_2
+            responseValue: ＪＲ新幹線のぞみ
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r2_line_longname_2
+            responseValue: ＪＲ新幹線のぞみ
+          - comment: 路線区間の会社名
+            name: val_r2_line_corp_name_2
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r2_line_from_2
+            responseValue: 岡山
+          - comment: 路線区間の到着駅名
+            name: val_r2_line_to_2
+            responseValue: 名古屋
+          - comment: 路線区間の時間(単位：分)
+            name: val_r2_line_time_2
+            responseValue: '106'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r2_line_dist_2
+            responseValue: '3669'
+          - comment: 路線区間の途中停車駅数
+            name: val_r2_line_stop_station_cnt_2
+            responseValue: '4'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r2_line_traffic_2
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r2_line_type_2
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間3
+          params:
+          - comment: 路線区間の路線名
+            name: val_r2_line_name_3
+            responseValue: ＪＲ特急しなの
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r2_line_longname_3
+            responseValue: ＪＲ特急しなの
+          - comment: 路線区間の会社名
+            name: val_r2_line_corp_name_3
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r2_line_from_3
+            responseValue: 名古屋
+          - comment: 路線区間の到着駅名
+            name: val_r2_line_to_3
+            responseValue: 長野
+          - comment: 路線区間の時間(単位：分)
+            name: val_r2_line_time_3
+            responseValue: '180'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r2_line_dist_3
+            responseValue: '2508'
+          - comment: 路線区間の途中停車駅数
+            name: val_r2_line_stop_station_cnt_3
+            responseValue: '11'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r2_line_traffic_3
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r2_line_type_3
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間4
+          params:
+          - comment: 路線区間の路線名
+            name: val_r2_line_name_4
+            responseValue: ＪＲ妙高
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r2_line_longname_4
+            responseValue: ＪＲ妙高
+          - comment: 路線区間の会社名
+            name: val_r2_line_corp_name_4
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r2_line_from_4
+            responseValue: 長野
+          - comment: 路線区間の到着駅名
+            name: val_r2_line_to_4
+            responseValue: 直江津
+          - comment: 路線区間の時間(単位：分)
+            name: val_r2_line_time_4
+            responseValue: '88'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r2_line_dist_4
+            responseValue: '750'
+          - comment: 路線区間の途中停車駅数
+            name: val_r2_line_stop_station_cnt_4
+            responseValue: '15'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r2_line_traffic_4
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r2_line_type_4
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間5
+          params:
+          - comment: 路線区間の路線名
+            name: val_r2_line_name_5
+            responseValue: ＪＲ特急はくたか
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r2_line_longname_5
+            responseValue: ＪＲ特急はくたか
+          - comment: 路線区間の会社名
+            name: val_r2_line_corp_name_5
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r2_line_from_5
+            responseValue: 直江津
+          - comment: 路線区間の到着駅名
+            name: val_r2_line_to_5
+            responseValue: 越後湯沢
+          - comment: 路線区間の時間(単位：分)
+            name: val_r2_line_time_5
+            responseValue: '52'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r2_line_dist_5
+            responseValue: '842'
+          - comment: 路線区間の途中停車駅数
+            name: val_r2_line_stop_station_cnt_5
+            responseValue: '1'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r2_line_traffic_5
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r2_line_type_5
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間6
+          params:
+          - comment: 路線区間の路線名
+            name: val_r2_line_name_6
+            responseValue: ＪＲ新幹線とき
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r2_line_longname_6
+            responseValue: ＪＲ新幹線とき
+          - comment: 路線区間の会社名
+            name: val_r2_line_corp_name_6
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r2_line_from_6
+            responseValue: 越後湯沢
+          - comment: 路線区間の到着駅名
+            name: val_r2_line_to_6
+            responseValue: 新潟
+          - comment: 路線区間の時間(単位：分)
+            name: val_r2_line_time_6
+            responseValue: '51'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r2_line_dist_6
+            responseValue: '1347'
+          - comment: 路線区間の途中停車駅数
+            name: val_r2_line_stop_station_cnt_6
+            responseValue: '3'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r2_line_traffic_6
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r2_line_type_6
+            responseValue: '2'
+        - countGroupNumberComment: 路線区間7
+          params:
+          - comment: 路線区間の路線名
+            name: val_r2_line_name_7
+            responseValue: ＪＲ特急いなほ
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r2_line_longname_7
+            responseValue: ＪＲ特急いなほ
+          - comment: 路線区間の会社名
+            name: val_r2_line_corp_name_7
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r2_line_from_7
+            responseValue: 新潟
+          - comment: 路線区間の到着駅名
+            name: val_r2_line_to_7
+            responseValue: 村上(新潟県)
+          - comment: 路線区間の時間(単位：分)
+            name: val_r2_line_time_7
+            responseValue: '48'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r2_line_dist_7
+            responseValue: '607'
+          - comment: 路線区間の途中停車駅数
+            name: val_r2_line_stop_station_cnt_7
+            responseValue: '4'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r2_line_traffic_7
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r2_line_type_7
+            responseValue: '0'
+      - countGroupComment: 乗車券区間
+        comment: 乗車券区間の数
+        name: val_r2_fsect_cnt
+        responseValue: '2'
+        children:
+        - countGroupNumberComment: 乗車券区間1
+          params:
+          - comment: 乗車券区間の開始路線
+            name: val_r2_fsect_from_1
+            responseValue: '1'
+          - comment: 乗車券区間の終了路線
+            name: val_r2_fsect_to_1
+            responseValue: '5'
+          - comment: 乗車券区間の運賃
+            name: val_r2_fsect_fare_1
+            responseValue: '12610'
+          - comment: 乗車券区間の割引名称
+            name: val_r2_fsect_discountname_1
+            responseValue: 通過連絡運輸
+          - countGroupComment: 航空便
+            comment: 乗車券区間の航空便数
+            name: val_r2_fsect_airfare_1_cnt
+            responseValue: '0'
+          - countGroupComment: 運賃クラス
+            comment: 乗車券区間の運賃クラス数
+            name: val_r2_fsect_fclass_1_cnt
+            responseValue: '0'
+          - countGroupComment: システムタイプ
+            comment: 乗車券区間のシステムタイプ数
+            name: val_r2_fsect_ticketsys_1_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 乗車券区間2
+          params:
+          - comment: 乗車券区間の開始路線
+            name: val_r2_fsect_from_2
+            responseValue: '6'
+          - comment: 乗車券区間の終了路線
+            name: val_r2_fsect_to_2
+            responseValue: '7'
+          - comment: 乗車券区間の運賃
+            name: val_r2_fsect_fare_2
+            responseValue: '3260'
+          - comment: 乗車券区間の割引名称
+            name: val_r2_fsect_discountname_2
+            responseValue: ''
+          - countGroupComment: 航空便
+            comment: 乗車券区間の航空便数
+            name: val_r2_fsect_airfare_2_cnt
+            responseValue: '0'
+          - countGroupComment: 運賃クラス
+            comment: 乗車券区間の運賃クラス数
+            name: val_r2_fsect_fclass_2_cnt
+            responseValue: '0'
+          - countGroupComment: システムタイプ
+            comment: 乗車券区間のシステムタイプ数
+            name: val_r2_fsect_ticketsys_2_cnt
+            responseValue: '0'
+      - countGroupComment: 料金区間
+        comment: 料金区間の数
+        name: val_r2_csect_cnt
+        responseValue: '7'
+        children:
+        - countGroupNumberComment: 料金区間1
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r2_csect_from_1
+            responseValue: '1'
+          - comment: 料金区間の終了路線
+            name: val_r2_csect_to_1
+            responseValue: '1'
+          - comment: 料金区間の選択された料金名
+            name: val_r2_csect_name_1
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r2_csect_fare_1
+            responseValue: '1310'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r2_csect_surcharge_1_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_1_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_1_fare_1
+                responseValue: '1310'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_1_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_1_fare_2
+                responseValue: '2310'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_1_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_1_fare_3
+                responseValue: '6310'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r2_csect_surcharge_1_pair
+            responseValue: '3'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r2_csect_seasontype_1
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r2_csect_sleepingcar_1_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間2
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r2_csect_from_2
+            responseValue: '2'
+          - comment: 料金区間の終了路線
+            name: val_r2_csect_to_2
+            responseValue: '2'
+          - comment: 料金区間の選択された料金名
+            name: val_r2_csect_name_2
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r2_csect_fare_2
+            responseValue: '4690'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r2_csect_surcharge_2_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_2_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_2_fare_1
+                responseValue: '4690'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_2_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_2_fare_2
+                responseValue: '3980'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_2_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_2_fare_3
+                responseValue: '8380'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r2_csect_surcharge_2_pair
+            responseValue: '0'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r2_csect_seasontype_2
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r2_csect_sleepingcar_2_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間3
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r2_csect_from_3
+            responseValue: '3'
+          - comment: 料金区間の終了路線
+            name: val_r2_csect_to_3
+            responseValue: '3'
+          - comment: 料金区間の選択された料金名
+            name: val_r2_csect_name_3
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r2_csect_fare_3
+            responseValue: '2620'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r2_csect_surcharge_3_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_3_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_3_fare_1
+                responseValue: '2620'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_3_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_3_fare_2
+                responseValue: '2310'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_3_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_3_fare_3
+                responseValue: '6310'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r2_csect_surcharge_3_pair
+            responseValue: '1'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r2_csect_seasontype_3
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r2_csect_sleepingcar_3_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間4
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r2_csect_from_4
+            responseValue: '4'
+          - comment: 料金区間の終了路線
+            name: val_r2_csect_to_4
+            responseValue: '4'
+          - comment: 料金区間の選択された料金名
+            name: val_r2_csect_name_4
+            responseValue: 自由席
+          - comment: 料金区間の選択された料金
+            name: val_r2_csect_fare_4
+            responseValue: '0'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r2_csect_surcharge_4_cnt
+            responseValue: '2'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_4_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_4_fare_1
+                responseValue: '310'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_4_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_4_fare_2
+                responseValue: '0'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r2_csect_surcharge_4_pair
+            responseValue: '0'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r2_csect_seasontype_4
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r2_csect_sleepingcar_4_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間5
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r2_csect_from_5
+            responseValue: '5'
+          - comment: 料金区間の終了路線
+            name: val_r2_csect_to_5
+            responseValue: '5'
+          - comment: 料金区間の選択された料金名
+            name: val_r2_csect_name_5
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r2_csect_fare_5
+            responseValue: '1540'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r2_csect_surcharge_5_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_5_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_5_fare_1
+                responseValue: '1540'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_5_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_5_fare_2
+                responseValue: '1130'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_5_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_5_fare_3
+                responseValue: '2630'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r2_csect_surcharge_5_pair
+            responseValue: '7'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r2_csect_seasontype_5
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r2_csect_sleepingcar_5_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間6
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r2_csect_from_6
+            responseValue: '6'
+          - comment: 料金区間の終了路線
+            name: val_r2_csect_to_6
+            responseValue: '6'
+          - comment: 料金区間の選択された料金名
+            name: val_r2_csect_name_6
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r2_csect_fare_6
+            responseValue: '2830'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r2_csect_surcharge_6_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_6_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_6_fare_1
+                responseValue: '2830'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_6_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_6_fare_2
+                responseValue: '2520'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_6_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_6_fare_3
+                responseValue: '4520'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r2_csect_surcharge_6_pair
+            responseValue: '0'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r2_csect_seasontype_6
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r2_csect_sleepingcar_6_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間7
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r2_csect_from_7
+            responseValue: '7'
+          - comment: 料金区間の終了路線
+            name: val_r2_csect_to_7
+            responseValue: '7'
+          - comment: 料金区間の選択された料金名
+            name: val_r2_csect_name_7
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r2_csect_fare_7
+            responseValue: '600'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r2_csect_surcharge_7_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_7_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_7_fare_1
+                responseValue: '600'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_7_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_7_fare_2
+                responseValue: '900'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r2_csect_surcharge_7_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r2_csect_surcharge_7_fare_3
+                responseValue: '1900'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r2_csect_surcharge_7_pair
+            responseValue: '5'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r2_csect_seasontype_7
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r2_csect_sleepingcar_7_cnt
+            responseValue: '0'
+      - comment: 乗継割引相対組み合わせ連番
+        name: val_r2_csect1_3
+        responseValue: '1'
+      - comment: 乗継割引相対組み合わせ連番
+        name: val_r2_csect5_7
+        responseValue: '2'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect1_1_1
+        responseValue: '1310,2620'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect1_1_2
+        responseValue: '1310,2310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect1_1_3
+        responseValue: '1310,6310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect1_2_1
+        responseValue: '2310,1310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect1_2_2
+        responseValue: '1150,2310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect1_2_3
+        responseValue: '1150,6310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect1_3_1
+        responseValue: '6310,1310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect1_3_2
+        responseValue: '5150,2310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect1_3_3
+        responseValue: '5150,6310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect2_1_1
+        responseValue: '1540,600'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect2_1_2
+        responseValue: '1020,900'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect2_1_3
+        responseValue: '1020,1900'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect2_2_1
+        responseValue: '1130,600'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect2_2_2
+        responseValue: '1130,450'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect2_2_3
+        responseValue: '1130,1450'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect2_3_1
+        responseValue: '2630,600'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect2_3_2
+        responseValue: '2630,450'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r2_csect2_3_3
+        responseValue: '2630,1450'
+      - countGroupComment: 定期券区間
+        comment: 定期券区間の数
+        name: val_r2_tsect_cnt
+        responseValue: '0'
+      - comment: 定期券利用計算の有無
+        value: 0：無&1：有
+        name: val_r2_teikiuse_include
+        responseValue: '0'
+      - countGroupComment: 定期券利用時の路線区間
+        comment: 定期券利用時の路線区間数
+        name: val_r2_teikiuse_cnt
+        responseValue: '0'
+      - comment: 分割定期計算の有無
+        value: 0：無&1：有
+        name: val_r2_stsect
+        responseValue: '0'
+    - countGroupNumberComment: 経路3
+      params:
+      - comment: 経路の文字列
+        name: val_route_3
+        responseValue: 出雲市－ＪＲ特急やくも－岡山－ＪＲ新幹線のぞみ－名古屋－ＪＲ特急しなの－長野－ＪＲ妙高－直江津－ＪＲ特急北越－長岡－ＪＲ新幹線とき－燕三条－ＪＲ弥彦線－東三条－ＪＲ特急北越－新潟－ＪＲ特急いなほ－村上(新潟県)
+      - comment: 経路の所要時間合計(単位：分)
+        name: val_time_3
+        responseValue: '933'
+      - comment: 経路の乗車時間合計(単位：分)
+        name: val_board_time_3
+        responseValue: '694'
+      - comment: 経路の徒歩時間合計(単位：分)
+        name: val_walk_time_3
+        responseValue: '0'
+      - comment: 経路のその他時間合計(単位：分)
+        name: val_other_time_3
+        responseValue: '239'
+      - comment: 経路の距離(単位：100m)
+        name: val_dist_3
+        responseValue: '11149'
+      - comment: 経路の乗換回数
+        name: val_transfer_3
+        responseValue: '8'
+      - comment: 経路の運賃の合計金額
+        name: val_fare_3
+        responseValue: '12810'
+      - comment: 経路の料金の合計金額
+        name: val_surcharge_fare_3
+        responseValue: '13700'
+      - comment: 経路の1ヵ月定期代
+        name: val_teiki1_3
+        responseValue: '0'
+      - comment: 経路の3ヵ月定期代
+        name: val_teiki3_3
+        responseValue: '0'
+      - comment: 経路の6ヵ月定期代
+        name: val_teiki6_3
+        responseValue: '0'
+      - countGroupComment: 乗り入れ路線
+        comment: 経路の乗り入れ数
+        name: val_r3_connect_cnt
+        responseValue: '0'
+      - comment: 「駅すぱあと」における定期券としての利用可能判定
+        value: 0：利用不可(「駅すぱあと」に定期券として登録できない情報)&1：利用可(「駅すぱあと」に定期券として登録できる情報)
+        name: val_r3_teiki_available
+        responseValue: '0'
+      - comment: 方向性を持った経路文字列(定期券利用区間指定用)
+        name: val_restoreroute_3
+        responseValue: 出雲市_ＪＲ特急やくも_2_岡山_ＪＲ新幹線のぞみ_2_名古屋_ＪＲ特急しなの_1_長野_ＪＲ妙高_1_直江津_ＪＲ特急北越_1_長岡_ＪＲ新幹線とき_1_燕三条_ＪＲ弥彦線(東三条－吉田)_2_東三条_ＪＲ特急北越_1_新潟_ＪＲ特急いなほ_1_村上(新潟県)
+      - comment: 経路の駅数(定期券利用区間指定用)
+        name: val_teiki_station_cnt_3
+        responseValue: '10'
+      - comment: 経路の駅名リスト(定期券利用区間指定用)
+        name: val_teiki_stationnamelist_3
+        responseValue: 出雲市_岡山_名古屋_長野_直江津_長岡_燕三条_東三条_新潟_村上(新潟県)
+      - comment: 経路の路線数(定期券利用区間指定用)
+        name: val_teiki_rail_cnt_3
+        responseValue: '9'
+      - comment: 経路の路線数リスト(定期券利用区間指定用)
+        name: val_teiki_railnamelist_3
+        responseValue: ＪＲ特急やくも_ＪＲ新幹線のぞみ_ＪＲ特急しなの_ＪＲ妙高_ＪＲ特急北越_ＪＲ新幹線とき_ＪＲ弥彦線(東三条－吉田)_ＪＲ特急北越_ＪＲ特急いなほ
+      - countGroupComment: 路線区間
+        comment: 路線区間の数
+        name: val_r3_line_cnt
+        responseValue: '9'
+        children:
+        - countGroupNumberComment: 路線区間1
+          params:
+          - comment: 路線区間の路線名
+            name: val_r3_line_name_1
+            responseValue: ＪＲ特急やくも
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r3_line_longname_1
+            responseValue: ＪＲ特急やくも
+          - comment: 路線区間の会社名
+            name: val_r3_line_corp_name_1
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r3_line_from_1
+            responseValue: 出雲市
+          - comment: 路線区間の到着駅名
+            name: val_r3_line_to_1
+            responseValue: 岡山
+          - comment: 路線区間の時間(単位：分)
+            name: val_r3_line_time_1
+            responseValue: '178'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r3_line_dist_1
+            responseValue: '2207'
+          - comment: 路線区間の途中停車駅数
+            name: val_r3_line_stop_station_cnt_1
+            responseValue: '13'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r3_line_traffic_1
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r3_line_type_1
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間2
+          params:
+          - comment: 路線区間の路線名
+            name: val_r3_line_name_2
+            responseValue: ＪＲ新幹線のぞみ
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r3_line_longname_2
+            responseValue: ＪＲ新幹線のぞみ
+          - comment: 路線区間の会社名
+            name: val_r3_line_corp_name_2
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r3_line_from_2
+            responseValue: 岡山
+          - comment: 路線区間の到着駅名
+            name: val_r3_line_to_2
+            responseValue: 名古屋
+          - comment: 路線区間の時間(単位：分)
+            name: val_r3_line_time_2
+            responseValue: '106'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r3_line_dist_2
+            responseValue: '3669'
+          - comment: 路線区間の途中停車駅数
+            name: val_r3_line_stop_station_cnt_2
+            responseValue: '4'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r3_line_traffic_2
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r3_line_type_2
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間3
+          params:
+          - comment: 路線区間の路線名
+            name: val_r3_line_name_3
+            responseValue: ＪＲ特急しなの
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r3_line_longname_3
+            responseValue: ＪＲ特急しなの
+          - comment: 路線区間の会社名
+            name: val_r3_line_corp_name_3
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r3_line_from_3
+            responseValue: 名古屋
+          - comment: 路線区間の到着駅名
+            name: val_r3_line_to_3
+            responseValue: 長野
+          - comment: 路線区間の時間(単位：分)
+            name: val_r3_line_time_3
+            responseValue: '180'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r3_line_dist_3
+            responseValue: '2508'
+          - comment: 路線区間の途中停車駅数
+            name: val_r3_line_stop_station_cnt_3
+            responseValue: '11'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r3_line_traffic_3
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r3_line_type_3
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間4
+          params:
+          - comment: 路線区間の路線名
+            name: val_r3_line_name_4
+            responseValue: ＪＲ妙高
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r3_line_longname_4
+            responseValue: ＪＲ妙高
+          - comment: 路線区間の会社名
+            name: val_r3_line_corp_name_4
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r3_line_from_4
+            responseValue: 長野
+          - comment: 路線区間の到着駅名
+            name: val_r3_line_to_4
+            responseValue: 直江津
+          - comment: 路線区間の時間(単位：分)
+            name: val_r3_line_time_4
+            responseValue: '88'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r3_line_dist_4
+            responseValue: '750'
+          - comment: 路線区間の途中停車駅数
+            name: val_r3_line_stop_station_cnt_4
+            responseValue: '15'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r3_line_traffic_4
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r3_line_type_4
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間5
+          params:
+          - comment: 路線区間の路線名
+            name: val_r3_line_name_5
+            responseValue: ＪＲ特急北越
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r3_line_longname_5
+            responseValue: ＪＲ特急北越
+          - comment: 路線区間の会社名
+            name: val_r3_line_corp_name_5
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r3_line_from_5
+            responseValue: 直江津
+          - comment: 路線区間の到着駅名
+            name: val_r3_line_to_5
+            responseValue: 長岡
+          - comment: 路線区間の時間(単位：分)
+            name: val_r3_line_time_5
+            responseValue: '47'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r3_line_dist_5
+            responseValue: '730'
+          - comment: 路線区間の途中停車駅数
+            name: val_r3_line_stop_station_cnt_5
+            responseValue: '2'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r3_line_traffic_5
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r3_line_type_5
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間6
+          params:
+          - comment: 路線区間の路線名
+            name: val_r3_line_name_6
+            responseValue: ＪＲ新幹線とき
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r3_line_longname_6
+            responseValue: ＪＲ新幹線とき
+          - comment: 路線区間の会社名
+            name: val_r3_line_corp_name_6
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r3_line_from_6
+            responseValue: 長岡
+          - comment: 路線区間の到着駅名
+            name: val_r3_line_to_6
+            responseValue: 燕三条
+          - comment: 路線区間の時間(単位：分)
+            name: val_r3_line_time_6
+            responseValue: '10'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r3_line_dist_6
+            responseValue: '232'
+          - comment: 路線区間の途中停車駅数
+            name: val_r3_line_stop_station_cnt_6
+            responseValue: '0'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r3_line_traffic_6
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r3_line_type_6
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間7
+          params:
+          - comment: 路線区間の路線名
+            name: val_r3_line_name_7
+            responseValue: ＪＲ弥彦線
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r3_line_longname_7
+            responseValue: ＪＲ弥彦線(東三条－吉田)
+          - comment: 路線区間の会社名
+            name: val_r3_line_corp_name_7
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r3_line_from_7
+            responseValue: 燕三条
+          - comment: 路線区間の到着駅名
+            name: val_r3_line_to_7
+            responseValue: 東三条
+          - comment: 路線区間の時間(単位：分)
+            name: val_r3_line_time_7
+            responseValue: '8'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r3_line_dist_7
+            responseValue: '45'
+          - comment: 路線区間の途中停車駅数
+            name: val_r3_line_stop_station_cnt_7
+            responseValue: '1'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r3_line_traffic_7
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r3_line_type_7
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間8
+          params:
+          - comment: 路線区間の路線名
+            name: val_r3_line_name_8
+            responseValue: ＪＲ特急北越
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r3_line_longname_8
+            responseValue: ＪＲ特急北越
+          - comment: 路線区間の会社名
+            name: val_r3_line_corp_name_8
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r3_line_from_8
+            responseValue: 東三条
+          - comment: 路線区間の到着駅名
+            name: val_r3_line_to_8
+            responseValue: 新潟
+          - comment: 路線区間の時間(単位：分)
+            name: val_r3_line_time_8
+            responseValue: '29'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r3_line_dist_8
+            responseValue: '401'
+          - comment: 路線区間の途中停車駅数
+            name: val_r3_line_stop_station_cnt_8
+            responseValue: '2'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r3_line_traffic_8
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r3_line_type_8
+            responseValue: '0'
+        - countGroupNumberComment: 路線区間9
+          params:
+          - comment: 路線区間の路線名
+            name: val_r3_line_name_9
+            responseValue: ＪＲ特急いなほ
+          - comment: 路線区間の路線名(ロングネーム)
+            name: val_r3_line_longname_9
+            responseValue: ＪＲ特急いなほ
+          - comment: 路線区間の会社名
+            name: val_r3_line_corp_name_9
+            responseValue: ＪＲ
+          - comment: 路線区間の出発駅名
+            name: val_r3_line_from_9
+            responseValue: 新潟
+          - comment: 路線区間の到着駅名
+            name: val_r3_line_to_9
+            responseValue: 村上(新潟県)
+          - comment: 路線区間の時間(単位：分)
+            name: val_r3_line_time_9
+            responseValue: '48'
+          - comment: 路線区間の距離(単位：100m)
+            name: val_r3_line_dist_9
+            responseValue: '607'
+          - comment: 路線区間の途中停車駅数
+            name: val_r3_line_stop_station_cnt_9
+            responseValue: '4'
+          - comment: 路線区間の交通種類
+            value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+            name: val_r3_line_traffic_9
+            responseValue: '1'
+          - comment: 路線区間の種別
+            value: 0：通常&1：乗り入れ&2：折り返し
+            name: val_r3_line_type_9
+            responseValue: '0'
+      - countGroupComment: 乗車券区間
+        comment: 乗車券区間の数
+        name: val_r3_fsect_cnt
+        responseValue: '1'
+        children:
+        - countGroupNumberComment: 乗車券区間1
+          params:
+          - comment: 乗車券区間の開始路線
+            name: val_r3_fsect_from_1
+            responseValue: '1'
+          - comment: 乗車券区間の終了路線
+            name: val_r3_fsect_to_1
+            responseValue: '9'
+          - comment: 乗車券区間の運賃
+            name: val_r3_fsect_fare_1
+            responseValue: '12810'
+          - comment: 乗車券区間の割引名称
+            name: val_r3_fsect_discountname_1
+            responseValue: ''
+          - countGroupComment: 航空便
+            comment: 乗車券区間の航空便数
+            name: val_r3_fsect_airfare_1_cnt
+            responseValue: '0'
+          - countGroupComment: 運賃クラス
+            comment: 乗車券区間の運賃クラス数
+            name: val_r3_fsect_fclass_1_cnt
+            responseValue: '0'
+          - countGroupComment: システムタイプ
+            comment: 乗車券区間のシステムタイプ数
+            name: val_r3_fsect_ticketsys_1_cnt
+            responseValue: '0'
+      - countGroupComment: 料金区間
+        comment: 料金区間の数
+        name: val_r3_csect_cnt
+        responseValue: '8'
+        children:
+        - countGroupNumberComment: 料金区間1
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r3_csect_from_1
+            responseValue: '1'
+          - comment: 料金区間の終了路線
+            name: val_r3_csect_to_1
+            responseValue: '1'
+          - comment: 料金区間の選択された料金名
+            name: val_r3_csect_name_1
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r3_csect_fare_1
+            responseValue: '1310'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r3_csect_surcharge_1_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_1_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_1_fare_1
+                responseValue: '1310'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_1_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_1_fare_2
+                responseValue: '2310'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_1_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_1_fare_3
+                responseValue: '6310'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r3_csect_surcharge_1_pair
+            responseValue: '3'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r3_csect_seasontype_1
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r3_csect_sleepingcar_1_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間2
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r3_csect_from_2
+            responseValue: '2'
+          - comment: 料金区間の終了路線
+            name: val_r3_csect_to_2
+            responseValue: '2'
+          - comment: 料金区間の選択された料金名
+            name: val_r3_csect_name_2
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r3_csect_fare_2
+            responseValue: '4690'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r3_csect_surcharge_2_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_2_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_2_fare_1
+                responseValue: '4690'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_2_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_2_fare_2
+                responseValue: '3980'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_2_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_2_fare_3
+                responseValue: '8380'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r3_csect_surcharge_2_pair
+            responseValue: '0'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r3_csect_seasontype_2
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r3_csect_sleepingcar_2_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間3
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r3_csect_from_3
+            responseValue: '3'
+          - comment: 料金区間の終了路線
+            name: val_r3_csect_to_3
+            responseValue: '3'
+          - comment: 料金区間の選択された料金名
+            name: val_r3_csect_name_3
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r3_csect_fare_3
+            responseValue: '2620'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r3_csect_surcharge_3_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_3_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_3_fare_1
+                responseValue: '2620'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_3_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_3_fare_2
+                responseValue: '2310'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_3_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_3_fare_3
+                responseValue: '6310'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r3_csect_surcharge_3_pair
+            responseValue: '1'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r3_csect_seasontype_3
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r3_csect_sleepingcar_3_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間4
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r3_csect_from_4
+            responseValue: '4'
+          - comment: 料金区間の終了路線
+            name: val_r3_csect_to_4
+            responseValue: '4'
+          - comment: 料金区間の選択された料金名
+            name: val_r3_csect_name_4
+            responseValue: 自由席
+          - comment: 料金区間の選択された料金
+            name: val_r3_csect_fare_4
+            responseValue: '0'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r3_csect_surcharge_4_cnt
+            responseValue: '2'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_4_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_4_fare_1
+                responseValue: '310'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_4_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_4_fare_2
+                responseValue: '0'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r3_csect_surcharge_4_pair
+            responseValue: '0'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r3_csect_seasontype_4
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r3_csect_sleepingcar_4_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間5
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r3_csect_from_5
+            responseValue: '5'
+          - comment: 料金区間の終了路線
+            name: val_r3_csect_to_5
+            responseValue: '5'
+          - comment: 料金区間の選択された料金名
+            name: val_r3_csect_name_5
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r3_csect_fare_5
+            responseValue: '730'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r3_csect_surcharge_5_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_5_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_5_fare_1
+                responseValue: '730'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_5_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_5_fare_2
+                responseValue: '570'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_5_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_5_fare_3
+                responseValue: '1570'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r3_csect_surcharge_5_pair
+            responseValue: '0'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r3_csect_seasontype_5
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r3_csect_sleepingcar_5_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間6
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r3_csect_from_6
+            responseValue: '6'
+          - comment: 料金区間の終了路線
+            name: val_r3_csect_to_6
+            responseValue: '6'
+          - comment: 料金区間の選択された料金名
+            name: val_r3_csect_name_6
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r3_csect_fare_6
+            responseValue: '2100'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r3_csect_surcharge_6_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_6_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_6_fare_1
+                responseValue: '2100'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_6_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_6_fare_2
+                responseValue: '840'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_6_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_6_fare_3
+                responseValue: '2790'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r3_csect_surcharge_6_pair
+            responseValue: '0'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r3_csect_seasontype_6
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r3_csect_sleepingcar_6_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間7
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r3_csect_from_7
+            responseValue: '8'
+          - comment: 料金区間の終了路線
+            name: val_r3_csect_to_7
+            responseValue: '8'
+          - comment: 料金区間の選択された料金名
+            name: val_r3_csect_name_7
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r3_csect_fare_7
+            responseValue: '1040'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r3_csect_surcharge_7_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_7_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_7_fare_1
+                responseValue: '1040'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_7_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_7_fare_2
+                responseValue: '730'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_7_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_7_fare_3
+                responseValue: '1730'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r3_csect_surcharge_7_pair
+            responseValue: '0'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r3_csect_seasontype_7
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r3_csect_sleepingcar_7_cnt
+            responseValue: '0'
+        - countGroupNumberComment: 料金区間8
+          params:
+          - comment: 料金区間の開始路線
+            name: val_r3_csect_from_8
+            responseValue: '9'
+          - comment: 料金区間の終了路線
+            name: val_r3_csect_to_8
+            responseValue: '9'
+          - comment: 料金区間の選択された料金名
+            name: val_r3_csect_name_8
+            responseValue: 指定席
+          - comment: 料金区間の選択された料金
+            name: val_r3_csect_fare_8
+            responseValue: '1210'
+          - countGroupComment: 料金種別
+            comment: 料金区間の種別数
+            name: val_r3_csect_surcharge_8_cnt
+            responseValue: '3'
+            children:
+            - countGroupNumberComment: 料金種別1
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_8_name_1
+                responseValue: 指定席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_8_fare_1
+                responseValue: '1210'
+            - countGroupNumberComment: 料金種別2
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_8_name_2
+                responseValue: 自由席
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_8_fare_2
+                responseValue: '900'
+            - countGroupNumberComment: 料金種別3
+              params:
+              - comment: 料金区間の座席名
+                name: val_r3_csect_surcharge_8_name_3
+                responseValue: グリーン
+              - comment: 料金区間の料金
+                name: val_r3_csect_surcharge_8_fare_3
+                responseValue: '1900'
+          - comment: 乗継割引相対ペアNo.
+            name: val_r3_csect_surcharge_8_pair
+            responseValue: '0'
+          - comment: 料金区間の繁忙期・閑散期
+            value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+            name: val_r3_csect_seasontype_8
+            responseValue: '1'
+          - countGroupComment: 料金種別(寝台列車)
+            comment: 料金区間の種別数(寝台列車)
+            name: val_r3_csect_sleepingcar_8_cnt
+            responseValue: '0'
+      - comment: 乗継割引相対組み合わせ連番
+        name: val_r3_csect1_3
+        responseValue: '1'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r3_csect1_1_1
+        responseValue: '1310,2620'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r3_csect1_1_2
+        responseValue: '1310,2310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r3_csect1_1_3
+        responseValue: '1310,6310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r3_csect1_2_1
+        responseValue: '2310,1310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r3_csect1_2_2
+        responseValue: '1150,2310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r3_csect1_2_3
+        responseValue: '1150,6310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r3_csect1_3_1
+        responseValue: '6310,1310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r3_csect1_3_2
+        responseValue: '5150,2310'
+      - comment: 乗継割引相対割引料金リスト
+        name: val_r3_csect1_3_3
+        responseValue: '5150,6310'
+      - countGroupComment: 定期券区間
+        comment: 定期券区間の数
+        name: val_r3_tsect_cnt
+        responseValue: '0'
+      - comment: 定期券利用計算の有無
+        value: 0：無&1：有
+        name: val_r3_teikiuse_include
+        responseValue: '0'
+      - countGroupComment: 定期券利用時の路線区間
+        comment: 定期券利用時の路線区間数
+        name: val_r3_teikiuse_cnt
+        responseValue: '0'
+      - comment: 分割定期計算の有無
+        value: 0：無&1：有
+        name: val_r3_stsect
+        responseValue: '0'
+  - comment: val_jr2sectteikiに入力した内容を出力
+    name: val_reuse_jr2sectteiki
+    responseValue: '0'
+  - comment: val_doublerouteに入力した内容を出力
+    name: val_reuse_doubleroute
+    responseValue: '0'
+  - comment: 乗り継ぎステータス
+    value: 0：未指定&1：指定日に運行されている&2：指定日に運行されていない&3：路線名が正しくない
+    name: val_connectstate1
+    responseValue: '0'
+  - comment: 乗り継ぎステータス
+    value: 0：未指定&1：指定日に運行されている&2：指定日に運行されていない&3：路線名が正しくない
+    name: val_connectstate2
+    responseValue: '0'
+  - comment: 乗り継ぎステータス
+    value: 0：未指定&1：指定日に運行されている&2：指定日に運行されていない&3：路線名が正しくない
+    name: val_connectstate3
+    responseValue: '0'
+  - comment: 乗り継ぎステータス
+    value: 0：未指定&1：指定日に運行されている&2：指定日に運行されていない&3：路線名が正しくない
+    name: val_connectstate4
+    responseValue: '0'
+- params:
+  - comment: エラー情報
+    value: 0：正常&1：パラメータエラー&2：ハンドル取得エラー&3：出発地が存在しない&4：目的地が存在しない&5：出発地と目的地が同じ駅名&6：途中駅にランドマーク&7：途中駅にバス停&8：経路なし&9：定期券登録情報取得エラー(｢3-2
+      定期券利用時の運賃計算｣を会話型で利用した場合のみ)
+    name: val_errcode
+    responseValue: '0'
+  - comment: 定期券利用区間エラー情報
+    value: 0：正常&1：パラメータエラー&2：定期券情報復元エラー(2)&3：駅名エラー&4：駅名数エラー&5：路線名エラー&6：路線名数エラー&7：定期券情報復元エラー(7)
+    name: val_teiki_errcode
+    responseValue: '0'
+  - comment: 同時接続ID取得エラー情報
+    value: 0：正常&-1：コネクトエラー&-2：ファイルエラー
+    name: val_connect_errcode
+    responseValue: '0'
+routeString:
+- 出雲市－ＪＲ特急やくも－岡山－ＪＲ新幹線のぞみ－名古屋－ＪＲ特急しなの－長野－ＪＲ妙高－直江津－ＪＲ特急北越－長岡－ＪＲ新幹線とき－新潟－ＪＲ特急いなほ－村上(新潟県)
+- 出雲市－ＪＲ特急やくも－岡山－ＪＲ新幹線のぞみ－名古屋－ＪＲ特急しなの－長野－ＪＲ妙高－直江津－ＪＲ特急はくたか－越後湯沢－ＪＲ新幹線とき－新潟－ＪＲ特急いなほ－村上(新潟県)
+- 出雲市－ＪＲ特急やくも－岡山－ＪＲ新幹線のぞみ－名古屋－ＪＲ特急しなの－長野－ＪＲ妙高－直江津－ＪＲ特急北越－長岡－ＪＲ新幹線とき－燕三条－ＪＲ弥彦線－東三条－ＪＲ特急北越－新潟－ＪＲ特急いなほ－村上(新潟県)
+userParams:
+- name: user_param
+  responseValue: nisikokubunji
+notDefinedParams:
+- name: val_notdef_param
+  responseValue: invalid

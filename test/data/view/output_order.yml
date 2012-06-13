@@ -1,0 +1,1045 @@
+---
+#
+# 探索(平均・詳細)
+#
+- apis:
+  - cgi_details2
+  - jcgi_details2
+  params:
+  - name: val_route_cnt
+    numberOf: routeNo
+    countGroupComment: 経路
+    countGroupNumberComment: 経路
+    children:
+    - name: val_route_[routeNo]
+    - name: val_time_[routeNo]
+    - name: val_board_time_[routeNo]
+    - name: val_walk_time_[routeNo]
+    - name: val_other_time_[routeNo]
+    - name: val_dist_[routeNo]
+    - name: val_transfer_[routeNo]
+    - name: val_fare_[routeNo]
+    - name: val_surcharge_fare_[routeNo]
+    - name: val_teiki1_[routeNo]
+    - name: val_teiki3_[routeNo]
+    - name: val_teiki6_[routeNo]
+    - name: val_r[routeNo]_connect_cnt
+      numberOf: connectNo
+      countGroupComment: 乗り入れ路線
+      countGroupNumberComment: 乗り入れ路線
+      children:
+      - name: val_r[routeNo]_connect_line_[connectNo]
+    - name: val_r[routeNo]_teiki_available
+    - name: val_restoreroute_[routeNo]
+    - name: val_teiki_station_cnt_[routeNo]
+    - name: val_teiki_stationnamelist_[routeNo]
+    - name: val_teiki_rail_cnt_[routeNo]
+    - name: val_teiki_railnamelist_[routeNo]
+    - name: val_r[routeNo]_line_cnt
+      numberOf: lineNo
+      countGroupComment: 路線区間
+      countGroupNumberComment: 路線区間
+      children:
+      - name: val_r[routeNo]_line_name_[lineNo]
+      - name: val_r[routeNo]_line_longname_[lineNo]
+      - name: val_r[routeNo]_line_corp_name_[lineNo]
+      - name: val_r[routeNo]_line_from_[lineNo]
+      - name: val_r[routeNo]_line_to_[lineNo]
+      - name: val_r[routeNo]_line_time_[lineNo]
+      - name: val_r[routeNo]_line_dist_[lineNo]
+      - name: val_r[routeNo]_line_stop_station_cnt_[lineNo]
+      - name: val_r[routeNo]_line_traffic_[lineNo]
+      - name: val_r[routeNo]_line_type_[lineNo]
+      - name: val_r[routeNo]_line_isdisasterdia_[lineNo]
+      - name: val_r[routeNo]_line_disasterdia_serial_[lineNo]
+      - name: val_r[routeNo]_line_co2_[lineNo]
+      - name: val_r[routeNo]_line_co2car_[lineNo]
+      - name: val_r[routeNo]_line_color_[lineNo]
+      - name: val_r[routeNo]_line_colorrgb_[lineNo]
+    - name: val_r[routeNo]_fsect_cnt
+      numberOf: fsectNo
+      countGroupComment: 乗車券区間
+      countGroupNumberComment: 乗車券区間
+      children:
+      - name: val_r[routeNo]_fsect_from_[fsectNo]
+      - name: val_r[routeNo]_fsect_to_[fsectNo]
+      - name: val_r[routeNo]_fsect_fare_[fsectNo]
+      - name: val_r[routeNo]_fsect_premium_[fsectNo]
+      - name: val_r[routeNo]_fsect_discountname_[fsectNo]
+      - name: val_r[routeNo]_fsect_fclassno_[fsectNo]
+      - name: val_r[routeNo]_fsect_fclassname_[fsectNo]
+      - name: val_r[routeNo]_fsect_ticketsysno_[fsectNo]
+      - name: val_r[routeNo]_fsect_ticketsysname_[fsectNo]
+      - name: val_r[routeNo]_fsect_airfare_[fsectNo]_farename
+      - name: val_r[routeNo]_fsect_airfare_[fsectNo]_cnt
+        countGroupComment: 航空便
+        countGroupNumberComment: 航空便
+        numberOf: airfareNo
+        children:
+        - name: val_r[routeNo]_fsect_airfare_[fsectNo]_name_[airfareNo]
+        - name: val_r[routeNo]_fsect_airfare_[fsectNo]_fare_[airfareNo]
+      - name: val_r[routeNo]_fsect_airport_[fsectNo]_depcharge
+      - name: val_r[routeNo]_fsect_airport_[fsectNo]_arrcharge
+      - name: val_r[routeNo]_fsect_fclass_[fsectNo]_cnt
+        numberOf: fclassNo
+        countGroupComment: 運賃クラス
+        countGroupNumberComment: 運賃クラス
+        children:
+        - name: val_r[routeNo]_fsect_fclass_[fsectNo]_name_[fclassNo]
+        - name: val_r[routeNo]_fsect_fclass_[fsectNo]_fare_[fclassNo]
+      - name: val_r[routeNo]_fsect_ticketsys_[fsectNo]_cnt
+        numberOf: ticketsysNo
+        countGroupComment: システムタイプ
+        countGroupNumberComment: システムタイプ
+        children:
+        - name: val_r[routeNo]_fsect_ticketsys_[fsectNo]_name_[ticketsysNo]
+        - name: val_r[routeNo]_fsect_ticketsys_[fsectNo]_fare_[ticketsysNo]
+      - name: val_r[routeNo]_fsect_istassign_[fsectNo]
+      - name: val_r[routeNo]_fsect_iscassign_[fsectNo]
+    - name: val_r[routeNo]_csect_cnt
+      numberOf: csectNo
+      countGroupComment: 料金区間
+      countGroupNumberComment: 料金区間
+      children:
+      - name: val_r[routeNo]_csect_from_[csectNo]
+      - name: val_r[routeNo]_csect_to_[csectNo]
+      - name: val_r[routeNo]_csect_name_[csectNo]
+      - name: val_r[routeNo]_csect_fare_[csectNo]
+      - name: val_r[routeNo]_csect_surcharge_[csectNo]_cnt
+        numberOf: surchargeNo
+        countGroupComment: 料金種別
+        countGroupNumberComment: 料金種別
+        children:
+        - name: val_r[routeNo]_csect_surcharge_[csectNo]_name_[surchargeNo]
+        - name: val_r[routeNo]_csect_surcharge_[csectNo]_fare_[surchargeNo]
+      - name: val_r[routeNo]_csect_surcharge_[csectNo]_pair
+      - name: val_r[routeNo]_csect_seasontype_[csectNo]
+      - name: val_r[routeNo]_csect_sleepingcar_[csectNo]_cnt
+        numberOf: sleepingcarNo
+        countGroupComment: 料金種別(寝台列車)
+        countGroupNumberComment: 料金種別(寝台列車)
+        children:
+        - name: val_r[routeNo]_csect_sleepingcar_[csectNo]_name_[sleepingcarNo]
+        - name: val_r[routeNo]_csect_sleepingcar_[csectNo]_fare_[sleepingcarNo]
+      - name: val_r[routeNo]_csect_istassign_[csectNo]
+      - name: val_r[routeNo]_csect_iscassign_[csectNo]
+    - name: val_r[routeNo]_csect[csectNo1]_[csectNo2]
+    - name: val_r[routeNo]_csect[sequenceNo]_[surchargeNo1]_[surchargeNo2]
+    - name: val_r[routeNo]_tsect_cnt
+      numberOf: tsectNo
+      countGroupComment: 定期券区間
+      countGroupNumberComment: 定期券区間
+      children:
+      - name: val_r[routeNo]_tsect_from_[tsectNo]
+      - name: val_r[routeNo]_tsect_to_[tsectNo]
+      - name: val_r[routeNo]_tsect_teiki1_[tsectNo]
+      - name: val_r[routeNo]_tsect_teiki3_[tsectNo]
+      - name: val_r[routeNo]_tsect_teiki6_[tsectNo]
+      - name: val_r[routeNo]_tsect_zensen_[tsectNo]
+      - name: val_r[routeNo]_tsect_tkcls_[tsectNo]
+      - name: val_r[routeNo]_tsect_tkclslist_[tsectNo]_cnt
+        numberOf: tkclsNo
+        countGroupComment: 定期クラス
+        countGroupNumberComment: 定期クラス
+        children:
+        - name: val_r[routeNo]_tsect_tkclslist_[tsectNo]_tkcls_[tkclsNo]
+    - name: val_r[routeNo]_tassign_status
+    - name: val_r[routeNo]_tassign_fare
+    - name: val_r[routeNo]_tassign_fsect_cnt
+      numberOf: tassignfsectNo
+      countGroupComment: 定期券利用時の乗車券区間
+      countGroupNumberComment: 定期券利用時の乗車券区間
+      children:
+      - name: val_r[routeNo]_tassign_fsect_fare_[tassignfsectNo]
+      - name: val_r[routeNo]_tassign_fsect_istassign_[tassignfsectNo]
+      - name: val_r[routeNo]_tassign_fsect_from_[tassignfsectNo]
+      - name: val_r[routeNo]_tassign_fsect_to_[tassignfsectNo]
+    - name: val_r[routeNo]_tassign_line_cnt
+      numberOf: tassignlineNo
+      countGroupComment: 定期券利用時の路線区間
+      countGroupNumberComment: 定期券利用時の路線区間
+      children:
+      - name: val_r[routeNo]_tassign_line_from_[tassignlineNo]
+      - name: val_r[routeNo]_tassign_line_to_[tassignlineNo]
+    - name: val_r[routeNo]_teikiuse_include
+    - name: val_r[routeNo]_teikiuse_totalfare
+    - name: val_r[routeNo]_teikiuse_cnt
+      numberOf: teikiuselineNo
+      countGroupComment: 定期券利用時の路線区間
+      countGroupNumberComment: 定期券利用時の路線区間
+      children:
+      - name: val_r[routeNo]_teikiuse_from_[teikiuselineNo]
+      - name: val_r[routeNo]_teikiuse_to_[teikiuselineNo]
+      - name: val_r[routeNo]_teikiuse_fare_[teikiuselineNo]
+    - name: val_r[routeNo]_cassign_status
+    - name: val_r[routeNo]_stsect
+    - name: val_r[routeNo]_stsect_from_1
+    - name: val_r[routeNo]_stsect_from_2
+    - name: val_r[routeNo]_stsect_to_1
+    - name: val_r[routeNo]_stsect_to_2
+    - name: val_r[routeNo]_stsect_teiki1_from_1
+    - name: val_r[routeNo]_stsect_teiki1_from_2
+    - name: val_r[routeNo]_stsect_teiki3_from_1
+    - name: val_r[routeNo]_stsect_teiki3_from_2
+    - name: val_r[routeNo]_stsect_teiki6_from_1
+    - name: val_r[routeNo]_stsect_teiki6_from_2
+    - name: val_r[routeNo]_stsect_teiki1_to_1
+    - name: val_r[routeNo]_stsect_teiki1_to_2
+    - name: val_r[routeNo]_stsect_teiki3_to_1
+    - name: val_r[routeNo]_stsect_teiki3_to_2
+    - name: val_r[routeNo]_stsect_teiki6_to_1
+    - name: val_r[routeNo]_stsect_teiki6_to_2
+    - name: val_r[routeNo]_stsect_teiki1_1
+    - name: val_r[routeNo]_stsect_teiki1_2
+    - name: val_r[routeNo]_stsect_teiki3_1
+    - name: val_r[routeNo]_stsect_teiki3_2
+    - name: val_r[routeNo]_stsect_teiki6_1
+    - name: val_r[routeNo]_stsect_teiki6_2
+    - name: val_r[routeNo]_stsect_fare_from_1
+    - name: val_r[routeNo]_stsect_fare_from_2
+    - name: val_r[routeNo]_stsect_fare_to_1
+    - name: val_r[routeNo]_stsect_fare_to_2
+    - name: val_r[routeNo]_stsect_fare_1
+    - name: val_r[routeNo]_stsect_fare_2
+    - name: val_co2_[routeNo]
+    - name: val_co2car_[routeNo]
+  - name: val_reuse_jr2sectteiki
+  - name: val_reuse_doubleroute
+  - name: val_connectstate1
+  - name: val_connectstate2
+  - name: val_connectstate3
+  - name: val_connectstate4
+  - name: val_assigned_teiki_available
+#
+# 探索(ダイヤ・詳細)
+#
+- apis:
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  params:
+  - name: val_route_cnt
+    numberOf: routeNo
+    countGroupComment: 経路
+    countGroupNumberComment: 経路
+    children:
+    - name: val_route_[routeNo]
+    - name: val_dep_date_[routeNo]
+    - name: val_arr_date_[routeNo]
+    - name: val_dep_time_[routeNo]
+    - name: val_arr_time_[routeNo]
+    - name: val_time_[routeNo]
+    - name: val_board_time_[routeNo]
+    - name: val_walk_time_[routeNo]
+    - name: val_other_time_[routeNo]
+    - name: val_dist_[routeNo]
+    - name: val_transfer_[routeNo]
+    - name: val_fare_[routeNo]
+    - name: val_surcharge_fare_[routeNo]
+    - name: val_teiki1_[routeNo]
+    - name: val_teiki3_[routeNo]
+    - name: val_teiki6_[routeNo]
+    - name: val_r[routeNo]_connect_cnt
+      numberOf: connectNo
+      countGroupComment: 乗り入れ
+      countGroupNumberComment: 乗り入れ
+      children:
+      - name: val_r[routeNo]_connect_line_[connectNo]
+    - name: val_r[routeNo]_line_cnt
+      numberOf: lineNo
+      countGroupComment: 路線区間
+      countGroupNumberComment: 路線区間
+      children:
+      - name: val_r[routeNo]_line_name_[lineNo]
+      - name: val_r[routeNo]_line_corp_name_[lineNo]
+      - name: val_r[routeNo]_line_from_[lineNo]
+      - name: val_r[routeNo]_line_to_[lineNo]
+      - name: val_r[routeNo]_line_dep_time_[lineNo]
+      - name: val_r[routeNo]_line_arr_time_[lineNo]
+      - name: val_r[routeNo]_line_dist_[lineNo]
+      - name: val_r[routeNo]_line_stop_station_cnt_[lineNo]
+      - name: val_r[routeNo]_line_traffic_[lineNo]
+      - name: val_r[routeNo]_line_type_[lineNo]
+      - name: val_r[routeNo]_line_isdisasterdia_[lineNo]
+      - name: val_r[routeNo]_line_disasterdia_serial_[lineNo]
+      - name: val_r[routeNo]_line_co2_[lineNo]
+      - name: val_r[routeNo]_line_co2car_[lineNo]
+      - name: val_r[routeNo]_line_color_[lineNo]
+      - name: val_r[routeNo]_line_colorrgb_[lineNo]
+    - name: val_r[routeNo]_fsect_cnt
+      numberOf: fsectNo
+      countGroupComment: 乗車券区間
+      countGroupNumberComment: 乗車券区間
+      children:
+      - name: val_r[routeNo]_fsect_from_[fsectNo]
+      - name: val_r[routeNo]_fsect_to_[fsectNo]
+      - name: val_r[routeNo]_fsect_fare_[fsectNo]
+      - name: val_r[routeNo]_fsect_premium_[fsectNo]
+      - name: val_r[routeNo]_fsect_discountname_[fsectNo]
+      - name: val_r[routeNo]_fsect_fclassno_[fsectNo]
+      - name: val_r[routeNo]_fsect_fclassname_[fsectNo]
+      - name: val_r[routeNo]_fsect_ticketsysno_[fsectNo]
+      - name: val_r[routeNo]_fsect_ticketsysname_[fsectNo]
+      - name: val_r[routeNo]_fsect_airfare_cnt_[fsectNo]
+        numberOf: airfareNo
+        countGroupComment: 航空運賃
+        countGroupNumberComment: 航空運賃
+        children:
+        - name: val_r[routeNo]_fsect_airfare_[fsectNo]_farename_[airfareNo]
+        - name: val_r[routeNo]_fsect_airfare_[fsectNo]_name_[airfareNo]
+        - name: val_r[routeNo]_fsect_airfare_[fsectNo]_fare_[airfareNo]
+      - name: val_r[routeNo]_fsect_airfare_[fsectNo]
+      - name: val_r[routeNo]_fsect_airport_[fsectNo]_depcharge
+      - name: val_r[routeNo]_fsect_airport_[fsectNo]_arrcharge
+      - name: val_r[routeNo]_fsect_fclass_[fsectNo]_cnt
+        numberOf: fclassNo
+        countGroupComment: 運賃クラス
+        countGroupNumberComment: 運賃クラス
+        children:
+        - name: val_r[routeNo]_fsect_fclass_[fsectNo]_name_[fclassNo]
+        - name: val_r[routeNo]_fsect_fclass_[fsectNo]_fare_[fclassNo]
+      - name: val_r[routeNo]_fsect_ticketsys_[fsectNo]_cnt
+        numberOf: ticketsysNo
+        countGroupComment: システムタイプ
+        countGroupNumberComment: システムタイプ
+        children:
+        - name: val_r[routeNo]_fsect_ticketsys_[fsectNo]_name_[ticketsysNo]
+        - name: val_r[routeNo]_fsect_ticketsys_[fsectNo]_fare_[ticketsysNo]
+      - name: val_r[routeNo]_fsect_istassign_[fsectNo]
+      - name: val_r[routeNo]_fsect_iscassign_[fsectNo]
+    - name: val_r[routeNo]_csect_cnt
+      numberOf: csectNo
+      countGroupComment: 料金区間
+      countGroupNumberComment: 料金区間
+      children:
+      - name: val_r[routeNo]_csect_from_[csectNo]
+      - name: val_r[routeNo]_csect_to_[csectNo]
+      - name: val_r[routeNo]_csect_name_[csectNo]
+      - name: val_r[routeNo]_csect_fare_[csectNo]
+      - name: val_r[routeNo]_csect_surcharge_[csectNo]_cnt
+        numberOf: surchargeNo
+        countGroupComment: 料金種別
+        countGroupNumberComment: 料金種別
+        children:
+        - name: val_r[routeNo]_csect_surcharge_[csectNo]_name_[surchargeNo]
+        - name: val_r[routeNo]_csect_surcharge_[csectNo]_fare_[surchargeNo]
+      - name: val_r[routeNo]_csect_surcharge_[csectNo]_pair
+      - name: val_r[routeNo]_csect_seasontype_[csectNo]
+      - name: val_r[routeNo]_csect_sleepingcar_[csectNo]_cnt
+        numberOf: sleepingcarNo
+        countGroupComment: 料金種別(寝台列車)
+        countGroupNumberComment: 料金種別(寝台列車)
+        children:
+        - name: val_r[routeNo]_csect_sleepingcar_[csectNo]_name_[sleepingcarNo]
+        - name: val_r[routeNo]_csect_sleepingcar_[csectNo]_fare_[sleepingcarNo]
+      - name: val_r[routeNo]_csect_istassign_[csectNo]
+      - name: val_r[routeNo]_csect_iscassign_[csectNo]
+    - name: val_r[routeNo]_csect[csectNo1]_[csectNo2]
+    - name: val_r[routeNo]_csect[sequenceNo]_[surchargeNo1]_[surchargeNo2]
+    - name: val_r[routeNo]_tsect_cnt
+      numberOf: tsectNo
+      countGroupComment: 定期券区間
+      countGroupNumberComment: 定期券区間
+      children:
+      - name: val_r[routeNo]_tsect_from_[tsectNo]
+      - name: val_r[routeNo]_tsect_to_[tsectNo]
+      - name: val_r[routeNo]_tsect_teiki1_[tsectNo]
+      - name: val_r[routeNo]_tsect_teiki3_[tsectNo]
+      - name: val_r[routeNo]_tsect_teiki6_[tsectNo]
+      - name: val_r[routeNo]_tsect_zensen_[tsectNo]
+      - name: val_r[routeNo]_tsect_tkcls_[tsectNo]
+      - name: val_r[routeNo]_tsect_tkclslist_[tsectNo]_cnt
+        numberOf: tkclsNo
+        countGroupComment: 定期クラス
+        countGroupNumberComment: 定期クラス
+        children:
+        - name: val_r[routeNo]_tsect_tkclslist_[tsectNo]_tkcls_[tkclsNo]
+    - name: val_r[routeNo]_tassign_status
+    - name: val_r[routeNo]_tassign_fare
+    - name: val_r[routeNo]_tassign_fsect_cnt
+      numberOf: tassignfsectNo
+      countGroupComment: 定期券利用時の乗車券区間
+      countGroupNumberComment: 定期券利用時の乗車券区間
+      children:
+      - name: val_r[routeNo]_tassign_fsect_fare_[tassignfsectNo]
+      - name: val_r[routeNo]_tassign_fsect_istassign_[tassignfsectNo]
+      - name: val_r[routeNo]_tassign_fsect_from_[tassignfsectNo]
+      - name: val_r[routeNo]_tassign_fsect_to_[tassignfsectNo]
+    - name: val_r[routeNo]_tassign_line_cnt
+      numberOf: tassignlineNo
+      countGroupComment: 定期券利用時の路線区間
+      countGroupNumberComment: 定期券利用時の路線区間
+      children:
+      - name: val_r[routeNo]_tassign_line_from_[tassignlineNo]
+      - name: val_r[routeNo]_tassign_line_to_[tassignlineNo]
+    - name: val_r[routeNo]_teikiuse_include
+    - name: val_r[routeNo]_teikiuse_totalfare
+    - name: val_r[routeNo]_teikiuse_cnt
+      numberOf: teikiuselineNo
+      countGroupComment: 定期券利用時の路線区間
+      countGroupNumberComment: 定期券利用時の路線区間
+      children:
+      - name: val_r[routeNo]_teikiuse_from_[teikiuselineNo]
+      - name: val_r[routeNo]_teikiuse_to_[teikiuselineNo]
+      - name: val_r[routeNo]_teikiuse_fare_[teikiuselineNo]
+    - name: val_r[routeNo]_cassign_status
+    - name: val_co2_[routeNo]
+    - name: val_co2car_[routeNo]
+  - name: val_reuse_jr2sectteiki
+  - name: val_reuse_doubleroute
+  - name: val_assigned_teiki_available
+#
+# 探索(平均・会話)
+#
+- apis:
+  - cgi_result2
+  - cgi_result2_h
+  params:
+  - name: val_routeno
+  - name: val_route
+  - name: val_time
+  - name: val_board_time
+  - name: val_walk_time
+  - name: val_other_time
+  - name: val_dist
+  - name: val_transfer
+  - name: val_fare
+  - name: val_surcharge_fare
+  - name: val_teiki1
+  - name: val_teiki3
+  - name: val_teiki6
+  - name: val_connect_cnt
+    numberOf: connectNo
+    countGroupComment: 乗り入れ
+    countGroupNumberComment: 乗り入れ
+    children:
+    - name: val_connect_line_[connectNo]
+  - name: val_teiki_available
+  - name: val_restoreroute
+  - name: val_teiki_station_cnt
+  - name: val_teiki_stationnamelist
+  - name: val_teiki_rail_cnt
+  - name: val_teiki_railnamelist
+  - name: val_line_cnt
+    numberOf: lineNo
+    countGroupComment: 路線区間
+    countGroupNumberComment: 路線区間
+    children:
+    - name: val_line_name_[lineNo]
+    - name: val_line_longname_[lineNo]
+    - name: val_line_corp_name_[lineNo]
+    - name: val_line_from_[lineNo]
+    - name: val_line_to_[lineNo]
+    - name: val_line_time_[lineNo]
+    - name: val_line_dist_[lineNo]
+    - name: val_line_stop_station_cnt_[lineNo]
+    - name: val_line_traffic_[lineNo]
+    - name: val_line_type_[lineNo]
+    - name: val_line_co2_[lineNo]
+    - name: val_line_co2car_[lineNo]
+  - name: val_fsect_cnt
+    numberOf: fsectNo
+    countGroupComment: 乗車券区間
+    countGroupNumberComment: 乗車券区間
+    children:
+    - name: val_fsect_from_[fsectNo]
+    - name: val_fsect_to_[fsectNo]
+    - name: val_fsect_fare_[fsectNo]
+    - name: val_fsect_premium_[fsectNo]
+    - name: val_fsect_discountname_[fsectNo]
+    - name: val_fsect_fclassno_[fsectNo]
+    - name: val_fsect_fclassname_[fsectNo]
+    - name: val_fsect_ticketsysno_[fsectNo]
+    - name: val_fsect_ticketsysname_[fsectNo]
+    - name: val_fsect_airfare_[fsectNo]_farename
+    - name: val_fsect_airfare_[fsectNo]_cnt
+      numberOf: airfareNo
+      countGroupComment: 航空便
+      countGroupNumberComment: 航空便
+      children:
+      - name: val_fsect_airfare_[fsectNo]_name_[airfareNo]
+      - name: val_fsect_airfare_[fsectNo]_fare_[airfareNo]
+    - name: val_fsect_airport_[fsectNo]_depcharge
+    - name: val_fsect_airport_[fsectNo]_arrcharge
+    - name: val_fsect_fclass_[fsectNo]_cnt
+      numberOf: fclassNo
+      countGroupComment: 運賃クラス
+      countGroupNumberComment: 運賃クラス
+      children:
+      - name: val_fsect_fclass_[fsectNo]_name_[fclassNo]
+      - name: val_fsect_fclass_[fsectNo]_fare_[fclassNo]
+    - name: val_fsect_ticketsys_[fsectNo]_cnt
+      numberOf: ticketsysNo
+      countGroupComment: システムタイプ
+      countGroupNumberComment: システムタイプ
+      children:
+      - name: val_fsect_ticketsys_[fsectNo]_name_[ticketsysNo]
+      - name: val_fsect_ticketsys_[fsectNo]_fare_[ticketsysNo]
+    - name: val_fsect_istassign_[fsectNo]
+    - name: val_fsect_iscassign_[fsectNo]
+  - name: val_csect_cnt
+    numberOf: csectNo
+    countGroupComment: 料金区間
+    countGroupNumberComment: 料金区間
+    children:
+    - name: val_csect_from_[csectNo]
+    - name: val_csect_to_[csectNo]
+    - name: val_csect_name_[csectNo]
+    - name: val_csect_fare_[csectNo]
+    - name: val_csect_surcharge_[csectNo]_cnt
+      numberOf: surchargeNo
+      countGroupComment: 料金種別
+      countGroupNumberComment: 料金種別
+      children:
+      - name: val_csect_surcharge_[csectNo]_name_[surchargeNo]
+      - name: val_csect_surcharge_[csectNo]_fare_[surchargeNo]
+    - name: val_csect_seasontype_[csectNo]
+    - name: val_csect_sleepingcar_[csectNo]_cnt
+      numberOf: sleepingcarNo
+      countGroupComment: 料金種別(寝台列車)
+      countGroupNumberComment: 料金種別(寝台列車)
+      children:
+      - name: val_csect_sleepingcar_[csectNo]_name_[sleepingcarNo]
+      - name: val_csect_sleepingcar_[csectNo]_fare_[sleepingcarNo]
+    - name: val_csect_istassign_[csectNo]
+    - name: val_csect_iscassign_[csectNo]
+  - name: val_tsect_cnt
+    numberOf: tsectNo
+    countGroupComment: 定期券区間
+    countGroupNumberComment: 定期券区間
+    children:
+    - name: val_tsect_from_[tsectNo]
+    - name: val_tsect_to_[tsectNo]
+    - name: val_tsect_teiki1_[tsectNo]
+    - name: val_tsect_teiki3_[tsectNo]
+    - name: val_tsect_teiki6_[tsectNo]
+    - name: val_tsect_zensen_[tsectNo]
+    - name: val_tsect_tkcls_[tsectNo]
+    - name: val_tsect_tkclslist_[tsectNo]_cnt
+      numberOf: tkclsNo
+      countGroupComment: 定期クラス
+      countGroupNumberComment: 定期クラス
+      children:
+      - name: val_tsect_tkclslist_[tsectNo]_tkcls_[tkclsNo]
+  - name: val_tassign_status
+  - name: val_tassign_fare
+  - name: val_tassign_fsect_cnt
+    numberOf: tassignfsectNo
+    countGroupComment: 定期券利用時の乗車券区間
+    countGroupNumberComment: 定期券利用時の乗車券区間
+    children:
+    - name: val_tassign_fsect_fare_[tassignfsectNo]
+    - name: val_tassign_fsect_istassign_[tassignfsectNo]
+    - name: val_tassign_fsect_from_[tassignfsectNo]
+    - name: val_tassign_fsect_to_[tassignfsectNo]
+  - name: val_tassign_line_cnt
+    numberOf: tassignlineNo
+    countGroupComment: 定期券利用時の路線区間
+    countGroupNumberComment: 定期券利用時の路線区間
+    children:
+    - name: val_tassign_line_from_[tassignlineNo]
+    - name: val_tassign_line_to_[tassignlineNo]
+  - name: val_teikiuse_include
+  - name: val_teikiuse_totalfare
+  - name: val_teikiuse_cnt
+    numberOf: teikiuselineNo
+    countGroupComment: 定期券利用時の路線区間
+    countGroupNumberComment: 定期券利用時の路線区間
+    children:
+    - name: val_teikiuse_from_[teikiuselineNo]
+    - name: val_teikiuse_to_[teikiuselineNo]
+    - name: val_teikiuse_fare_[teikiuselineNo]
+  - name: val_cassign_status
+  - name: val_stsect
+  - name: val_stsect_from_1
+  - name: val_stsect_from_2
+  - name: val_stsect_to_1
+  - name: val_stsect_to_2
+  - name: val_stsect_teiki1_from_1
+  - name: val_stsect_teiki1_from_2
+  - name: val_stsect_teiki3_from_1
+  - name: val_stsect_teiki3_from_2
+  - name: val_stsect_teiki6_from_1
+  - name: val_stsect_teiki6_from_2
+  - name: val_stsect_teiki1_to_1
+  - name: val_stsect_teiki1_to_2
+  - name: val_stsect_teiki3_to_1
+  - name: val_stsect_teiki3_to_2
+  - name: val_stsect_teiki6_to_1
+  - name: val_stsect_teiki6_to_2
+  - name: val_stsect_teiki1_1
+  - name: val_stsect_teiki1_2
+  - name: val_stsect_teiki3_1
+  - name: val_stsect_teiki3_2
+  - name: val_stsect_teiki6_1
+  - name: val_stsect_teiki6_2
+  - name: val_stsect_fare_from_1
+  - name: val_stsect_fare_from_2
+  - name: val_stsect_fare_to_1
+  - name: val_stsect_fare_to_2
+  - name: val_stsect_fare_1
+  - name: val_stsect_fare_2
+  - name: val_co2
+  - name: val_co2car
+  - name: val_reuse_jr2sectteiki
+  - name: val_reuse_doubleroute
+  - name: val_connectstate1
+  - name: val_connectstate2
+  - name: val_connectstate3
+  - name: val_connectstate4
+  - name: val_assigned_teiki_available
+#
+# 探索(ダイヤ・会話)
+#
+- apis:
+  - cgi_diaresult2
+  - cgi_diaresult2_h
+  - cgi_diaassign
+  - cgi_diaassign_h
+  params:
+  - name: val_route
+  - name: val_dep_date
+  - name: val_arr_date
+  - name: val_dep_time
+  - name: val_arr_time
+  - name: val_time
+  - name: val_board_time
+  - name: val_walk_time
+  - name: val_other_time
+  - name: val_dist
+  - name: val_transfer
+  - name: val_fare
+  - name: val_surcharge_fare
+  - name: val_teiki1
+  - name: val_teiki3
+  - name: val_teiki6
+  - name: val_connect_cnt
+    numberOf: connectNo
+    countGroupComment: 乗り入れ
+    countGroupNumberComment: 乗り入れ
+    children:
+    - name: val_connect_line_[connectNo]
+  - name: val_line_cnt
+    numberOf: lineNo
+    countGroupComment: 路線区間
+    countGroupNumberComment: 路線区間
+    children:
+    - name: val_line_name_[lineNo]
+    - name: val_line_corp_name_[lineNo]
+    - name: val_line_from_[lineNo]
+    - name: val_line_to_[lineNo]
+    - name: val_line_dep_time_[lineNo]
+    - name: val_line_arr_time_[lineNo]
+    - name: val_line_dist_[lineNo]
+    - name: val_line_stop_station_cnt_[lineNo]
+    - name: val_line_traffic_[lineNo]
+    - name: val_line_type_[lineNo]
+    - name: val_line_isdisasterdia_[lineNo]
+    - name: val_line_disasterdia_serial_[lineNo]
+    - name: val_line_co2_[lineNo]
+    - name: val_line_co2car_[lineNo]
+  - name: val_fsect_cnt
+    numberOf: fsectNo
+    countGroupComment: 乗車券区間
+    countGroupNumberComment: 乗車券区間
+    children:
+    - name: val_fsect_from_[fsectNo]
+    - name: val_fsect_to_[fsectNo]
+    - name: val_fsect_fare_[fsectNo]
+    - name: val_fsect_premium_[fsectNo]
+    - name: val_fsect_discountname_[fsectNo]
+    - name: val_fsect_fclassno_[fsectNo]
+    - name: val_fsect_fclassname_[fsectNo]
+    - name: val_fsect_ticketsysno_[fsectNo]
+    - name: val_fsect_ticketsysname_[fsectNo]
+    - name: val_fsect_airfare_cnt_[fsectNo]
+      numberOf: airfareNo
+      countGroupComment: 航空運賃
+      countGroupNumberComment: 航空運賃
+      children:
+      - name: val_fsect_airfare_[fsectNo]_farename_[airfareNo]
+      - name: val_fsect_airfare_[fsectNo]_name_[airfareNo]
+      - name: val_fsect_airfare_[fsectNo]_fare_[airfareNo]
+    - name: val_fsect_airfare_[fsectNo]
+    - name: val_fsect_airport_[fsectNo]_depcharge
+    - name: val_fsect_airport_[fsectNo]_arrcharge
+    - name: val_fsect_fclass_[fsectNo]_cnt
+      numberOf: fclassNo
+      countGroupComment: 運賃クラス
+      countGroupNumberComment: 運賃クラス
+      children:
+      - name: val_fsect_fclass_[fsectNo]_name_[fclassNo]
+      - name: val_fsect_fclass_[fsectNo]_fare_[fclassNo]
+    - name: val_fsect_ticketsys_[fsectNo]_cnt
+      numberOf: ticketsysNo
+      countGroupComment: システムタイプ
+      countGroupNumberComment: システムタイプ
+      children:
+      - name: val_fsect_ticketsys_[fsectNo]_name_[ticketsysNo]
+      - name: val_fsect_ticketsys_[fsectNo]_fare_[ticketsysNo]
+    - name: val_fsect_istassign_[fsectNo]
+    - name: val_fsect_iscassign_[fsectNo]
+  - name: val_csect_cnt
+    numberOf: csectNo
+    countGroupComment: 料金区間
+    countGroupNumberComment: 料金区間
+    children:
+    - name: val_csect_from_[csectNo]
+    - name: val_csect_to_[csectNo]
+    - name: val_csect_name_[csectNo]
+    - name: val_csect_fare_[csectNo]
+    - name: val_csect_surcharge_[csectNo]_cnt
+      numberOf: surchargeNo
+      countGroupComment: 料金種別
+      countGroupNumberComment: 料金種別
+      children:
+      - name: val_csect_surcharge_[csectNo]_name_[surchargeNo]
+      - name: val_csect_surcharge_[csectNo]_fare_[surchargeNo]
+    - name: val_csect_seasontype_[csectNo]
+    - name: val_csect_sleepingcar_[csectNo]_cnt
+      numberOf: sleepingcarNo
+      countGroupComment: 料金種別(寝台列車)
+      countGroupNumberComment: 料金種別(寝台列車)
+      children:
+      - name: val_csect_sleepingcar_[csectNo]_name_[sleepingcarNo]
+      - name: val_csect_sleepingcar_[csectNo]_fare_[sleepingcarNo]
+    - name: val_csect_istassign_[csectNo]
+    - name: val_csect_iscassign_[csectNo]
+  - name: val_tsect_cnt
+    numberOf: tsectNo
+    countGroupComment: 定期券区間
+    countGroupNumberComment: 定期券区間
+    children:
+    - name: val_tsect_from_[tsectNo]
+    - name: val_tsect_to_[tsectNo]
+    - name: val_tsect_teiki1_[tsectNo]
+    - name: val_tsect_teiki3_[tsectNo]
+    - name: val_tsect_teiki6_[tsectNo]
+    - name: val_tsect_zensen_[tsectNo]
+    - name: val_tsect_tkcls_[tsectNo]
+    - name: val_tsect_tkclslist_[tsectNo]_cnt
+      numberOf: tkclsNo
+      countGroupComment: 定期クラス
+      countGroupNumberComment: 定期クラス
+      children:
+      - name: val_tsect_tkclslist_[tsectNo]_tkcls_[tkclsNo]
+  - name: val_tassign_status
+  - name: val_tassign_fare
+  - name: val_tassign_fsect_cnt
+    numberOf: tassignfsectNo
+    countGroupComment: 定期券利用時の乗車券区間
+    countGroupNumberComment: 定期券利用時の乗車券区間
+    children:
+    - name: val_tassign_fsect_fare_[tassignfsectNo]
+    - name: val_tassign_fsect_istassign_[tassignfsectNo]
+    - name: val_tassign_fsect_from_[tassignfsectNo]
+    - name: val_tassign_fsect_to_[tassignfsectNo]
+  - name: val_tassign_line_cnt
+    numberOf: tassignlineNo
+    countGroupComment: 定期券利用時の路線区間
+    countGroupNumberComment: 定期券利用時の路線区間
+    children:
+    - name: val_tassign_line_from_[tassignlineNo]
+    - name: val_tassign_line_to_[tassignlineNo]
+  - name: val_teikiuse_include
+  - name: val_teikiuse_totalfare
+  - name: val_teikiuse_cnt
+    numberOf: teikiuselineNo
+    countGroupComment: 定期券利用時の路線区間
+    countGroupNumberComment: 定期券利用時の路線区間
+    children:
+    - name: val_teikiuse_from_[teikiuselineNo]
+    - name: val_teikiuse_to_[teikiuselineNo]
+    - name: val_teikiuse_fare_[teikiuselineNo]
+  - name: val_cassign_status
+  - name: val_co2
+  - name: val_co2car
+  - name: val_reuse_jr2sectteiki
+  - name: val_reuse_doubleroute
+  - name: val_assigned_teiki_available
+#
+# 鉄道会社名・路線名取得
+#
+- apis:
+  - cgi_corp
+  - jcgi_corp
+  - cgi_rail
+  - jcgi_rail
+  - cgi_stop
+  - jcgi_stop
+  params:
+  - name: val_corp_cnt
+    numberOf: corpNo
+    countGroupComment: 会社名
+    children:
+    - name: val_corp_name[corpNo]
+  - name: val_rail_cnt
+    numberOf: railNo
+    countGroupComment: 路線名
+    children:
+    - name: val_rail_name[railNo]
+  - name: val_stn_cnt
+    numberOf: stationNo
+    countGroupComment: 駅名
+    children:
+    - name: val_stn_name[stationNo]
+#
+# 駅名・バス停名・ランドマーク名(緯度経度以外)
+#
+- apis:
+  - cgi_station
+  - jcgi_station
+  - cgi_busstop
+  - jcgi_busstop
+  - cgi_landmark
+  - jcgi_landmark
+  - cgi_fromto_station
+  - jcgi_fromto_station
+  - cgi_select_station
+  - cgi_select_station_landmark
+  params:
+  - name: val_stn_cnt
+    numberOf: stationNo
+    countGroupComment: 駅名
+    children:
+    - name: val_stn_name[stationNo]
+  - name: val_busstop_cnt
+    numberOf: busstopNo
+    countGroupComment: バス停名
+    children:
+    - name: val_busstop_name[busstopNo]
+  - name: val_landmark_cnt
+    numberOf: landmarkNo
+    countGroupComment: ランドマーク名
+    children:
+    - name: val_landmark_name[landmarkNo]
+  - name: val_from_stn_cnt
+    numberOf: from_stationNo
+    countGroupComment: 出発駅名
+    children:
+    - name: val_from_stn_name[from_stationNo]
+  - name: val_to_stn_cnt
+    numberOf: to_stationNo
+    countGroupComment: 目的駅名
+    children:
+    - name: val_to_stn_name[to_stationNo]
+  - name: val_station_name
+#
+# 駅名・バス停名・ランドマーク名(緯度経度のみ)
+#
+- apis:
+  - jcgi_station_from_geopoint
+  params:
+  - name: val_datum
+  - name: val_stn_cnt
+    numberOf: stationNo
+    countGroupComment: 駅名
+    countGroupNumberComment: 駅名
+    children:
+    - name: val_stn_name[stationNo]
+    - name: val_lat_d[stationNo]
+    - name: val_lon_d[stationNo]
+    - name: val_lat[stationNo]
+    - name: val_lon[stationNo]
+#
+# 回数券情報
+#
+- apis:
+  - jcgi_coupondata_name
+  - jcgi_coupondata_section
+  - jcgi_coupondata_info
+  params:
+  - name: val_coupon_count
+    numberOf: couponNo
+    countGroupComment: 回数券
+    children:
+    - name: val_coupon_name_[couponNo]
+  - name: val_couponsection_count
+    numberOf: couponsectNo
+    countGroupComment: 回数券の設定区間
+    countGroupNumberComment: 回数券の設定区間
+    children:
+    - name: val_couponsection_coupondata_[couponsectNo]
+    - name: val_couponsection_ticketcount_[couponsectNo]
+    - name: val_couponsection_validperiod_[couponsectNo]
+    - name: val_couponsection_display_[couponsectNo]
+    - name: val_couponsection_amount_[couponsectNo]
+  - name: val_coupon_name
+  - name: val_couponsection_ticketcount
+  - name: val_couponsection_validperiod
+  - name: val_couponsection_display
+  - name: val_couponsection_amount
+#
+# 定期払戻(払戻情報取得)
+#
+- apis:
+  - cgi_teiki_repay
+  - jcgi_teiki_repay
+  params:
+  - name: val_teiki_route
+  - name: val_teiki_repay_cnt
+    numberOf: repayNo
+    countGroupComment: 定期払戻グループ
+    countGroupNumberComment: 定期払戻グループ
+    children:
+    - name: val_teiki_repay[repayNo]_status
+    - name: val_teiki_repay[repayNo]_fromsectionno
+    - name: val_teiki_repay[repayNo]_tosectionno
+    - name: val_teiki_repay[repayNo]_fromstationname
+    - name: val_teiki_repay[repayNo]_tostationname
+    - name: val_teiki_repay[repayNo]_purchasemoney
+    - name: val_teiki_repay[repayNo]_usedmoney
+    - name: val_teiki_repay[repayNo]_fee
+    - name: val_teiki_repay[repayNo]_repaymentmoney
+  - name: val_connectstate1
+  - name: val_connectstate2
+  - name: val_connectstate3
+  - name: val_connectstate4
+#
+# 定期払戻(手数料取得)
+#
+- apis:
+  - cgi_teiki_repay_corpfee
+  - jcgi_teiki_repay_corpfee
+  params:
+  - name: val_corpfee
+#
+# 住所関連情報
+#
+- apis:
+  - cgi_address
+  - jcgi_address
+  - cgi_addressfromzipcode
+  - jcgi_addressfromzipcode
+  - cgi_zipcodefromaddress
+  - jcgi_zipcodefromaddress
+  - cgi_stationfromaddress
+  - jcgi_stationfromaddress
+  params:
+  - name: val_address_cnt
+    numberOf: addressNo
+    countGroupComment: 住所名称
+    children:
+    - name: val_address_[addressNo]
+  - name: val_zipcodeupper3
+  - name: val_zipcodelower4
+  - name: val_station_cnt
+    numberOf: stationNo
+    countGroupComment: 駅名
+    countGroupNumberComment: 駅名
+    children:
+    - name: val_station_[stationNo]
+    - name: val_station_distance_[stationNo]
+#
+# その他
+#
+- apis:
+  - cgi_version
+  - jcgi_version
+  - cgi_connect_id
+  - jcgi_connect_id
+  - cgi_calendar
+  - jcgi_expdate
+  - cgi_name_renewal
+  - jcgi_name_renewal
+  params:
+  - name: val_version
+  - name: val_jrtrain_timetable_version
+  - name: val_etctrain_timetable_version
+  - name: val_air_timetable_version
+  - name: val_cgi_version
+  - name: val_connection
+  - name: val_connect_id
+  - name: val_year
+  - name: val_month
+  - name: val_day
+  - name: val_date
+  - name: val_week
+  - name: val_holiday
+  - name: val_isholiday
+  - name: val_renewalstatus
+  - name: val_renewalnamelist
+  - name: val_renewalteikistationlist
+  - name: val_renewalteikiraillist
+#
+# 管理者専用
+#
+- apis:
+  - jcgi_adm_import_landmark
+  - jcgi_adm_delete_landmark
+  params:
+  - name: val_landmark_status
+#
+# 東日本大震災関連
+#
+- apis:
+  - jcgi_disasterdia_info
+  params:
+  - name: val_disasterdia_errcode
+  - name: val_disasterdia_comment
+#
+# エラーコード
+# 全API共通で最下部に表示
+#
+- apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  - cgi_diaresult2
+  - cgi_diaresult2_h
+  - cgi_diaassign
+  - cgi_diaassign_h
+  - cgi_corp
+  - jcgi_corp
+  - cgi_rail
+  - jcgi_rail
+  - cgi_stop
+  - jcgi_stop
+  - cgi_station
+  - jcgi_station
+  - cgi_busstop
+  - jcgi_busstop
+  - cgi_landmark
+  - jcgi_landmark
+  - cgi_fromto_station
+  - jcgi_fromto_station
+  - jcgi_station_from_geopoint
+  - cgi_select_station
+  - cgi_select_station_landmark
+  - jcgi_coupondata_name
+  - jcgi_coupondata_section
+  - jcgi_coupondata_info
+  - cgi_teiki_repay
+  - jcgi_teiki_repay
+  - cgi_teiki_repay_corpfee
+  - jcgi_teiki_repay_corpfee
+  - cgi_address
+  - jcgi_address
+  - cgi_addressfromzipcode
+  - jcgi_addressfromzipcode
+  - cgi_zipcodefromaddress
+  - jcgi_zipcodefromaddress
+  - cgi_stationfromaddress
+  - jcgi_stationfromaddress
+  - cgi_version
+  - jcgi_version
+  - cgi_connect_id
+  - jcgi_connect_id
+  - cgi_calendar
+  - jcgi_expdate
+  - cgi_name_renewal
+  - jcgi_name_renewal
+  - jcgi_adm_import_landmark
+  - jcgi_adm_delete_landmark
+  - jcgi_disasterdia_info
+  - cgi_routedisp
+  - cgi_routedisp_h
+  params:
+  - name: val_errcode
+  - name: val_teiki_errcode
+  - name: val_connect_errcode
+  - name: val_coupon_errcode
+  - name: val_teiki_repay_errcode
+  - name: val_address_err

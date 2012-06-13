@@ -1,0 +1,58 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  params_data -> (Array)表示用パラメータ情報(params要素)
+  #             max_indent  -> 最大インデント数。name_colにはこの数分のセルを用意する
+  #             indent      -> インデントのレベル(同一countの字下げ用)
+%>
+<% params_data.each do |param_data| %>
+  <% # count系パラメータでない場合、そのまま出力処理 %>
+  <% if param_data["countGroupComment"].nil? %>
+    <%==
+      erubis :"output_param_table/_param_row",
+             :layout => false,
+             :locals => {param_data: param_data,
+                         max_indent: max_indent,
+                         indent: indent}
+    %>
+  <% # count系パラメータの場合、再帰させる %>
+  <% else %>
+    <% # count系パラメータのグループ分けヘッダ %>
+    <%==
+      erubis :"output_param_table/_count_title_row",
+             :layout => false,
+             :locals => {title: param_data["countGroupComment"],
+                         max_indent: max_indent,
+                         indent: indent}
+    %>
+    <% # count系パラメータの出力 %>
+    <%==
+      erubis :"output_param_table/_param_row",
+             :layout => false,
+             :locals => {param_data: param_data,
+                         max_indent: max_indent,
+                         indent: indent + 1}
+    %>
+    <% param_data["children"].each_with_index do |children_data,i| %>
+      <% # count系のヘッダ %>
+      <% if children_data["countGroupNumberComment"] %>
+        <%==
+          erubis :"output_param_table/_count_number_row",
+                 :layout => false,
+                 :locals => {title: children_data["countGroupNumberComment"],
+                             count_num: i + 1,
+                             max_indent: max_indent,
+                             indent: indent,
+                             is_route: (param_data["name"] == "val_route_cnt")}
+        %>
+      <% end %>
+      <% # countに依存するパラメータ %>
+      <%==
+        erubis :"output_param_table/_param_rows",
+               :layout => false,
+               :locals => {params_data: children_data["params"],
+                           max_indent: max_indent,
+                           indent: indent + 1}
+      %>
+    <% end if param_data["children"]%>
+  <% end %>
+<% end %>

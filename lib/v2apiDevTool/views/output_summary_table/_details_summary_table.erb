@@ -1,0 +1,16 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  route_strings -> (Array)経路文字列の配列
+%>
+<table id="output_summary_table">
+  <tr>
+    <th class="route_no_col">経路No</th>
+    <th class="route_str_col">経路</th>
+  </tr>
+  <% route_strings.each_with_index do |route_string,i| %>
+    <tr>
+      <td class="route_no_col"><a href="#route_<%= i+1 %>"><%= "経路#{i+1}" %></a></td>
+      <td class="route_str_col"><%= route_string %></td>
+    </tr>
+  <% end %>
+</table>

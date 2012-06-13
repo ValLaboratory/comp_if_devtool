@@ -1,0 +1,16 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  notdef_params_data -> (Array)未定義パラメータデータ(notDefinedParams要素)
+%>
+<table id="output_notdef_param_table">
+  <tr>
+    <th class="name_col">未定義パラメータ名</th>
+    <th class="value_col">出力値</th>
+  </tr>
+  <% notdef_params_data.each do |param| %>
+    <tr>
+      <td class="name_col"><%= param["name"] %></td>
+      <td class="value_col"><%= param["responseValue"] %></td>
+    </tr>
+  <% end %>
+</table>

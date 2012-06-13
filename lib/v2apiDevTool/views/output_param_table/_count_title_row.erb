@@ -1,0 +1,10 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  title      -> 表示するタイトル
+  #             max_indent -> 最大インデント数。name_colにはこの数分のセルを用意する
+  #             indent     -> インデントのレベル(同一countの字下げ用)
+%>
+<% indent.times do |i| %>
+  <td class="name_col_indent indent_<%= i + 1 %>"></td>
+<% end %>
+<td class="count_title_row indent_<%= indent + 1 %>" colspan="<%= max_indent - indent + 2 %>"><%= title %></td>

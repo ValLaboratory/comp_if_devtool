@@ -1,0 +1,318 @@
+---
+val_route_cnt:
+  comment: 経路の数
+val_route_[routeNo]:
+  comment: 経路の文字列
+val_time_[routeNo]:
+  comment: 経路の所要時間合計(単位：分)
+val_board_time_[routeNo]:
+  comment: 経路の乗車時間合計(単位：分)
+val_walk_time_[routeNo]:
+  comment: 経路の徒歩時間合計(単位：分)
+val_other_time_[routeNo]:
+  comment: 経路のその他時間合計(単位：分)
+val_dist_[routeNo]:
+  comment: 経路の距離(単位：100m)
+val_transfer_[routeNo]:
+  comment: 経路の乗換回数
+val_fare_[routeNo]:
+  comment: 経路の運賃の合計金額
+val_surcharge_fare_[routeNo]:
+  comment: 経路の料金の合計金額
+val_teiki1_[routeNo]:
+  comment: 経路の1ヵ月定期代
+val_teiki3_[routeNo]:
+  comment: 経路の3ヵ月定期代
+val_teiki6_[routeNo]:
+  comment: 経路の6ヵ月定期代
+val_r[routeNo]_connect_cnt:
+  comment: 経路の乗り入れ数
+val_r[routeNo]_connect_line_[connectNo]:
+  comment: 経路の乗り入れ路線番号
+val_r[routeNo]_teiki_available:
+  comment: 「駅すぱあと」における定期券としての利用可能判定
+  value: 0：利用不可(「駅すぱあと」に定期券として登録できない情報)&1：利用可(「駅すぱあと」に定期券として登録できる情報)
+val_restoreroute_[routeNo]:
+  comment: 方向性を持った経路文字列(定期券利用区間指定用)
+val_teiki_station_cnt_[routeNo]:
+  comment: 経路の駅数(定期券利用区間指定用)
+val_teiki_stationnamelist_[routeNo]:
+  comment: 経路の駅名リスト(定期券利用区間指定用)
+val_teiki_rail_cnt_[routeNo]:
+  comment: 経路の路線数(定期券利用区間指定用)
+val_teiki_railnamelist_[routeNo]:
+  comment: 経路の路線数リスト(定期券利用区間指定用)
+val_r[routeNo]_line_cnt:
+  comment: 路線区間の数
+val_r[routeNo]_line_name_[lineNo]:
+  comment: 路線区間の路線名
+val_r[routeNo]_line_longname_[lineNo]:
+  comment: 路線区間の路線名(ロングネーム)
+val_r[routeNo]_line_corp_name_[lineNo]:
+  comment: 路線区間の会社名
+val_r[routeNo]_line_from_[lineNo]:
+  comment: 路線区間の出発駅名
+val_r[routeNo]_line_to_[lineNo]:
+  comment: 路線区間の到着駅名
+val_r[routeNo]_line_time_[lineNo]:
+  comment: 路線区間の時間(単位：分)
+val_r[routeNo]_line_dist_[lineNo]:
+  comment: 路線区間の距離(単位：100m)
+val_r[routeNo]_line_stop_station_cnt_[lineNo]:
+  comment: 路線区間の途中停車駅数
+val_r[routeNo]_line_traffic_[lineNo]:
+  comment: 路線区間の交通種類
+  value: 1：列車&2：飛行機&3：連絡バス&4：船&5：徒歩&6：路線バス&7：高速バス&8：深夜急行バス&15：ランドマーク
+val_r[routeNo]_line_type_[lineNo]:
+  comment: 路線区間の種別
+  value: 0：通常&1：乗り入れ&2：折り返し
+val_r[routeNo]_fsect_cnt:
+  comment: 乗車券区間の数
+val_r[routeNo]_fsect_from_[fsectNo]:
+  comment: 乗車券区間の開始路線
+val_r[routeNo]_fsect_to_[fsectNo]:
+  comment: 乗車券区間の終了路線
+val_r[routeNo]_fsect_fare_[fsectNo]:
+  comment: 乗車券区間の運賃
+val_r[routeNo]_fsect_premium_[fsectNo]:
+  comment: 乗車券区間の航空保険特別料金
+val_r[routeNo]_fsect_discountname_[fsectNo]:
+  comment: 乗車券区間の割引名称
+val_r[routeNo]_fsect_fclassno_[fsectNo]:
+  comment: 選択された運賃クラスリストの番号
+val_r[routeNo]_fsect_fclassname_[fsectNo]:
+  comment: 選択された運賃クラスの名称
+val_r[routeNo]_fsect_ticketsysno_[fsectNo]:
+  comment: 乗車券区間の選択されたシステムタイプの番号
+val_r[routeNo]_fsect_ticketsysname_[fsectNo]:
+  comment: 乗車券区間の選択されたシステムタイプの名称
+val_r[routeNo]_fsect_airfare_[fsectNo]_farename:
+  comment: 乗車券区間の航空運賃種類名称
+  value: 参考運賃：航空時刻表保守期間前&前期適用運賃：航空時刻表保守期間後
+val_r[routeNo]_fsect_airfare_[fsectNo]_cnt:
+  comment: 乗車券区間の航空便数
+val_r[routeNo]_fsect_airfare_[fsectNo]_name_[airfareNo]:
+  comment: 乗車券区間の航空便の会社名
+val_r[routeNo]_fsect_airfare_[fsectNo]_fare_[airfareNo]:
+  comment: 乗車券区間の航空便の運賃
+val_r[routeNo]_fsect_airport_[fsectNo]_depcharge:
+  comment: 乗車券区間の出発空港の使用料
+val_r[routeNo]_fsect_airport_[fsectNo]_arrcharge:
+  comment: 乗車券区間の到着空港の使用料
+val_r[routeNo]_fsect_fclass_[fsectNo]_cnt:
+  comment: 乗車券区間の運賃クラス数
+val_r[routeNo]_fsect_fclass_[fsectNo]_name_[fclassNo]:
+  comment: 乗車券区間の運賃クラスの名称
+val_r[routeNo]_fsect_fclass_[fsectNo]_fare_[fclassNo]:
+  comment: 乗車券区間の運賃クラスの運賃
+val_r[routeNo]_fsect_ticketsys_[fsectNo]_cnt:
+  comment: 乗車券区間のシステムタイプ数
+val_r[routeNo]_fsect_ticketsys_[fsectNo]_name_[ticketsysNo]:
+  comment: 乗車券区間のシステムタイプの名称
+val_r[routeNo]_fsect_ticketsys_[fsectNo]_fare_[ticketsysNo]:
+  comment: 乗車券区間のシステムタイプの運賃
+val_r[routeNo]_csect_cnt:
+  comment: 料金区間の数
+val_r[routeNo]_csect_from_[csectNo]:
+  comment: 料金区間の開始路線
+val_r[routeNo]_csect_to_[csectNo]:
+  comment: 料金区間の終了路線
+val_r[routeNo]_csect_name_[csectNo]:
+  comment: 料金区間の選択された料金名
+val_r[routeNo]_csect_fare_[csectNo]:
+  comment: 料金区間の選択された料金
+val_r[routeNo]_csect_surcharge_[csectNo]_cnt:
+  comment: 料金区間の種別数
+val_r[routeNo]_csect_surcharge_[csectNo]_name_[surchargeNo]:
+  comment: 料金区間の座席名
+val_r[routeNo]_csect_surcharge_[csectNo]_fare_[surchargeNo]:
+  comment: 料金区間の料金
+val_r[routeNo]_csect_surcharge_[csectNo]_pair:
+  comment: 乗継割引相対ペアNo.
+val_r[routeNo]_csect[csectNo1]_[csectNo2]:
+  comment: 乗継割引相対組み合わせ連番
+val_r[routeNo]_csect[sequenceNo]_[surchargeNo1]_[surchargeNo2]:
+  comment: 乗継割引相対割引料金リスト
+val_r[routeNo]_csect_seasontype_[csectNo]:
+  comment: 料金区間の繁忙期・閑散期
+  value: 0：指定席無し&1：閑散期&2：繁忙期&3：通常期
+val_r[routeNo]_csect_sleepingcar_[csectNo]_cnt:
+  comment: 料金区間の種別数(寝台列車)
+val_r[routeNo]_csect_sleepingcar_[csectNo]_name_[sleepingcarNo]:
+  comment: 料金区間の座席名(寝台列車)
+val_r[routeNo]_csect_sleepingcar_[csectNo]_fare_[sleepingcarNo]:
+  comment: 料金区間の料金(寝台列車)
+val_r[routeNo]_tsect_cnt:
+  comment: 定期券区間の数
+val_r[routeNo]_tsect_from_[tsectNo]:
+  comment: 定期券区間の開始路線
+val_r[routeNo]_tsect_to_[tsectNo]:
+  comment: 定期券区間の終了路線
+val_r[routeNo]_tsect_teiki1_[tsectNo]:
+  comment: 定期券区間の1ヶ月の定期券の定期代
+val_r[routeNo]_tsect_teiki3_[tsectNo]:
+  comment: 定期券区間の3ヶ月の定期券の定期代
+val_r[routeNo]_tsect_teiki6_[tsectNo]:
+  comment: 定期券区間の6ヶ月の定期券の定期代
+val_r[routeNo]_tsect_zensen_[tsectNo]:
+  comment: 定期券区間の全線定期
+  value: 0：全線定期を共通使用可能な区間無し&1以上：全線定期を共通使用可能な区間の内、最初の区間番号
+val_r[routeNo]_tsect_tkcls_[tsectNo]:
+  comment: 定期券区間の選択された定期クラス
+  value: 2Section：二区間定期&passage：区間外定期&general：一般定期&wRoute：だぶるーと&t2Route：二区間定期券&s2Route：Oneだぶる♪
+val_r[routeNo]_tsect_tkclslist_[tsectNo]_cnt:
+  comment: 定期券区間で選択可能な定期クラスの種別数
+val_r[routeNo]_tsect_tkclslist_[tsectNo]_tkcls_[tkclsNo]:
+  comment: 定期券区間で選択可能な定期クラス
+  value: 2Section：二区間定期&passage：区間外定期&general：一般定期&wRoute：だぶるーと&t2Route：二区間定期券&s2Route：Oneだぶる♪
+val_reuse_jr2sectteiki:
+  comment: val_jr2sectteikiに入力した内容を出力
+val_reuse_doubleroute:
+  comment: val_doublerouteに入力した内容を出力
+val_connectstate1:
+  comment: 乗り継ぎステータス
+  value: 0：未指定&1：指定日に運行されている&2：指定日に運行されていない&3：路線名が正しくない
+val_connectstate2:
+  comment: 乗り継ぎステータス
+  value: 0：未指定&1：指定日に運行されている&2：指定日に運行されていない&3：路線名が正しくない
+val_connectstate3:
+  comment: 乗り継ぎステータス
+  value: 0：未指定&1：指定日に運行されている&2：指定日に運行されていない&3：路線名が正しくない
+val_connectstate4:
+  comment: 乗り継ぎステータス
+  value: 0：未指定&1：指定日に運行されている&2：指定日に運行されていない&3：路線名が正しくない
+val_errcode:
+  comment: エラー情報
+  value: 0：正常&1：パラメータエラー&2：ハンドル取得エラー&3：出発地が存在しない&4：目的地が存在しない&5：出発地と目的地が同じ駅名&6：途中駅にランドマーク&7：途中駅にバス停&8：経路なし&9：定期券登録情報取得エラー(｢3-2
+    定期券利用時の運賃計算｣を会話型で利用した場合のみ)
+val_teiki_errcode:
+  comment: 定期券利用区間エラー情報
+  value: 0：正常&1：パラメータエラー&2：定期券情報復元エラー(2)&3：駅名エラー&4：駅名数エラー&5：路線名エラー&6：路線名数エラー&7：定期券情報復元エラー(7)
+val_connect_errcode:
+  comment: 同時接続ID取得エラー情報
+  value: 0：正常&-1：コネクトエラー&-2：ファイルエラー
+val_assigned_teiki_available:
+  comment: 定期券情報の利用可能判定
+  value: 0：利用不可(「駅すぱあと」に定期券として登録できない情報)&1：利用可(「駅すぱあと」に定期券として登録できる情報)
+val_r[routeNo]_tassign_status:
+  comment: 定期適用情報
+  value: 0：成功&1：予期せぬエラー&2：定期経路が不適切&3：定期区間を含む経路が存在しない&4：定期を利用しても運賃が高くなってしまう、または変わらない&99：val_teiki_errcodeが0(正常)以外
+val_r[routeNo]_tassign_fare:
+  comment: 定期券利用時の乗車券の合計運賃
+val_r[routeNo]_tassign_fsect_cnt:
+  comment: 定期券利用時の乗車券区間数
+val_r[routeNo]_tassign_fsect_fare_[tassignfsectNo]:
+  comment: 定期券利用時の各乗車券区間の運賃
+val_r[routeNo]_tassign_fsect_istassign_[tassignfsectNo]:
+  comment: 定期券利用時の各乗車券区間の定期適用の有無
+  value: 0：非定期券利用区間&1：定期券利用区間
+val_r[routeNo]_tassign_fsect_from_[tassignfsectNo]:
+  comment: 定期券利用時の各乗車券区間の開始路線
+val_r[routeNo]_tassign_fsect_to_[tassignfsectNo]:
+  comment: 定期券利用時の各乗車券区間の終了路線
+val_r[routeNo]_tassign_line_cnt:
+  comment: 定期券利用時の路線区間数
+val_r[routeNo]_tassign_line_from_[tassignlineNo]:
+  comment: 定期券利用時の各路線区間の出発駅名(ロングネーム)
+val_r[routeNo]_tassign_line_to_[tassignlineNo]:
+  comment: 定期券利用時の各路線区間の到着駅名(ロングネーム)
+val_r[routeNo]_fsect_istassign_[fsectNo]:
+  comment: 各乗車券区間の定期適用の有無
+  value: 0：非定期券利用区間&1：定期券利用区間
+val_r[routeNo]_csect_istassign_[csectNo]:
+  comment: 各料金区間の定期適用の有無
+  value: 0：非定期券利用区間&1：定期券利用区間
+val_r[routeNo]_teikiuse_include:
+  comment: 定期券利用計算の有無
+  value: 0：無&1：有
+val_r[routeNo]_teikiuse_totalfare:
+  comment: 定期券利用時の合計運賃
+val_r[routeNo]_teikiuse_cnt:
+  comment: 定期券利用時の路線区間数
+val_r[routeNo]_teikiuse_from_[teikiuselineNo]:
+  comment: 定期券利用時の各路線区間の出発駅名
+val_r[routeNo]_teikiuse_to_[teikiuselineNo]:
+  comment: 定期券利用時の各路線区間の到着駅名
+val_r[routeNo]_teikiuse_fare_[teikiuselineNo]:
+  comment: 定期券利用時の各路線区間の運賃
+  value: -1：定期券を利用できる区間&0以上：定期券を利用できない区間の運賃
+val_r[routeNo]_cassign_status:
+  comment: 回数券適用情報
+  value: 0：成功&1：予期せぬエラー&2：利用可能な区間が経路に存在しない&3：利用可能な列車が経路に存在しない&4：利用可能な日付でない&5：割引運賃が含まれる経路
+val_r[routeNo]_fsect_iscassign_[fsectNo]:
+  comment: 各乗車券区間の回数券適用の有無
+  value: 0：非回数券利用区間&1：回数券利用区間
+val_r[routeNo]_csect_iscassign_[csectNo]:
+  comment: 各料金区間の回数券適用の有無
+  value: 0：非回数券利用区間&1：回数券利用区間
+val_r[routeNo]_stsect:
+  comment: 分割定期計算の有無
+  value: 0：無&1：有
+val_r[routeNo]_stsect_from_1:
+  comment: 分割定期区間1の出発駅名
+val_r[routeNo]_stsect_from_2:
+  comment: 分割定期区間2の出発駅名
+val_r[routeNo]_stsect_to_1:
+  comment: 分割定期区間1の到着駅名
+val_r[routeNo]_stsect_to_2:
+  comment: 分割定期区間2の到着駅名
+val_r[routeNo]_stsect_teiki1_from_1:
+  comment: 1ヵ月定期の分割定期区間1の出発駅名
+val_r[routeNo]_stsect_teiki1_from_2:
+  comment: 1ヵ月定期の分割定期区間2の出発駅名
+val_r[routeNo]_stsect_teiki3_from_1:
+  comment: 3ヵ月定期の分割定期区間1の出発駅名
+val_r[routeNo]_stsect_teiki3_from_2:
+  comment: 3ヵ月定期の分割定期区間2の出発駅名
+val_r[routeNo]_stsect_teiki6_from_1:
+  comment: 6ヵ月定期の分割定期区間1の出発駅名
+val_r[routeNo]_stsect_teiki6_from_2:
+  comment: 6ヵ月定期の分割定期区間2の出発駅名
+val_r[routeNo]_stsect_teiki1_to_1:
+  comment: 1ヵ月定期の分割定期区間1の到着駅名
+val_r[routeNo]_stsect_teiki1_to_2:
+  comment: 1ヵ月定期の分割定期区間2の到着駅名
+val_r[routeNo]_stsect_teiki3_to_1:
+  comment: 3ヵ月定期の分割定期区間1の到着駅名
+val_r[routeNo]_stsect_teiki3_to_2:
+  comment: 3ヵ月定期の分割定期区間2の到着駅名
+val_r[routeNo]_stsect_teiki6_to_1:
+  comment: 6ヵ月定期の分割定期区間1の到着駅名
+val_r[routeNo]_stsect_teiki6_to_2:
+  comment: 6ヵ月定期の分割定期区間2の到着駅名
+val_r[routeNo]_stsect_teiki1_1:
+  comment: 1ヵ月定期の分割定期区間1の定期代
+val_r[routeNo]_stsect_teiki1_2:
+  comment: 1ヵ月定期の分割定期区間2の定期代
+val_r[routeNo]_stsect_teiki3_1:
+  comment: 3ヵ月定期の分割定期区間1の定期代
+val_r[routeNo]_stsect_teiki3_2:
+  comment: 3ヵ月定期の分割定期区間2の定期代
+val_r[routeNo]_stsect_teiki6_1:
+  comment: 6ヵ月定期の分割定期区間1の定期代
+val_r[routeNo]_stsect_teiki6_2:
+  comment: 6ヵ月定期の分割定期区間2の定期代
+val_r[routeNo]_stsect_fare_from_1:
+  comment: 分割定期区間1の乗車券の出発駅名
+val_r[routeNo]_stsect_fare_from_2:
+  comment: 分割定期区間2の乗車券の出発駅名
+val_r[routeNo]_stsect_fare_to_1:
+  comment: 分割定期区間1の乗車券の到着駅名
+val_r[routeNo]_stsect_fare_to_2:
+  comment: 分割定期区間2の乗車券の到着駅名
+val_r[routeNo]_stsect_fare_1:
+  comment: 分割定期区間1の乗車券の運賃
+val_r[routeNo]_stsect_fare_2:
+  comment: 分割定期区間2の乗車券の運賃
+val_co2_[routeNo]:
+  comment: 各経路の二酸化炭素(CO2)排出量(単位：g)
+val_co2car_[routeNo]:
+  comment: 自家用乗用車で同距離を走行した場合の各経路の二酸化炭素(CO2)排出量(単位：g)
+val_r[routeNo]_line_co2_[lineNo]:
+  comment: 各路線区間の二酸化炭素(CO2)排出量(単位：g)
+val_r[routeNo]_line_co2car_[lineNo]:
+  comment: 自家用乗用車で同距離を走行した場合の各路線区間の二酸化炭素(CO2)排出量(単位：g)
+val_r[routeNo]_line_color_[lineNo]:
+  comment: 路線色カンマ区切りの0～255のRGB値(左から｢赤,緑,青｣の順)
+val_r[routeNo]_line_colorrgb_[lineNo]:
+  comment: 路線色16進数(00～FF)のRGB値(主にHTMLやCSSで利用するフォーマット)

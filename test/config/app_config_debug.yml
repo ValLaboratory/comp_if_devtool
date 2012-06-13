@@ -1,0 +1,8 @@
+v2apiURLList:
+  - url: http://intra.val.co.jp/expwww2/expcgi.exe
+    comment: 最新版
+  - url: http://intra.val.co.jp/expwww2_20111101/expcgi.exe
+    comment: 2011年11月版
+inputQueryString: true
+outputNotdefParams: true
+intraV2OnlyAPI: true

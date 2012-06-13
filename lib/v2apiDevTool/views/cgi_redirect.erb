@@ -1,0 +1,26 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  v2_request  -> (Hash)イントラにリクエストする値
+  #             request_url -> リクエストを投げるイントラのURL
+  #             charset     -> エンコーディング
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="<%= charset %>" />
+  <script src="<%= app_root_url %>/js/lib/jquery.js"></script>
+  <script>
+    $(function(){
+      $("#input_param_form").submit();
+    })
+  </script>
+  <title><%= "V2APIテストサイト" %></title>
+</head>
+<body>
+  <form id="input_param_form" action="<%= request_url %>" method="POST">
+    <% v2_request.each do |param_key,param_value| %>
+      <input type="hidden" name="<%= param_key %>" value="<%= param_value %>" />
+    <% end %>
+  </form>
+</body>
+</html>

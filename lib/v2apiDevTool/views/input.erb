@@ -1,0 +1,69 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  v2api_name   -> APIの名称
+  #             display_data -> (Hash)表示用パラメータ情報
+%>
+<div id="header">
+  <%== erubis :"header/_header",
+              :layout => false %>
+</div>
+<div id="contents_input">
+  <%
+    # ========================================
+    #     サーバ選択用セレクトボックス
+    # ========================================
+  %>
+  <% if settings.app_config_debug["v2apiURLList"] && settings.environment != "production" %>
+    <div id="div_request_server">
+      <select id="select_request_server">
+        <% settings.app_config_debug["v2apiURLList"].each_with_index do |server,i| %>
+          <option value="<%= server["url"] %>"><%= server["comment"] %></option>
+        <% end %>
+      </select>
+      <input type="text" id="input_request_server" name="val_v2api_dev_tool_request_server"></input>
+      <input type="button" id="clear_input_request_server_button" value="消去"></input>
+    </div>
+  <% end %>
+  <input type="hidden" id="static_request_server" value="<%= settings.app_config["v2apiURL"] %>"></input>
+  <%
+    # ========================================
+    #            パラメータ代入実行
+    # ========================================
+  %>
+  <% if settings.environment != "production" %>
+    <input type="text" id="input_query"></input>
+    <input type="button" id="input_query_button" value="代入" />
+  <% end %>
+  <%
+    # ========================================
+    #             履歴表示ボタン
+    # ========================================
+  %>
+  <input type="button" class="view_history" value="履歴" />
+  <%
+    # ========================================
+    #              入力フォーム
+    # ========================================
+  %>
+  <form id="input_param_form" action="./output" method="POST">
+    <input type="submit" value="送信" />
+  </form>
+  <%==
+    erubis :"input_param_table/_param_table",
+           :layout => false,
+           :locals => {v2api_name: v2api_name,
+                       display_data: display_data}
+  %>
+</div>
+<div id="footer">
+  <%==
+    # グループタイトルの抽出
+    group_comments = []
+    display_data.each do |group|
+      group_comments << group["groupComment"] if group["groupComment"]
+    end
+    erubis :"input_footer/_input_footer",
+           :layout => false,
+           :locals => {group_comments: group_comments}
+  %>
+</div>

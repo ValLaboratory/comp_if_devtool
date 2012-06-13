@@ -1,0 +1,348 @@
+---
+cgi_details2:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  comment: 平均探索結果の詳細情報を取得する
+jcgi_details2:
+  apiType: jcgi
+  userParam: false
+  tansaku: true
+  comment: 平均探索結果の詳細情報を取得する
+cgi_diadetails2:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  comment: ダイヤ探索結果の詳細情報を取得する
+jcgi_diadetails2:
+  apiType: jcgi
+  userParam: false
+  tansaku: true
+  comment: ダイヤ探索結果の詳細情報を取得する
+cgi_result2:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  comment: 平均探索結果を表示して選択する
+cgi_result2_h:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  comment: 平均探索結果を表示して選択する
+cgi_diaresult2:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  comment: ダイヤ探索結果を表示して選択する
+cgi_diaresult2_h:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  comment: ダイヤ探索結果を表示して選択する
+cgi_diaassign:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  comment: 再探索可能なダイヤ探索結果を表示し選択する
+cgi_diaassign_h:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  comment: 再探索可能なダイヤ探索結果を表示し選択する
+cgi_corp:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 会社名一覧を取得する
+jcgi_corp:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 会社名一覧を取得する
+cgi_rail:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 指定した会社の路線名一覧を取得する
+jcgi_rail:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 指定した会社の路線名一覧を取得する
+cgi_stop:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 指定した路線の停車駅一覧を取得する
+jcgi_stop:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 指定した路線の停車駅一覧を取得する
+cgi_station:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 駅名を取得する
+jcgi_station:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 駅名を取得する
+cgi_busstop:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: バス停名を取得する
+jcgi_busstop:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: バス停名を取得する
+cgi_landmark:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: ランドマーク名を取得する
+jcgi_landmark:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: ランドマーク名を取得する
+cgi_fromto_station:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 出発駅・到着駅を取得する
+jcgi_fromto_station:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 出発駅・到着駅を取得する
+jcgi_station_from_geopoint:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 緯度経度情報から駅リストを取得する
+cgi_select_station:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 選択した駅名を取得する
+cgi_select_station_landmark:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 選択した駅名・ランドマーク名を取得する
+jcgi_coupondata_name:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 回数券名称リストを取得する
+jcgi_coupondata_section:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 回数券の名称から回数券情報を取得する
+jcgi_coupondata_info:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 回数券の内容を確認する
+cgi_teiki_repay:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 定期払戻情報を取得する
+jcgi_teiki_repay:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 定期払戻情報を取得する
+cgi_teiki_repay_corpfee:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 会社ごとの手数料を取得する
+jcgi_teiki_repay_corpfee:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 会社ごとの手数料を取得する
+cgi_address:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: レベルごとの住所一覧を取得する
+jcgi_address:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: レベルごとの住所一覧を取得する
+cgi_addressfromzipcode:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 郵便番号から住所を取得する
+jcgi_addressfromzipcode:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 郵便番号から住所を取得する
+cgi_zipcodefromaddress:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 住所から郵便番号を取得する
+jcgi_zipcodefromaddress:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 住所から郵便番号を取得する
+cgi_stationfromaddress:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 住所から駅一覧を取得する
+jcgi_stationfromaddress:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 住所から駅一覧を取得する
+cgi_version:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: ｢駅すぱあと｣のデータのバージョンを取得する
+jcgi_version:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: ｢駅すぱあと｣のデータのバージョンを取得する
+cgi_connect_id:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 同時接続IDを取得する
+jcgi_connect_id:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 同時接続IDを取得する
+cgi_calendar:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: カレンダーを表示する(日付を取得する)
+jcgi_expdate:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: ｢駅すぱあと｣から日付を取得する
+cgi_name_renewal:
+  apiType: cgi
+  userParam: true
+  tansaku: false
+  comment: 駅名・路線名・会社名をリニューアルする
+jcgi_name_renewal:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 駅名・路線名・会社名をリニューアルする
+jcgi_adm_import_landmark:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: ランドマークを登録する
+jcgi_adm_delete_landmark:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: ランドマークを削除する
+jcgi_disasterdia_info:
+  apiType: jcgi
+  userParam: false
+  tansaku: false
+  comment: 災害・節電の影響に関するダイヤの情報を取得する
+cgi_routedisp:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  comment: 平均探索結果の1経路を表示する
+cgi_routedisp_h:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  comment: 平均探索結果の1経路を表示する
+cgi_summary:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  intraV2Only: true
+  comment: 平均探索結果のサマリー情報を取得する
+jcgi_summary:
+  apiType: jcgi
+  userParam: false
+  tansaku: true
+  intraV2Only: true
+  comment: 平均探索結果のサマリー情報を取得する
+cgi_details:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  intraV2Only: true
+  comment: 平均探索結果の詳細情報を取得する(旧版)
+jcgi_details:
+  apiType: jcgi
+  userParam: false
+  tansaku: true
+  intraV2Only: true
+  comment: 平均探索結果の詳細情報を取得する(旧版)
+cgi_diadetails:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  intraV2Only: true
+  comment: ダイヤ探索結果の詳細情報を取得する(旧版)
+jcgi_diadetails:
+  apiType: jcgi
+  userParam: false
+  tansaku: true
+  intraV2Only: true
+  comment: ダイヤ探索結果の詳細情報を取得する(旧版)
+cgi_result:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  intraV2Only: true
+  comment: 平均探索結果を表示して選択する(旧版)
+cgi_result_h:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  intraV2Only: true
+  comment: 平均探索結果を表示して選択する(旧版)
+cgi_resultroutelist:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  intraV2Only: true
+  comment: 平均探索結果のサマリーのみを表示する(旧版)
+cgi_diaresult:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  intraV2Only: true
+  comment: ダイヤ探索結果を表示して選択する(旧版)
+cgi_diaresult_h:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  intraV2Only: true
+  comment: ダイヤ探索結果を表示して選択する(旧版)
+cgi_diaresultroutelist:
+  apiType: cgi
+  userParam: true
+  tansaku: true
+  intraV2Only: true
+  comment: ダイヤ探索結果のサマリーのみを表示する(旧版)

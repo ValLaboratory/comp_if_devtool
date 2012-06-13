@@ -1,0 +1,34 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  v2api_name   -> APIの名称
+  #             display_data -> (Hash)表示用パラメータ情報
+%>
+<table id="input_param_table">
+  <tr>
+    <th class="name_col">パラメータ名</th>
+    <th class="value_col">入力値</th>
+    <th class="comment_col">説明</th>
+  </tr>
+  <% display_data.each_with_index do |group,i| %>
+    <% if group["groupComment"] %>
+      <%==
+        erubis :"input_param_table/_group_title_row",
+               :layout => false,
+               :locals => {comment: group["groupComment"],
+                           index: i}
+      %>
+    <% end %>
+    <%==
+      erubis :"input_param_table/_param_rows",
+             :layout => false,
+             :locals => {v2api_name: v2api_name,
+                         display_params_data: group["params"]}
+    %>
+  <% end %>
+  <% if enabled_user_param?(v2api_name) %>
+    <%==
+      erubis :"input_param_table/_user_param_row",
+             :layout => false
+    %>
+  <% end %>
+</table>

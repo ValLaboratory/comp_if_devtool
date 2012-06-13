@@ -1,0 +1,763 @@
+---
+# ======== 探索系 ========
+- groupComment: 1-1 基本入力パラメータ(平均)
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  params:
+  - name: val_htmb
+    inputType: system
+  - name: val_cgi_url
+    inputType: system
+  - name: val_from
+    isStation: true
+  - name: val_to
+    isStation: true
+  - name: val_to01
+    isStation: true
+  - name: val_to02
+    isStation: true
+  - name: val_to03
+    isStation: true
+  - name: val_to04
+    isStation: true
+- groupComment: 1-2 基本入力パラメータ(ダイヤ)
+  apis:
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  - cgi_diaresult2
+  - cgi_diaresult2_h
+  - cgi_diaassign
+  - cgi_diaassign_h
+  params:
+  - name: val_htmb
+    inputType: system
+  - name: val_cgi_url
+    inputType: system
+  - name: val_from
+    isStation: true
+  - name: val_to
+    isStation: true
+  - name: val_to01
+    isStation: true
+  - name: val_to02
+    isStation: true
+  - name: val_to03
+    isStation: true
+  - name: val_to04
+    isStation: true
+  - name: val_hour
+  - name: val_minute
+  - name: val_searchtype
+- groupComment: 1-3 探索条件(平均)
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  params:
+  - name: val_year
+  - name: val_month
+  - name: val_day
+  - name: val_feeling
+  - name: val_expressonly
+  - name: val_shinkansen
+  - name: val_nozomi
+  - name: val_sleepingcar
+  - name: val_highwaybus
+  - name: val_airbus
+  - name: val_ship
+  - name: val_bus_route_only
+- groupComment: 1-4 探索条件(ダイヤ)
+  apis:
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  - cgi_diaresult2
+  - cgi_diaresult2_h
+  - cgi_diaassign
+  - cgi_diaassign_h
+  params:
+  - name: val_year
+  - name: val_month
+  - name: val_day
+  - name: val_change_cost
+  - name: val_dia_traffic_air
+  - name: val_dia_traffic_sinkansen
+  - name: val_dia_traffic_sinkansen_nozomi
+  - name: val_dia_traffic_sleeping_car
+  - name: val_dia_traffic_express
+  - name: val_dia_traffic_highwaybus
+  - name: val_dia_traffic_airbus
+  - name: val_dia_traffic_specialtrain
+  - name: val_dia_traffic_ship
+  - name: val_dia_traffic_midnightbus
+  - name: val_dia_traffic_airfare_class
+- groupComment: 1-5 共通探索条件
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  - cgi_diaresult2
+  - cgi_diaresult2_h
+  - cgi_diaassign
+  - cgi_diaassign_h
+  params:
+  - name: val_oneway
+  - name: val_icticket
+  - name: val_dcstudent
+  - name: val_teikifare_mode
+  - name: val_jr2sectteiki
+  - name: val_doubleroute
+  - name: val_confload
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_sorttype
+  - name: val_surcharge_type
+  - name: val_jrconsideration
+  - name: val_airfare_mode
+  - name: val_airport_charge
+  - name: val_max_result
+- groupComment: 1-6 探索結果のカスタマイズ
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  params:
+  - name: val_cstm[cstmNo]_r[routeNo]_type
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_cstm1_all_type
+    ref: val_cstm[cstmNo]_all_type
+    devtoolComment: 本ツールでは1件のみ指定可
+  - name: val_cstm1_tkcls_seq
+    ref: val_cstm[cstmNo]_tkcls_seq
+    devtoolComment: 本ツールでは1件のみ指定可
+  - name: val_cstm1_tkcls
+    ref: val_cstm[cstmNo]_tkcls
+    devtoolComment: 本ツールでは1件のみ指定可
+- groupComment: 1-7 使用路線の指定
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  params:
+  - name: val_noritugi01
+  - name: val_noritugi02
+  - name: val_noritugi03
+  - name: val_noritugi04
+- groupComment: 1-8 不通路線の指定
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  params:
+  - name: val_use_stopsect
+  - name: val_stopsect01
+  - name: val_stopsect02
+  - name: val_stopsect03
+  - name: val_stopsect04
+  - name: val_stopsect05
+  - name: val_stopsect06
+  - name: val_stopsect07
+  - name: val_stopsect08
+  - name: val_stopsect09
+  - name: val_stopsect10
+- groupComment: 1-9 その他の入力パラメータ
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  - cgi_diaresult2
+  - cgi_diaresult2_h
+  - cgi_diaassign
+  - cgi_diaassign_h
+  params:
+  - name: val_outpara_cookie
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_aircorp_const
+  - name: val_popupmenu
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_cgi_back_url
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_connect_id
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+- groupComment: 3-1 定期券利用時の運賃計算(詳細な計算結果)
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  - cgi_diaresult2
+  - cgi_diaresult2_h
+  - cgi_diaassign
+  - cgi_diaassign_h
+  params:
+  - name: val_tassignmode
+    devtoolComment: 本ツールでは"1"は利用不可
+  - name: val_tassign_reflect
+  - name: val_tassign_year
+  - name: val_tassign_month
+  - name: val_tassign_day
+  - name: val_tassign_liketeikiuse
+  - name: val_tassign_entryname
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_tassign_stationnamelist
+  - name: val_tassign_railnamelist
+  - name: val_tassign_restoreroute
+  - name: val_tassign_jr2sectteiki
+  - name: val_tassign_doubleroute
+  - name: val_tassign_tkcls_1
+    ref: val_tassign_tkcls_[tsectNo]
+    devtoolComment: 本ツールでは定期券区間1のみ指定可
+- groupComment: 3-2 定期券利用時の運賃計算
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  - cgi_diaresult2
+  - cgi_diaresult2_h
+  - cgi_diaassign
+  - cgi_diaassign_h
+  params:
+  - name: val_teiki_route
+    devtoolComment: 本ツールでは"1"は利用不可
+  - name: val_teiki_year
+  - name: val_teiki_month
+  - name: val_teiki_day
+  - name: val_teikiuse_key
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_teiki_station_cnt
+  - name: val_teiki_stationnamelist
+  - name: val_teiki_rail_cnt
+  - name: val_teiki_railnamelist
+  - name: val_teikirestore
+- groupComment: 3-3 回数券利用時の運賃計算
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  - cgi_diaresult2
+  - cgi_diaresult2_h
+  - cgi_diaassign
+  - cgi_diaassign_h
+  params:
+  - name: val_coupon_data
+- groupComment: 3-4 分割定期計算
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  params:
+  - name: val_separate_route
+- groupComment: 3-5 二酸化炭素(CO2)排出量のパラメータ
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  - cgi_diaresult2
+  - cgi_diaresult2_h
+  - cgi_diaassign
+  - cgi_diaassign_h
+  params:
+  - name: val_co2mode
+- groupComment: 3-6 路線色
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  params:
+  - name: val_linecolor
+# パラメータが1つも存在しないダミーグループ
+- groupComment: ダミーグループ
+  apis:
+  - cgi_details2
+  params:
+  - name: val_dummy
+- groupComment: 3-7 ユーザーパラメータ
+  apis:
+  - cgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  - cgi_diadetails2
+  - cgi_diaresult2
+  - cgi_diaresult2_h
+  - cgi_diaassign
+  - cgi_diaassign_h
+  params:
+  - name: val_upperparam
+# ======== 非探索系 ========
+# 共通系1
+- apis:
+  - cgi_corp
+  - jcgi_corp
+  - cgi_rail
+  - jcgi_rail
+  - cgi_stop
+  - jcgi_stop
+  - cgi_station
+  - jcgi_station
+  - cgi_busstop
+  - jcgi_busstop
+  - cgi_landmark
+  - jcgi_landmark
+  - cgi_fromto_station
+  - jcgi_fromto_station
+  - jcgi_station_from_geopoint
+  - cgi_select_station
+  - cgi_select_station_landmark
+  - jcgi_coupondata_name
+  - jcgi_coupondata_section
+  - jcgi_coupondata_info
+  - cgi_teiki_repay
+  - jcgi_teiki_repay
+  - cgi_teiki_repay_corpfee
+  - jcgi_teiki_repay_corpfee
+  - cgi_address
+  - jcgi_address
+  - cgi_addressfromzipcode
+  - jcgi_addressfromzipcode
+  - cgi_zipcodefromaddress
+  - jcgi_zipcodefromaddress
+  - cgi_stationfromaddress
+  - jcgi_stationfromaddress
+  - cgi_version
+  - jcgi_version
+  - cgi_connect_id
+  - jcgi_connect_id
+  - cgi_calendar
+  - jcgi_expdate
+  - cgi_name_renewal
+  - jcgi_name_renewal
+  - jcgi_adm_import_landmark
+  - jcgi_adm_delete_landmark
+  - jcgi_disasterdia_info
+  params:
+  - name: val_htmb
+    inputType: system
+  - name: val_cgi_url
+    inputType: system
+# 鉄道会社名・路線名取得
+- apis:
+  - cgi_corp
+  - jcgi_corp
+  - cgi_rail
+  - jcgi_rail
+  - cgi_stop
+  - jcgi_stop
+  params:
+  - name: val_corp
+  - name: val_rail
+  - name: val_area
+  - name: val_year
+  - name: val_month
+  - name: val_day
+# 駅名・バス停名・ランドマーク名
+- apis:
+  - cgi_station
+  - jcgi_station
+  - cgi_busstop
+  - jcgi_busstop
+  - cgi_landmark
+  - jcgi_landmark
+  - cgi_fromto_station
+  - jcgi_fromto_station
+  - jcgi_station_from_geopoint
+  - cgi_select_station
+  - cgi_select_station_landmark
+  params:
+  - name: val_in_name
+  - name: val_in_fromname
+  - name: val_in_toname
+  - name: val_lat_d
+  - name: val_lon_d
+  - name: val_lat
+  - name: val_lon
+  - name: val_radius
+  - name: val_area
+  - name: val_station_sort
+  - name: val_datum
+  - name: val_sttypefilter
+  - name: val_sttypefilter_default
+  - name: val_stationonly
+  - name: val_station_type
+  - name: val_landmark_type
+# パラメータが1つも存在しないダミーグループ
+- apis:
+  - jcgi_station
+  params:
+  - name: val_dummy
+# 回数券情報
+- apis:
+  - jcgi_coupondata_name
+  - jcgi_coupondata_section
+  - jcgi_coupondata_info
+  params:
+  - name: val_coupon_name
+  - name: val_coupon_data
+# 定期払戻(払戻情報取得)
+- apis:
+  - cgi_teiki_repay
+  - jcgi_teiki_repay
+  params:
+  - name: val_from
+    isStation: true
+  - name: val_to
+    isStation: true
+  - name: val_to01
+    isStation: true
+  - name: val_to02
+    isStation: true
+  - name: val_to03
+    isStation: true
+  - name: val_to04
+    isStation: true
+  - name: val_noritugi01
+  - name: val_noritugi02
+  - name: val_noritugi03
+  - name: val_noritugi04
+  - name: val_year
+  - name: val_month
+  - name: val_day
+  - name: val_teiki_routeno
+  - name: val_teiki_repay_valid_date
+  - name: val_teiki_repay_valid_period
+  - name: val_teiki_repay_date
+  - name: val_teiki_repay_purchase_date
+  - name: val_teiki_repay_calc
+  - name: val_teiki_repay_type
+  - name: val_feeling
+  - name: val_expressonly
+  - name: val_shinkansen
+  - name: val_nozomi
+  - name: val_sleepingcar
+  - name: val_highwaybus
+  - name: val_airbus
+  - name: val_confload
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_sorttype
+  - name: val_use_stopsect
+  - name: val_stopsect01
+  - name: val_stopsect02
+  - name: val_stopsect03
+  - name: val_stopsect04
+  - name: val_stopsect05
+  - name: val_stopsect06
+  - name: val_stopsect07
+  - name: val_stopsect08
+  - name: val_stopsect09
+  - name: val_stopsect10
+  - name: val_max_result
+  - name: val_nametype
+# 定期払戻(手数料取得)
+- apis:
+  - cgi_teiki_repay_corpfee
+  - jcgi_teiki_repay_corpfee
+  params:
+  - name: val_corpname
+  - name: val_teiki_repay_calc
+  - name: val_teiki_repay_date
+# 住所関連情報
+- apis:
+  - cgi_address
+  - jcgi_address
+  - cgi_addressfromzipcode
+  - jcgi_addressfromzipcode
+  - cgi_zipcodefromaddress
+  - jcgi_zipcodefromaddress
+  - cgi_stationfromaddress
+  - jcgi_stationfromaddress
+  params:
+  - name: val_address
+  - name: val_address_level
+  - name: val_areasize
+  - name: val_zipcodeupper3
+  - name: val_zipcodelower4
+  - name: val_address_sorttype
+  - name: val_busselect
+# その他
+- apis:
+  - cgi_version
+  - jcgi_version
+  - cgi_connect_id
+  - jcgi_connect_id
+  - cgi_calendar
+  - jcgi_expdate
+  - cgi_name_renewal
+  - jcgi_name_renewal
+  params:
+  - name: val_nameformat
+  - name: val_oldnamelist
+  - name: val_oldteikistationlist
+  - name: val_oldteikiraillist
+  - name: val_title
+  - name: val_filename
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_nodisptoday
+  - name: val_date
+# 管理者専用
+- apis:
+  - jcgi_adm_import_landmark
+  - jcgi_adm_delete_landmark
+  params:
+  - name: val_password
+  - name: val_category
+  - name: val_landmark
+  - name: val_landmark_yomi
+  - name: val_landmark_category
+  - name: val_moyori
+  - name: val_moyori_way
+  - name: val_moyori_time
+  - name: val_moyori_distance
+  - name: val_moyori_exit
+  - name: val_moyori_fare
+  - name: val_moyori_teiki1
+  - name: val_moyori_teiki3
+  - name: val_moyori_teiki6
+# 東日本大震災関連
+- apis:
+  - jcgi_disasterdia_info
+  params:
+  - name: val_disasterdia_serial
+# 共通系2
+- apis:
+  - cgi_corp
+  - jcgi_corp
+  - cgi_rail
+  - jcgi_rail
+  - cgi_stop
+  - jcgi_stop
+  - cgi_station
+  - jcgi_station
+  - cgi_busstop
+  - jcgi_busstop
+  - cgi_landmark
+  - jcgi_landmark
+  - cgi_fromto_station
+  - jcgi_fromto_station
+  - jcgi_station_from_geopoint
+  - cgi_select_station
+  - cgi_select_station_landmark
+  - jcgi_coupondata_name
+  - jcgi_coupondata_section
+  - jcgi_coupondata_info
+  - cgi_teiki_repay
+  - jcgi_teiki_repay
+  - cgi_teiki_repay_corpfee
+  - jcgi_teiki_repay_corpfee
+  - cgi_address
+  - jcgi_address
+  - cgi_addressfromzipcode
+  - jcgi_addressfromzipcode
+  - cgi_zipcodefromaddress
+  - jcgi_zipcodefromaddress
+  - cgi_stationfromaddress
+  - jcgi_stationfromaddress
+  - cgi_version
+  - jcgi_version
+  - cgi_connect_id
+  - jcgi_connect_id
+  - cgi_calendar
+  - jcgi_expdate
+  - cgi_name_renewal
+  - jcgi_name_renewal
+  - jcgi_adm_import_landmark
+  - jcgi_adm_delete_landmark
+  - jcgi_disasterdia_info
+  params:
+  - name: val_outpara_cookie
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_connect_id
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_upperparam
+# ======== 探索系(旧) ========
+- apis:
+  - cgi_routedisp
+  - cgi_routedisp_h
+  params:
+  - name: val_htmb
+    inputType: system
+  - name: val_cgi_url
+    inputType: system
+  - name: val_station_cnt
+    devtoolComment: 本ツールでは2駅まで
+  - name: val_station_name_1
+    ref: val_station_name_[stationNo]
+    isStation: true
+  - name: val_station_name_2
+    ref: val_station_name_[stationNo]
+    isStation: true
+  - name: val_rail_cnt
+    devtoolComment: 本ツールでは1路線まで
+  - name: val_rail_name_1
+    ref: val_rail_name_[railNo]
+  - name: val_year
+  - name: val_month
+  - name: val_day
+  - name: val_feeling
+  - name: val_sleepingcar
+  - name: val_highwaybus
+  - name: val_airbus
+  - name: val_oneway
+  - name: val_teikifare_mode
+  - name: val_surcharge_type
+  - name: val_jrconsideration
+  - name: val_airfare_mode
+  - name: val_title
+  - name: val_button_type
+  - name: val_cgi_back_url
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_aircorp_const
+  - name: val_connect_id
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_upperparam
+# ======== 探索系(旧、イントラV2のみ) ========
+- apis:
+  - cgi_summary
+  - jcgi_summary
+  - cgi_details
+  - jcgi_details
+  - cgi_diadetails
+  - jcgi_diadetails
+  - cgi_result
+  - cgi_result_h
+  - cgi_resultroutelist
+  - cgi_diaresult
+  - cgi_diaresult_h
+  - cgi_diaresultroutelist
+  params:
+  - name: val_htmb
+    inputType: system
+  - name: val_cgi_url
+    inputType: system
+  - name: val_from
+    isStation: true
+  - name: val_to
+    isStation: true
+  - name: val_to01
+    isStation: true
+  - name: val_to02
+    isStation: true
+  - name: val_to03
+    isStation: true
+  - name: val_to04
+    isStation: true
+  - name: val_hour
+  - name: val_minute
+  - name: val_searchtype
+  - name: val_year
+  - name: val_month
+  - name: val_day
+  - name: val_feeling
+  - name: val_sleepingcar
+  - name: val_highwaybus
+  - name: val_airbus
+  - name: val_bus_route_only
+  - name: val_change_cost
+  - name: val_dia_traffic_air
+  - name: val_dia_traffic_sinkansen
+  - name: val_dia_traffic_sinkansen_nozomi
+  - name: val_dia_traffic_sleeping_car
+  - name: val_dia_traffic_express
+  - name: val_dia_traffic_highwaybus
+  - name: val_dia_traffic_airbus
+  - name: val_dia_traffic_airfare_class
+  - name: val_oneway
+  - name: val_teikifare_mode
+  - name: val_confload
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_sorttype
+  - name: val_surcharge_type
+  - name: val_jrconsideration
+  - name: val_airfare_mode
+  - name: val_airport_charge
+  - name: val_max_result
+  - name: val_noritugi01
+  - name: val_noritugi02
+  - name: val_noritugi03
+  - name: val_noritugi04
+  - name: val_use_stopsect
+  - name: val_stopsect01
+  - name: val_stopsect02
+  - name: val_stopsect03
+  - name: val_stopsect04
+  - name: val_stopsect05
+  - name: val_stopsect06
+  - name: val_stopsect07
+  - name: val_stopsect08
+  - name: val_stopsect09
+  - name: val_stopsect10
+  - name: val_outpara_cookie
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_aircorp_const
+  - name: val_popupmenu
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_cgi_back_url
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_connect_id
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_teiki_route
+    devtoolComment: 本ツールでは"1"は利用不可
+  - name: val_teikiuse_key
+    inputType: disabled
+    devtoolComment: 本ツールでは利用不可
+  - name: val_teiki_station_cnt
+  - name: val_teiki_stationnamelist
+  - name: val_teiki_rail_cnt
+  - name: val_teiki_railnamelist
+  - name: val_teikirestore
+  - name: val_separate_route
+  - name: val_upperparam
+  - name: val_route_fix_search
+  - name: val_station_cnt
+    devtoolComment: 本ツールでは2駅まで
+  - name: val_station_name_1
+    ref: val_station_name_[stationNo]
+    isStation: true
+  - name: val_station_name_2
+    ref: val_station_name_[stationNo]
+    isStation: true
+  - name: val_line_cnt
+    devtoolComment: 本ツールでは1路線まで
+  - name: val_rail_name_1
+    ref: val_line_name_[lineNo]

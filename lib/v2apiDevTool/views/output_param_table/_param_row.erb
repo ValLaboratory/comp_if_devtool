@@ -1,0 +1,23 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  param_data -> (Hash)表示用パラメータ情報(1パラメータ)
+  #             max_indent -> 最大インデント数。name_colにはこの数分のセルを用意する
+  #             indent     -> インデントのレベル(同一countの字下げ用)
+%>
+<tr>
+  <% indent.times do |i| %>
+    <td class="name_col_indent indent_<%= i + 1 %>"></td>
+  <% end %>
+  <td class="name_col" colspan="<%= max_indent - indent %>"><%= param_data["name"] %></td>
+  <td class="value_col"><%= param_data["responseValue"] %></td>
+  <td class="comment_col">
+    <%= param_data["comment"] %>
+    <% if param_data["value"] %>
+      <div class="value_comment">
+        <% split_values_comment(param_data["value"]).each do |value| %>
+          <%= value %><br />
+        <% end %>
+      </div>
+    <% end %>
+  </td>
+</tr>

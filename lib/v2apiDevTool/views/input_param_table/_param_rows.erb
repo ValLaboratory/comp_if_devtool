@@ -1,0 +1,13 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  v2api_name          -> API名
+  #             display_params_data -> (Array)表示用パラメータ情報(グループ内)
+%>
+<% display_params_data.each do |param_data| %>
+  <%==
+    erubis :"input_param_table/_param_row",
+           :layout => false,
+           :locals => {v2api_name: v2api_name,
+                       display_param_data: param_data}
+  %>
+<% end %>

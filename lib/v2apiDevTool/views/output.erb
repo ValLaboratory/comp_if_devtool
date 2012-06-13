@@ -1,0 +1,76 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  v2api_name   -> APIの名称
+  #             display_data -> (Hash)表示用パラメータ情報
+%>
+<div id="header">
+  <%== erubis :"header/_header", 
+              :layout => false %>
+</div>
+<div id="contents_output">
+  <p><a href="./input">入力画面に戻る</a></p>
+  <%
+    # ========================================
+    #             経路のサマリー
+    # ========================================
+  %>
+  <% if is_tansaku_v2api?(v2api_name) %>
+    <% if display_data["routeString"].class == Array %>
+      <%==
+        erubis :"output_summary_table/_details_summary_table",
+               :layout => false,
+               :locals => {route_strings: display_data["routeString"]}
+      %>
+    <% elsif display_data["routeString"].class == String %>
+      <%==
+        erubis :"output_summary_table/_result_summary_table",
+               :layout => false,
+               :locals => {route_string: display_data["routeString"]}
+      %>
+    <% end %>
+  <% end %>
+  <%
+    # ========================================
+    #              パラメータ一覧
+    # ========================================
+  %>
+  <%==
+    erubis :"output_param_table/_param_table",
+           :layout => false,
+           :locals => {display_params_data: display_data["definedParams"],
+                       max_indent: 4}
+  %>
+  <%
+    # ========================================
+    #           ユーザーパラメータ一覧
+    # ========================================
+  %>
+  <% if display_data["userParams"] %>
+    <%==
+      erubis :"output_user_param_table/_user_param_table",
+             :layout => false,
+             :locals => {user_params_data: display_data["userParams"]}
+    %>
+  <% end %>
+  <%
+    # ========================================
+    #           未定義パラメータ一覧
+    # ========================================
+  %>
+  <% if settings.environment != "production" %>
+    <% if display_data["notDefinedParams"] %>
+      <%==
+        erubis :"output_notdef_param_table/_notdef_param_table",
+               :layout => false,
+               :locals => {notdef_params_data: display_data["notDefinedParams"]}
+      %>
+    <% end %>
+  <% end %>
+</div>
+<div id="footer">
+  <%==
+    erubis :"output_footer/_output_footer",
+           :layout => false,
+           :locals => {route_string_data: display_data["routeString"]}
+  %>
+</div>

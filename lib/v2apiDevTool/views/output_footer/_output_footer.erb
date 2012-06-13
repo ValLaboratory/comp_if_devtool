@@ -1,0 +1,14 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  route_string_data -> (Array or String)経路文字列データ(routeString要素)
+%>
+<div id="footer_contents">
+  <ul class="footer_ul">
+    <% if route_string_data.class == Array %>
+      <% route_string_data.each_with_index do |str,i| %>
+        <li class="footer_li"><a href="#route_<%= i+1 %>">経路<%= i+1 %></a></li>
+      <% end %>
+    <% end %>
+    <li class="footer_li"><a href="#">一番上に戻る</a></li>
+  </ul>
+</div>

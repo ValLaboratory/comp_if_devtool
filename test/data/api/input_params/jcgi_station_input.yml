@@ -1,0 +1,25 @@
+---
+val_htmb:
+  status: required
+  comment: API名
+val_connect_id:
+  comment: 同時接続ID
+val_in_name:
+  status: required
+  comment: 取得したい駅名の一部
+val_area:
+  comment: 取得したい路線の地域
+  value: 0：全国&1：北海道&2：東北&3：関東&4：中部&5：近畿&6：中国&7：四国&8：九州
+  valueSkip: 0
+val_sttypefilter:
+  comment: 駅種別ごとのフィルタリング
+  value: (「val_stationonly」指定時は無効)
+  valueSkip: 「val_stationonly」の設定を適用
+val_sttypefilter_default:
+  comment: 「val_sttypefilter」の各桁を省略した場合の値
+  value: 0：駅候補に含めない&1：駅候補に含める
+  valueSkip: 1
+val_stationonly:
+  comment: 駅候補の詳細設定(「val_sttypefilter」を推奨)
+  value: 0：駅候補に高速バス・連絡バスを含む&1：駅候補に高速バス・連絡バスを含まない
+  valueSkip: 0

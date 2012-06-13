@@ -1,0 +1,253 @@
+---
+val_htmb:
+  status: required
+  comment: API名
+val_cgi_url:
+  status: required
+  comment: 呼び出すCGIのURL
+val_from:
+  status: required
+  comment: 出発駅の駅名(ロングネーム)
+val_to:
+  status: cond-required
+  comment: 目的駅の駅名(ロングネーム)(経由駅を指定しない場合)
+val_to01:
+  status: cond-required
+  comment: 経由駅または目的駅の駅名1(ロングネーム)
+val_to02:
+  status: cond-required
+  comment: 経由駅または目的駅の駅名2(ロングネーム)
+val_to03:
+  status: cond-required
+  comment: 経由駅または目的駅の駅名3(ロングネーム)
+val_to04:
+  status: cond-required
+  comment: 経由駅または目的駅の駅名4(ロングネーム)
+val_year:
+  comment: 出発日の年
+  valueSkip: 本日日付(年・月・日いずれかの省略で適用)
+val_month:
+  comment: 出発日の月
+  valueSkip: 本日日付(年・月・日いずれかの省略で適用)
+val_day:
+  comment: 出発日の日
+  valueSkip: 本日日付(年・月・日いずれかの省略で適用)
+val_feeling:
+  comment: 探索条件
+  valueSkip: 2221122
+val_expressonly:
+  comment: 探索条件：有料特急
+  value: 0：利用しない&1：利用する
+  valueSkip: 1
+val_shinkansen:
+  comment: 探索条件：新幹線
+  value: 0：利用しない&1：利用する
+  valueSkip: 1
+val_nozomi:
+  comment: 探索条件：のぞみ
+  value: 0：利用しない&1：利用する
+  valueSkip: 1
+val_sleepingcar:
+  comment: 探索条件：寝台列車
+  value: y：優先して利用&n：利用しない
+  valueSkip: n
+val_highwaybus:
+  comment: 探索条件：高速バス
+  value: 1：優先して利用&2：普通に利用&3：極力利用しない
+  valueSkip: 2
+val_airbus:
+  comment: 探索条件：連絡バス
+  value: 1：優先して利用&2：普通に利用&3：極力利用しない
+  valueSkip: 2
+val_ship:
+  comment: 探索条件：船
+  value: 1：優先して利用&2：普通に利用&3：極力利用しない
+  valueSkip: 2
+val_bus_route_only:
+  comment: バスのみ探索
+  value: y：利用する&n：利用しない
+  valueSkip: n
+val_oneway:
+  comment: 運賃種類
+  value: 1：片道運賃&0：往復運賃&2：定期代
+  valueSkip: 1
+val_icticket:
+  comment: ICカード乗車券の計算
+  value: 0：計算しない&1：計算する
+  valueSkip: 0
+val_dcstudent:
+  comment: 学割乗車券の計算
+  value: 0：計算しない&1：計算する
+  valueSkip: 0
+val_teikifare_mode:
+  comment: 定期種類
+  value: 1：通勤定期&2：高校生用通学定期&3：大学生用通学定期
+  valueSkip: 1
+val_jr2sectteiki:
+  comment: ＪＲ二区間定期
+  value: 0：適時計算する&1：常に計算する
+  valueSkip: 0
+val_doubleroute:
+  comment: 2ルート定期
+  value: 0：計算しない&1：計算する
+  valueSkip: 0
+val_confload:
+  comment: 環境設定ファイルから値の取得モード
+  valueSkip: 全ての桁に0を適用
+val_sorttype:
+  comment: 探索結果の並び順
+  value: 1：探索順&2：運賃順&3：所要時間順&4：定期順&5：乗換回数順&6：CO2排出量順&7：定期1ヵ月順&8：定期3ヵ月順&9：定期6ヵ月順
+  valueSkip: 1
+val_surcharge_type:
+  comment: 特急料金のタイプを指定
+  value: 1：指定席&2：自由席&3：グリーン席
+  valueSkip: 1
+val_jrconsideration:
+  comment: 繁忙期・閑散期を考慮した探索
+  value: y：考慮する、n：考慮しない
+  valueSkip: y
+val_airfare_mode:
+  comment: 航空保険特別料金
+  value: 0：運賃に含まない&1：運賃に含む
+  valueSkip: 0
+val_airport_charge:
+  comment: 空港使用料の出力
+  value: 0：出力しない、1：出力する
+  valueSkip: 0
+val_max_result:
+  comment: 探索結果の回答数の最大値
+  value: 1～20
+  valueSkip: 5
+val_cstm[cstmNo]_r[routeNo]_type:
+  comment: カスタマイズタイプ(1経路)
+  value: TeikiClassを指定
+val_cstm[cstmNo]_all_type:
+  comment: カスタマイズタイプ(全経路)
+  value: TeikiClassを指定
+val_cstm[cstmNo]_tkcls_seq:
+  comment: 定期券区間番号
+val_cstm[cstmNo]_tkcls:
+  comment: 定期クラス
+  value: 2Section：二区間定期&passage：区間外定期&general：一般定期&wRoute：だぶるーと&t2Route：二区間定期券&s2Route：Oneだぶる♪
+val_noritugi01:
+  comment: 1番目の路線区間の使用路線(ロングネーム)
+val_noritugi02:
+  comment: 2番目の路線区間の使用路線(ロングネーム)
+val_noritugi03:
+  comment: 3番目の路線区間の使用路線(ロングネーム)
+val_noritugi04:
+  comment: 4番目の路線区間の使用路線(ロングネーム)
+val_use_stopsect:
+  comment: 不通路線または会社を考慮した探索
+  value: y：考慮する&n：考慮しない
+  valueSkip: n
+val_stopsect01:
+  comment: 利用しない路線名または路線会社名1(ロングネーム)
+val_stopsect02:
+  comment: 利用しない路線名または路線会社名2(ロングネーム)
+val_stopsect03:
+  comment: 利用しない路線名または路線会社名3(ロングネーム)
+val_stopsect04:
+  comment: 利用しない路線名または路線会社名4(ロングネーム)
+val_stopsect05:
+  comment: 利用しない路線名または路線会社名5(ロングネーム)
+val_stopsect06:
+  comment: 利用しない路線名または路線会社名6(ロングネーム)
+val_stopsect07:
+  comment: 利用しない路線名または路線会社名7(ロングネーム)
+val_stopsect08:
+  comment: 利用しない路線名または路線会社名8(ロングネーム)
+val_stopsect09:
+  comment: 利用しない路線名または路線会社名9(ロングネーム)
+val_stopsect10:
+  comment: 利用しない路線名または路線会社名10(ロングネーム)
+val_outpara_cookie:
+  comment: 出力されたパラメータをCookieに書き込む
+  value: y：書き込む&n：書き込まない
+  valueSkip: n
+val_connect_id:
+  comment: 同時接続ID
+val_tassignmode:
+  comment: 定期券利用時の運賃計算(詳細な計算結果)
+  value: 1：定期券利用時の登録名での運賃計算&2：駅名・路線名による運賃計算&3：方向性を持った経路文字列で計算
+  valueSkip: 無効
+val_tassign_reflect:
+  comment: 探索結果への反映
+  value: 0：反映しない&1：反映する
+  valueSkip: 0
+val_tassign_year:
+  comment: 定期券情報を復元する年
+  valueSkip: 出発日(年・月・日いずれかの省略で適用)
+val_tassign_month:
+  comment: 定期券情報を復元する月
+  valueSkip: 出発日(年・月・日いずれかの省略で適用)
+val_tassign_day:
+  comment: 定期券情報を復元する日
+  valueSkip: 出発日(年・月・日いずれかの省略で適用)
+val_tassign_liketeikiuse:
+  comment: val_teiki_route利用時の出力パラメータを模倣して出力
+  value: 0：出力しない&1：出力する
+  valueSkip: 0
+val_tassign_entryname:
+  comment: 定期券利用区間登録名
+val_tassign_stationnamelist:
+  comment: 定期券利用区間駅名リスト
+val_tassign_railnamelist:
+  comment: 定期券利用区間路線名リスト
+val_tassign_restoreroute:
+  comment: 方向性を持った経路文字列
+val_tassign_jr2sectteiki:
+  comment: ＪＲ二区間定期
+  value: 0：適時計算する&1：常に計算する
+  valueSkip: 0
+val_tassign_doubleroute:
+  comment: 2ルート定期
+  value: 0：計算しない&1：計算する
+  valueSkip: 0
+val_tassign_tkcls_[tsectNo]:
+  comment: 定期券利用区間の定期クラス
+  value: 2Section：二区間定期&passage：区間外定期&general：一般定期&wRoute：だぶるーと&t2Route：二区間定期券&s2Route：Oneだぶる♪
+val_teiki_route:
+  comment: 定期券利用時の運賃計算
+  value: 1：定期券利用時の登録名での運賃計算&2：駅名・路線名による運賃計算&3：方向性を持った経路文字列で計算
+  valueSkip: 無効
+val_teiki_year:
+  comment: 定期券情報を復元する年
+  valueSkip: 出発日(例外あり)(年・月・日いずれかの省略で適用)
+val_teiki_month:
+  comment: 定期券情報を復元する月
+  valueSkip: 出発日(例外あり)(年・月・日いずれかの省略で適用)
+val_teiki_day:
+  comment: 定期券情報を復元する日
+  valueSkip: 出発日(例外あり)(年・月・日いずれかの省略で適用)
+val_teikiuse_key:
+  comment: 定期券利用区間登録名
+val_teiki_station_cnt:
+  comment: 定期券利用区間駅数
+val_teiki_stationnamelist:
+  comment: 定期券利用区間駅名リスト
+val_teiki_rail_cnt:
+  comment: 定期券利用区間路線数
+val_teiki_railnamelist:
+  comment: 定期券利用区間路線名リスト
+val_teikirestore:
+  comment: 方向性を持った経路文字列
+val_coupon_data:
+  comment: 回数券情報
+  valueSkip: 無効
+val_separate_route:
+  comment: 分割定期計算の有無
+  value: y：計算する&n：計算しない
+  valueSkip: n
+val_co2mode:
+  comment: 二酸化炭素(CO2)排出量
+  value: 0：出力しない&1：出力する
+  valueSkip: 0
+val_linecolor:
+  comment: 路線色の出力
+  value: 0：出力しない&1：出力する
+  valueSkip: 0
+val_upperparam:
+  comment: パラメータ名称の大文字小文字を区別する
+  value: y：区別する&n：区別しない
+  valueSkip: n

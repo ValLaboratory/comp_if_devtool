@@ -1,0 +1,12 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  group_comments -> (Array)groupComment要素の内容の配列
+%>
+<div id="footer_contents">
+  <ul class="footer_ul">
+    <% group_comments.each_with_index do |comment,i| %>
+      <li class="footer_li"><a href="#group_<%= i %>"><%= comment %></a></li>
+    <% end %>
+    <li class="footer_li"><a href="#">一番上に戻る</a></li>
+  </ul>
+</div>

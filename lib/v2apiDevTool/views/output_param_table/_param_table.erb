@@ -1,0 +1,23 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  display_params_data -> (Array)表示用パラメータ情報(definedParams要素)
+  #             max_indent          -> 最大インデント数。name_colにはこの数分のセルを用意する
+%>
+<table id="output_param_table">
+  <tr>
+    <th class="name_col" colspan="<%= max_indent %>">パラメータ名</th>
+    <th class="value_col">出力値</th>
+    <th class="comment_col">説明</th>
+  </tr>
+  <% display_params_data.each do |group| %>
+    <% if group["params"] %>
+      <%==
+        erubis :"output_param_table/_param_rows",
+               :layout => false,
+               :locals => {params_data: group["params"],
+                           max_indent: max_indent,
+                           indent: 0}
+      %>
+    <% end %>
+  <% end %>
+</table>

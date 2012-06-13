@@ -1,0 +1,17 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  title      -> 表示するタイトル
+  #             count_num  -> 表示する番号(経路の場合のみ使用)
+  #             max_indent -> 最大インデント数。name_colにはこの数分のセルを用意する
+  #             indent     -> インデントのレベル(同一countの字下げ用)
+  #             is_route   -> (bool)経路を示す行かどうか
+%>
+<% indent.times do |i| %>
+  <td class="name_col_indent indent_<%= i + 1 %>"></td>
+<% end %>
+<td class="name_col_indent_before_count indent_<%= indent + 1 %>"></td>
+<% if is_route %>
+  <td id="<%= "route_#{count_num}" %>" class="count_number_row route_row indent_<%= indent + 1 %>" colspan="<%= max_indent - (indent + 1) + 2 %>"><%= title %></td>
+<% else %>
+  <td class="count_number_row indent_<%= indent + 1 %>" colspan="<%= max_indent - (indent + 1) + 2 %>"><%= title %></td>
+<% end %>

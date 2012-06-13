@@ -1,0 +1,16 @@
+<%#-*- coding: UTF-8 -*- %>
+<%
+  # arguments:  user_params_data -> (Array)ユーザーパラメータデータ(userParams要素)
+%>
+<table id="output_user_param_table">
+  <tr>
+    <th class="name_col">ユーザーパラメータ名</th>
+    <th class="value_col">出力値</th>
+  </tr>
+  <% user_params_data.each do |param| %>
+    <tr>
+      <td class="name_col"><%= param["name"] %></td>
+      <td class="value_col"><%= param["responseValue"] %></td>
+    </tr>
+  <% end %>
+</table>
