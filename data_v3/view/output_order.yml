@@ -188,7 +188,6 @@
   - name: val_connectstate2
   - name: val_connectstate3
   - name: val_connectstate4
-  - name: val_assigned_teiki_available
 #
 # 探索(ダイヤ・詳細)
 #
@@ -349,7 +348,6 @@
     - name: val_r[routeNo]_serialize_data
   - name: val_reuse_jr2sectteiki
   - name: val_reuse_doubleroute
-  - name: val_assigned_teiki_available
 #
 # 探索(平均・会話)
 #
@@ -533,7 +531,6 @@
   - name: val_connectstate2
   - name: val_connectstate3
   - name: val_connectstate4
-  - name: val_assigned_teiki_available
 #
 # 探索(ダイヤ・会話)
 #
@@ -689,7 +686,6 @@
   - name: val_serialize_data
   - name: val_reuse_jr2sectteiki
   - name: val_reuse_doubleroute
-  - name: val_assigned_teiki_available
 #
 # 鉄道会社名・路線名取得
 #

@@ -199,9 +199,6 @@
   - name: val_tassignmode
     devtoolComment: 本ツールでは"1"は利用不可
   - name: val_tassign_reflect
-  - name: val_tassign_year
-  - name: val_tassign_month
-  - name: val_tassign_day
   - name: val_tassign_entryname
   - name: val_tassign_stationnamelist
   - name: val_tassign_railnamelist
