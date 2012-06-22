@@ -69,6 +69,7 @@
   - name: val_highwaybus
   - name: val_airbus
   - name: val_ship
+  - name: val_localbus
   - name: val_bus_route_only
 - groupComment: 1-4 探索条件(ダイヤ)
   apis:
@@ -93,6 +94,7 @@
   - name: val_dia_traffic_specialtrain
   - name: val_dia_traffic_ship
   - name: val_dia_traffic_midnightbus
+  - name: val_dia_traffic_localbus
   - name: val_dia_traffic_airfare_class
 - groupComment: 1-5 共通探索条件
   apis:
@@ -470,6 +472,7 @@
   - name: val_sleepingcar
   - name: val_highwaybus
   - name: val_airbus
+  - name: val_localbus
   - name: val_confload
   - name: val_sorttype
   - name: val_max_result
