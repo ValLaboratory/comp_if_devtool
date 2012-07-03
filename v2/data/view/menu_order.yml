@@ -1,0 +1,174 @@
+- category: 経路探索
+  children:
+    - comment: 平均探索結果の詳細情報を取得する
+      children:
+        - name: cgi_details2
+        - name: jcgi_details2
+    - comment: ダイヤ探索結果の詳細情報を取得する
+      children:
+        - name: cgi_diadetails2
+        - name: jcgi_diadetails2
+    - comment: 平均探索結果を表示して選択する
+      children:
+        - name: cgi_result2
+        - name: cgi_result2_h
+    - comment: ダイヤ探索結果を表示して選択する
+      children:
+        - name: cgi_diaresult2
+        - name: cgi_diaresult2_h
+    - comment: 再探索可能なダイヤ探索結果を表示し選択する
+      children:
+        - name: cgi_diaassign
+        - name: cgi_diaassign_h
+- category: 名称取得
+  children:
+    - comment: 会社名一覧を取得する
+      children:
+        - name: cgi_corp
+        - name: jcgi_corp
+    - comment: 指定した会社の路線名一覧を取得する
+      children:
+        - name: cgi_rail
+        - name: jcgi_rail
+    - comment: 指定した路線の停車駅一覧を取得する
+      children:
+        - name: cgi_stop
+        - name: jcgi_stop
+    - comment: 駅名を取得する
+      children:
+        - name: cgi_station
+        - name: jcgi_station
+    - comment: バス停名を取得する
+      children:
+        - name: cgi_busstop
+        - name: jcgi_busstop
+    - comment: ランドマーク名を取得する
+      children:
+        - name: cgi_landmark
+        - name: jcgi_landmark
+    - comment: 出発駅・到着駅を取得する
+      children:
+        - name: cgi_fromto_station
+        - name: jcgi_fromto_station
+    - comment: 緯度経度情報から駅リストを取得する
+      children:
+        - name: jcgi_station_from_geopoint
+    - comment: 選択した駅名を取得する
+      children:
+        - name: cgi_select_station
+    - comment: 選択した駅名・ランドマーク名を取得する
+      children:
+        - name: cgi_select_station_landmark
+- category: 回数券
+  children:
+    - comment: 回数券名称リストを取得する
+      children:
+        - name: jcgi_coupondata_name
+    - comment: 回数券の名称から回数券情報を取得する
+      children:
+        - name: jcgi_coupondata_section
+    - comment: 回数券の内容を確認する
+      children:
+        - name: jcgi_coupondata_info
+- category: 定期払戻
+  children:
+    - comment: 定期払戻情報を取得する
+      children:
+        - name: cgi_teiki_repay
+        - name: jcgi_teiki_repay
+    - comment: 会社ごとの手数料を取得する
+      disableProduction: true
+      children:
+        - name: cgi_teiki_repay_corpfee
+        - name: jcgi_teiki_repay_corpfee
+- category: 住所関連
+  disableProduction: true
+  children:
+    - comment: レベルごとの住所一覧を取得する
+      children:
+        - name: cgi_address
+        - name: jcgi_address
+    - comment: 郵便番号から住所を取得する
+      children:
+        - name: cgi_addressfromzipcode
+        - name: jcgi_addressfromzipcode
+    - comment: 住所から郵便番号を取得する
+      children:
+        - name: cgi_zipcodefromaddress
+        - name: jcgi_zipcodefromaddress
+    - comment: 住所から駅一覧を取得する
+      children:
+        - name: cgi_stationfromaddress
+        - name: jcgi_stationfromaddress
+- category: その他
+  children:
+    - comment: ｢駅すぱあと｣のデータのバージョンを取得する
+      children:
+        - name: cgi_version
+        - name: jcgi_version
+    - comment: 同時接続IDを取得する
+      children:
+        - name: cgi_connect_id
+        - name: jcgi_connect_id
+    - comment: カレンダーを表示する(日付を取得する)
+      children:
+        - name: cgi_calendar
+    - comment: ｢駅すぱあと｣から日付を取得する
+      children:
+        - name: jcgi_expdate
+    - comment: 駅名・路線名・会社名をリニューアルする
+      children:
+        - name: cgi_name_renewal
+        - name: jcgi_name_renewal
+    - comment: 災害・節電の影響に関するダイヤの情報を取得する
+      disableProduction: true
+      children:
+        - name: jcgi_disasterdia_info
+- category: 管理用
+  disableProduction: true
+  children:
+    - comment: ランドマークを登録する
+      children:
+        - name: jcgi_adm_import_landmark
+    - comment: ランドマークを削除する
+      children:
+        - name: jcgi_adm_delete_landmark
+- category: 旧探索系
+  children:
+    - comment: 平均探索結果の1経路を表示する
+      children:
+        - name: cgi_routedisp
+        - name: cgi_routedisp_h
+    - comment: 平均探索結果のサマリー情報を取得する
+      disableProduction: true
+      children:
+        - name: cgi_summary
+        - name: jcgi_summary
+    - comment: 平均探索結果の詳細情報を取得する(旧版)
+      disableProduction: true
+      children:
+        - name: cgi_details
+        - name: jcgi_details
+    - comment: ダイヤ探索結果の詳細情報を取得する(旧版)
+      disableProduction: true
+      children:
+        - name: cgi_diadetails
+        - name: jcgi_diadetails
+    - comment: 平均探索結果を表示して選択する(旧版)
+      disableProduction: true
+      children:
+        - name: cgi_result
+        - name: cgi_result_h
+    - comment: 平均探索結果のサマリーのみを表示する(旧版)
+      disableProduction: true
+      children:
+        - name: cgi_resultroutelist
+    - comment: ダイヤ探索結果を表示して選択する(旧版)
+      disableProduction: true
+      children:
+        - name: cgi_diaresult
+        - name: cgi_diaresult_h
+    - comment: ダイヤ探索結果のサマリーのみを表示する(旧版)
+      disableProduction: true
+      children:
+        - name: cgi_diaresultroutelist

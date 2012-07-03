@@ -1,0 +1,47 @@
+v2apiURLList:
+  - url: http://intra.val.co.jp/expwww2/expcgi.exe
+    comment: 最新版(Windows)
+  - url: http://172.17.10.157/expwww2/exp.cgi
+    comment: 最新版(Linux)
+  - url: http://intra.val.co.jp/expwww2_naya/expcgi.exe
+    comment: テストサイト(naya)
+  - url: http://intra.val.co.jp/expwww2_ssuzuki/expcgi.exe
+    comment: テストサイト(ssuzuki)
+  - url: http://intra.val.co.jp/expwww2_20120701/expcgi.exe
+    comment: 2012年7月1版
+  - url: http://intra.val.co.jp/expwww2_20120601/expcgi.exe
+    comment: 2012年6月1版
+  - url: http://intra.val.co.jp/expwww2_20120501/expcgi.exe
+    comment: 2012年5月1版
+  - url: http://intra.val.co.jp/expwww2_20120401/expcgi.exe
+    comment: 2012年4月1版
+  - url: http://intra.val.co.jp/expwww2_20120301/expcgi.exe
+    comment: 2012年3月1版
+  - url: http://intra.val.co.jp/expwww2_20120201/expcgi.exe
+    comment: 2012年2月1版
+  - url: http://intra.val.co.jp/expwww2_20120101/expcgi.exe
+    comment: 2012年1月1版
+  - url: http://intra.val.co.jp/expwww2_20111203/expcgi.exe
+    comment: 2011年12月3版
+  - url: http://intra.val.co.jp/expwww2_20111201/expcgi.exe
+    comment: 2011年12月1版
+  - url: http://intra.val.co.jp/expwww2_20111101/expcgi.exe
+    comment: 2011年11月1版
+  - url: http://intra.val.co.jp/expwww2_20111001/expcgi.exe
+    comment: 2011年10月1版
+  - url: http://intra.val.co.jp/expwww2_20110901/expcgi.exe
+    comment: 2011年9月1版
+  - url: http://intra.val.co.jp/expwww2_20110701/expcgi.exe
+    comment: 2011年7月1版
+  - url: http://intra.val.co.jp/expwww2_20110601/expcgi.exe
+    comment: 2011年6月1版
+  - url: http://intra.val.co.jp/expwww2_20110501/expcgi.exe
+    comment: 2011年5月1版
+  - url: http://intra.val.co.jp/expwww2_20110401/expcgi.exe
+    comment: 2011年4月1版
+  - url: http://intra.val.co.jp/expwww2_20110301/expcgi.exe
+    comment: 2011年3月1版
+  - url: http://intra.val.co.jp/expwww2_20110201/expcgi.exe
+    comment: 2011年2月1版
+  - url: http://intra.val.co.jp/expwww2_20110101/expcgi.exe
+    comment: 2011年1月1版

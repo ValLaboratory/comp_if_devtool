@@ -1,0 +1,7 @@
+v2apiURLList:
+  - url: http://intra.val.co.jp:8080/expwww2/expcgi.exe
+    comment: V3(Jenkins)
+  - url: http://intra.val.co.jp/expwww2/expcgi.exe
+    comment: V2最新版(Windows)
+  - url: http://192.168.50.112/expwww2/exp.cgi
+    comment: naya_dev
