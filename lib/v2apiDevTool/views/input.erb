@@ -13,7 +13,7 @@
     #     サーバ選択用セレクトボックス
     # ========================================
   %>
-  <% if settings.app_config_debug["v2apiURLList"] && settings.environment != "production" %>
+  <% if settings.app_config_debug["v2apiURLList"] && settings.environment != :production %>
     <div id="div_request_server">
       <select id="select_request_server">
         <% settings.app_config_debug["v2apiURLList"].each_with_index do |server,i| %>
@@ -30,7 +30,7 @@
     #            パラメータ代入実行
     # ========================================
   %>
-  <% if settings.environment != "production" %>
+  <% if settings.environment != :production %>
     <input type="text" id="input_query"></input>
     <input type="button" id="input_query_button" value="代入" />
   <% end %>

@@ -57,7 +57,7 @@
     #           未定義パラメータ一覧
     # ========================================
   %>
-  <% if settings.environment != "production" %>
+  <% if settings.environment != :production %>
     <% if display_data["notDefinedParams"] %>
       <%==
         erubis :"output_notdef_param_table/_notdef_param_table",

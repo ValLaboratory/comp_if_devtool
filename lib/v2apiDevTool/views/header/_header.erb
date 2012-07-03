@@ -4,19 +4,19 @@
   <ul class="api_menu_list api_menu_category">
     <% order.each do |category_list| %>
       <% # productionで表示しないものはスキップ %>
-      <% next if category_list["disableProduction"] == true && settings.environment == "production" %>
+      <% next if category_list["disableProduction"] == true && settings.environment == :production %>
       <li class="api_menu_item api_menu_category"><a href="#"><%= category_list["category"] %></a>
       <% if category_list["children"].length > 0 %>
         <ul class="api_menu_list api_menu_comment">
           <% category_list["children"].each do |comment_list| %>
           <% # productionで表示しないものはスキップ %>
-          <% next if comment_list["disableProduction"] == true && settings.environment == "production" %>
+          <% next if comment_list["disableProduction"] == true && settings.environment == :production %>
           <li class="api_menu_item api_menu_comment"><a href="#"><%= comment_list["comment"] %></a>
             <% if comment_list["children"].length > 0 %>
             <ul class="api_menu_list api_menu_name">
               <% comment_list["children"].each do |name_list| %>
               <% # productionで表示しないものはスキップ %>
-              <% next if name_list["disableProduction"] == true && settings.environment == "production" %>
+              <% next if name_list["disableProduction"] == true && settings.environment == :production %>
               <li class="api_menu_item api_menu_name"><a href="<%= app_root_url %>/<%= name_list["name"] %>/input"><%= name_list["name"] %></a>
               <% end %>
             </ul>

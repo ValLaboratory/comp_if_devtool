@@ -38,7 +38,7 @@
       # ========================================
     %>
     <% # productionの場合のみ、入力不可とする %>
-    <% elsif display_param_data["inputType"] == "disabled" && settings.environment == "production" %>
+    <% elsif display_param_data["inputType"] == "disabled" && settings.environment == :production %>
       <input type="text" class="api_input_param" disabled="disabled" name="<%= param_name %>" />
     <%
       # ========================================

@@ -19,7 +19,7 @@ module V2apiDevTool
           raise ArgumentError, "指定されたAPIは存在しません"
         end
         # V2のみのAPIで、ENVがproductionの場合
-        if settings.v2APIs[api_name]["intraV2Only"] == true && settings.environment == "production"
+        if settings.v2APIs[api_name]["intraV2Only"] == true && settings.environment == :production
           raise ArgumentError, "指定されたAPIは存在しません"
         end
 
