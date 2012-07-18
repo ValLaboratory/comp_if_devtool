@@ -96,6 +96,13 @@
         - name: val_r[routeNo]_fsect_ticketsys_[fsectNo]_fare_[ticketsysNo]
       - name: val_r[routeNo]_fsect_istassign_[fsectNo]
       - name: val_r[routeNo]_fsect_iscassign_[fsectNo]
+      - name: val_r[routeNo]_fsect_api_fareindex_[fsectNo]_cnt
+        numberOf: fareindexNo
+        countGroupComment: APIソリューション連携インデックス
+        countGroupNumberComment: APIソリューション連携インデックス
+        children:
+        - name: val_r[routeNo]_fsect_api_fareindex_[fsectNo]_index_[fareindexNo]
+        - name: val_r[routeNo]_fsect_api_fareindex_[fsectNo]_name_[fareindexNo]
     - name: val_r[routeNo]_csect_cnt
       numberOf: csectNo
       countGroupComment: 料金区間
@@ -125,6 +132,13 @@
       - name: val_r[routeNo]_csect_iscassign_[csectNo]
     - name: val_r[routeNo]_csect[csectNo1]_[csectNo2]
     - name: val_r[routeNo]_csect[sequenceNo]_[surchargeNo1]_[surchargeNo2]
+    - name: val_r[routeNo]_csect_api_chargeindex_[csectNo]_cnt
+      numberOf: chargeindexNo
+      countGroupComment: APIソリューション連携インデックス
+      countGroupNumberComment: APIソリューション連携インデックス
+      children:
+      - name: val_r[routeNo]_csect_api_chargeindex_[csectNo]_index_[chargeindexNo]
+      - name: val_r[routeNo]_csect_api_chargeindex_[csectNo]_name_[chargeindexNo]
     - name: val_r[routeNo]_tsect_cnt
       numberOf: tsectNo
       countGroupComment: 定期券区間
@@ -143,6 +157,13 @@
         countGroupNumberComment: 定期クラス
         children:
         - name: val_r[routeNo]_tsect_tkclslist_[tsectNo]_tkcls_[tkclsNo]
+      - name: val_r[routeNo]_tsect_api_nikukanteikiindex_[tsectNo]_cnt
+        numberOf: nikukanteikiindexNo
+        countGroupComment: APIソリューション連携インデックス
+        countGroupNumberComment: APIソリューション連携インデックス
+        children:
+        - name: val_r[routeNo]_tsect_api_nikukanteikiindex_[tsectNo]_index_[nikukanteikiindexNo]
+        - name: val_r[routeNo]_tsect_api_nikukanteikiindex_[tsectNo]_name_[nikukanteikiindexNo]
     - name: val_r[routeNo]_tassign_status
     - name: val_r[routeNo]_tassign_fare
     - name: val_r[routeNo]_tassign_fsect_cnt
@@ -307,6 +328,13 @@
         - name: val_r[routeNo]_fsect_ticketsys_[fsectNo]_fare_[ticketsysNo]
       - name: val_r[routeNo]_fsect_istassign_[fsectNo]
       - name: val_r[routeNo]_fsect_iscassign_[fsectNo]
+      - name: val_r[routeNo]_fsect_api_fareindex_[fsectNo]_cnt
+        numberOf: fareindexNo
+        countGroupComment: APIソリューション連携インデックス
+        countGroupNumberComment: APIソリューション連携インデックス
+        children:
+        - name: val_r[routeNo]_fsect_api_fareindex_[fsectNo]_index_[fareindexNo]
+        - name: val_r[routeNo]_fsect_api_fareindex_[fsectNo]_name_[fareindexNo]
     - name: val_r[routeNo]_csect_cnt
       numberOf: csectNo
       countGroupComment: 料金区間
@@ -336,6 +364,13 @@
       - name: val_r[routeNo]_csect_iscassign_[csectNo]
     - name: val_r[routeNo]_csect[csectNo1]_[csectNo2]
     - name: val_r[routeNo]_csect[sequenceNo]_[surchargeNo1]_[surchargeNo2]
+    - name: val_r[routeNo]_csect_api_chargeindex_[csectNo]_cnt
+      numberOf: chargeindexNo
+      countGroupComment: APIソリューション連携インデックス
+      countGroupNumberComment: APIソリューション連携インデックス
+      children:
+      - name: val_r[routeNo]_csect_api_chargeindex_[csectNo]_index_[chargeindexNo]
+      - name: val_r[routeNo]_csect_api_chargeindex_[csectNo]_name_[chargeindexNo]
     - name: val_r[routeNo]_tsect_cnt
       numberOf: tsectNo
       countGroupComment: 定期券区間
@@ -354,6 +389,13 @@
         countGroupNumberComment: 定期クラス
         children:
         - name: val_r[routeNo]_tsect_tkclslist_[tsectNo]_tkcls_[tkclsNo]
+      - name: val_r[routeNo]_tsect_api_nikukanteikiindex_[tsectNo]_cnt
+        numberOf: nikukanteikiindexNo
+        countGroupComment: APIソリューション連携インデックス
+        countGroupNumberComment: APIソリューション連携インデックス
+        children:
+        - name: val_r[routeNo]_tsect_api_nikukanteikiindex_[tsectNo]_index_[nikukanteikiindexNo]
+        - name: val_r[routeNo]_tsect_api_nikukanteikiindex_[tsectNo]_name_[nikukanteikiindexNo]
     - name: val_r[routeNo]_tassign_status
     - name: val_r[routeNo]_tassign_fare
     - name: val_r[routeNo]_tassign_fsect_cnt
