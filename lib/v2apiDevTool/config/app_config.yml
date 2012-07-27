@@ -1,2 +1,3 @@
-v2apiURL: http://intra.val.co.jp/expwww2/expcgi.exe
-incSearchURL: http://intra.val.co.jp:4567/expintra
+v2apiURL: http://intra.val.co.jp:8080/expwww2/expcgi.exe
+#incSearchURL: http://intra.val.co.jp:4567/expintra
+incSearchURL: http://intra.val.co.jp:8080/expwww2
