@@ -103,12 +103,12 @@ class JcgiOutputControllerTest < Test::Unit::TestCase
     request_server = input_params["val_v2api_dev_tool_request_server"]
 
     # postパラメータをCP932に変換し、クエリ文字列に
-    input_params_cp932 = {}
+    input_params_for_mock_cp932 = {}
     input_params.each do |key,value|
       next if key == "val_v2api_dev_tool_request_server"  # カットされるので無視
-      input_params_cp932[key] = value.encode("cp932")
+      input_params_for_mock_cp932[key] = value.encode("cp932")
       # webmockがUTF-8(ソースエンコーディング)で比較しようとするので強制変換
-      input_params_cp932[key].force_encoding("utf-8")
+      input_params_for_mock_cp932[key].force_encoding("utf-8")
     end
 
     # レスポンスのhtml(ていうかテキスト)
@@ -127,7 +127,7 @@ class JcgiOutputControllerTest < Test::Unit::TestCase
 
     # JCGIリクエスト時のモックの設定
     WebMock.stub_request(:post,request_server)
-      .with(:body => input_params_cp932)
+      .with(:body => input_params_for_mock_cp932)
       .to_return(:body => jcgi_response)
 
     post "/jcgi_details2/output", input_params
@@ -167,7 +167,11 @@ class JcgiOutputControllerTest < Test::Unit::TestCase
       "val_max_result" => "3",
       "val_encode" => "utf-8",
       "val_v2api_dev_tool_request_server" => "http://intra.val.co.jp/expwww2/expcgi.exe"}
-    request_server = input_params.delete("val_v2api_dev_tool_request_server")
+    request_server = input_params["val_v2api_dev_tool_request_server"]
+
+    # モック実行時のパラメータ(イントラサーバにリクエストする段階)
+    input_params_for_mock = input_params.dup
+    input_params_for_mock.delete("val_v2api_dev_tool_request_server")
 
     # レスポンスのhtml(ていうかテキスト)
     jcgi_response = ""
@@ -184,7 +188,7 @@ class JcgiOutputControllerTest < Test::Unit::TestCase
 
     # JCGIリクエスト時のモックの設定
     WebMock.stub_request(:post,request_server)
-      .with(:body => input_params)
+      .with(:body => input_params_for_mock)
       .to_return(:body => jcgi_response)
 
     post "/jcgi_details2/output", input_params
