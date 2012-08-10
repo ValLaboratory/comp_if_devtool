@@ -34,6 +34,15 @@
     <input type="text" id="input_query"></input>
     <input type="button" id="input_query_button" value="代入" />
   <% end %>
+    
+  <%
+    # ========================================
+    #            proxyの有無チェック
+    # ========================================
+  %>
+  <% if settings.environment != :production %>
+    <input type="checkbox" id="input_need_proxy">proxyを通して接続</input>
+  <% end %>
   <%
     # ========================================
     #             履歴表示ボタン
