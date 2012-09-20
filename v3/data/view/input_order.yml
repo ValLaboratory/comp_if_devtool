@@ -291,6 +291,8 @@
   - jcgi_stop
   - cgi_station
   - jcgi_station
+  - cgi_fromto_station
+  - jcgi_fromto_station
   - cgi_landmark
   - jcgi_landmark
   - jcgi_station_from_geopoint
@@ -334,6 +336,8 @@
 - apis:
   - cgi_station
   - jcgi_station
+  - cgi_fromto_station
+  - jcgi_fromto_station
   - cgi_landmark
   - jcgi_landmark
   - jcgi_station_from_geopoint
@@ -467,6 +471,8 @@
   - jcgi_stop
   - cgi_station
   - jcgi_station
+  - cgi_fromto_station
+  - jcgi_fromto_station
   - cgi_landmark
   - jcgi_landmark
   - jcgi_station_from_geopoint

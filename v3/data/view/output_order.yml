@@ -762,6 +762,8 @@
   - jcgi_station
   - cgi_landmark
   - jcgi_landmark
+  - cgi_fromto_station
+  - jcgi_fromto_station
   - cgi_select_station
   params:
   - name: val_stn_cnt
@@ -774,6 +776,16 @@
     countGroupComment: ランドマーク名
     children:
     - name: val_landmark_name[landmarkNo]
+  - name: val_from_stn_cnt
+    numberOf: from_stationNo
+    countGroupComment: 出発駅名
+    children:
+    - name: val_from_stn_name[from_stationNo]
+  - name: val_to_stn_cnt
+    numberOf: to_stationNo
+    countGroupComment: 目的駅名
+    children:
+    - name: val_to_stn_name[to_stationNo]
   - name: val_station_name
 #
 # 駅名・バス停名・ランドマーク名(緯度経度のみ)
@@ -910,6 +922,8 @@
   - jcgi_station
   - cgi_landmark
   - jcgi_landmark
+  - cgi_fromto_station
+  - jcgi_fromto_station
   - jcgi_station_from_geopoint
   - cgi_select_station
   - jcgi_coupondata_name
@@ -956,6 +970,8 @@
   - jcgi_station
   - cgi_landmark
   - jcgi_landmark
+  - cgi_fromto_station
+  - jcgi_fromto_station
   - jcgi_station_from_geopoint
   - cgi_select_station
   - jcgi_coupondata_name

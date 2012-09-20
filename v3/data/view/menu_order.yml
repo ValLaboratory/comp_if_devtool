@@ -40,6 +40,10 @@
       children:
         - name: cgi_landmark
         - name: jcgi_landmark
+    - comment: 出発駅、到着駅を取得する
+      children:
+        - name: cgi_fromto_station
+        - name: jcgi_fromto_station
     - comment: 緯度経度情報から駅リストを取得する
       children:
         - name: jcgi_station_from_geopoint
