@@ -201,6 +201,7 @@
   - name: val_tassignmode
     devtoolComment: 本ツールでは"1"は利用不可
   - name: val_tassign_reflect
+  - name: val_tassign_liketeikiuse
   - name: val_tassign_entryname
   - name: val_tassign_stationnamelist
   - name: val_tassign_railnamelist
