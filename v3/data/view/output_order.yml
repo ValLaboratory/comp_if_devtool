@@ -394,6 +394,16 @@
       children:
       - name: val_r[routeNo]_tassign_line_from_[tassignlineNo]
       - name: val_r[routeNo]_tassign_line_to_[tassignlineNo]
+    - name: val_r[routeNo]_teikiuse_include
+    - name: val_r[routeNo]_teikiuse_totalfare
+    - name: val_r[routeNo]_teikiuse_cnt
+      numberOf: teikiuselineNo
+      countGroupComment: 定期券利用時の路線区間
+      countGroupNumberComment: 定期券利用時の路線区間
+      children:
+      - name: val_r[routeNo]_teikiuse_from_[teikiuselineNo]
+      - name: val_r[routeNo]_teikiuse_to_[teikiuselineNo]
+      - name: val_r[routeNo]_teikiuse_fare_[teikiuselineNo]
     - name: val_r[routeNo]_cassign_status
     - name: val_co2_[routeNo]
     - name: val_co2car_[routeNo]
@@ -548,6 +558,16 @@
     children:
     - name: val_tassign_line_from_[tassignlineNo]
     - name: val_tassign_line_to_[tassignlineNo]
+  - name: val_teikiuse_include
+  - name: val_teikiuse_totalfare
+  - name: val_teikiuse_cnt
+    numberOf: teikiuselineNo
+    countGroupComment: 定期券利用時の路線区間
+    countGroupNumberComment: 定期券利用時の路線区間
+    children:
+    - name: val_teikiuse_from_[teikiuselineNo]
+    - name: val_teikiuse_to_[teikiuselineNo]
+    - name: val_teikiuse_fare_[teikiuselineNo]
   - name: val_cassign_status
   - name: val_stsect
   - name: val_stsect_teiki1_from_1
@@ -732,6 +752,16 @@
     children:
     - name: val_tassign_line_from_[tassignlineNo]
     - name: val_tassign_line_to_[tassignlineNo]
+  - name: val_teikiuse_include
+  - name: val_teikiuse_totalfare
+  - name: val_teikiuse_cnt
+    numberOf: teikiuselineNo
+    countGroupComment: 定期券利用時の路線区間
+    countGroupNumberComment: 定期券利用時の路線区間
+    children:
+    - name: val_teikiuse_from_[teikiuselineNo]
+    - name: val_teikiuse_to_[teikiuselineNo]
+    - name: val_teikiuse_fare_[teikiuselineNo]
   - name: val_cassign_status
   - name: val_co2
   - name: val_co2car
