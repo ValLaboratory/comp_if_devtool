@@ -213,6 +213,14 @@
     - name: val_co2_[routeNo]
     - name: val_co2car_[routeNo]
     - name: val_r[routeNo]_serialize_data
+  - name: val_cost_cheap
+  - name: val_fare_cheap
+  - name: val_surcharge_fare_cheap
+  - name: val_teiki1_cheap
+  - name: val_teiki3_cheap
+  - name: val_teiki6_cheap
+  - name: val_time_min
+  - name: val_transfer_min
   - name: val_reuse_jr2sectteiki
   - name: val_reuse_doubleroute
   - name: val_connectstate1

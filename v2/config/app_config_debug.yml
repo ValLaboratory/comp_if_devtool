@@ -7,6 +7,10 @@ v2apiURLList:
     comment: テストサイト(naya)
   - url: http://intra.val.co.jp/expwww2_ssuzuki/expcgi.exe
     comment: テストサイト(ssuzuki)
+  - url: http://intra.val.co.jp/expwww2_20121001/expcgi.exe
+    comment: 2012年9月1版
+  - url: http://intra.val.co.jp/expwww2_20120901/expcgi.exe
+    comment: 2012年9月1版
   - url: http://intra.val.co.jp/expwww2_20120701/expcgi.exe
     comment: 2012年7月1版
   - url: http://intra.val.co.jp/expwww2_20120601/expcgi.exe
