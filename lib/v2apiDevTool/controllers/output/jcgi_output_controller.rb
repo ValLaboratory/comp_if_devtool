@@ -27,7 +27,20 @@ module V2apiDevTool
         proxys = ENV['http_proxy'].sub(/\Ahttp:\/\//, '').split(':') if params['val_v2api_dev_tool_need_proxy'] == 'true'
         params = delete_devtool_param(params)
         begin
-          response = Net::HTTP.Proxy(proxys[0], proxys[1]).post_form(URI.parse(request_url),params)
+          #response = Net::HTTP.Proxy(proxys[0], proxys[1]).post_form(URI.parse(request_url),params)
+          response = nil
+          uri = URI.parse(request_url)
+          Net::HTTP.Proxy(proxys[0], proxys[1]).start(uri.host, uri.port){|http|
+            header = {
+             'Cache-Control' => 'no-cache',
+             'Pragma' => 'no-cache'
+            }
+            array = []
+            params.each{|key,value|
+              array.push("#{key}=#{value}")
+            }
+            response = http.post(uri.path, array.join('&'), header)
+          }
           response.value  # ステータスコードが200以外の場合、ここで例外発生
         rescue => e
           raise e
