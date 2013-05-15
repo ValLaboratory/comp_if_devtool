@@ -303,6 +303,20 @@
   - cgi_diaassign_h
   params:
   - name: val_out_serialize
+- groupComment: ?-? 定期控除（k3show専用）
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_result2
+  - cgi_result2_h
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  - cgi_diaresult2
+  - cgi_diaresult2_h
+  - cgi_diaassign
+  - cgi_diaassign_h
+  params:
+  - name: val_assign_teiki_data
 - groupComment: ※ V3専用
   apis:
   - cgi_details2

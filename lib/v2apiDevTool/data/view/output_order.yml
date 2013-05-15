@@ -35,6 +35,7 @@
     - name: val_teiki_stationnamelist_[routeNo]
     - name: val_teiki_rail_cnt_[routeNo]
     - name: val_teiki_railnamelist_[routeNo]
+    - name: val_r[routeNo]_teiki_data
     - name: val_r[routeNo]_line_cnt
       numberOf: lineNo
       countGroupComment: 路線区間
@@ -463,6 +464,7 @@
   - name: val_teiki_stationnamelist
   - name: val_teiki_rail_cnt
   - name: val_teiki_railnamelist
+  - name: val_teiki_data
   - name: val_line_cnt
     numberOf: lineNo
     countGroupComment: 路線区間
