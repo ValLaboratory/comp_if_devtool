@@ -5,8 +5,8 @@ v2apiURLList:
     comment: 最新版(Linux)
   - url: http://intra.val.co.jp/expwww2_naya/expcgi.exe
     comment: テストサイト(naya)
-  - url: http://intra.val.co.jp/expwww2_ssuzuki/expcgi.exe
-    comment: テストサイト(ssuzuki)
+  - url: http://intra.val.co.jp/expwww2_naya2/expcgi.exe
+    comment: テストサイト(naya2)
   - url: http://intra.val.co.jp/expwww2_20130501/expcgi.exe
     comment: 2013年5月1版
   - url: http://intra.val.co.jp/expwww2_20130401/expcgi.exe
