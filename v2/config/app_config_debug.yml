@@ -3,6 +3,8 @@ v2apiURLList:
     comment: 最新版(Windows)
   - url: http://172.17.10.157/expwww2/exp.cgi
     comment: 最新版(Linux)
+  - url: http://intra.val.co.jp/expwww2_k3show/expcgi.exe
+    comment: k3show
   - url: http://intra.val.co.jp/expwww2_naya/expcgi.exe
     comment: テストサイト(naya)
   - url: http://intra.val.co.jp/expwww2_naya2/expcgi.exe
