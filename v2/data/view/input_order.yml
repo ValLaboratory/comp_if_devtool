@@ -373,6 +373,7 @@
   - jcgi_adm_import_landmark
   - jcgi_adm_delete_landmark
   - jcgi_disasterdia_info
+  - jcgi_check_teiki_data
   params:
   - name: val_htmb
     inputType: system
