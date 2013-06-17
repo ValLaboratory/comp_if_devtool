@@ -557,6 +557,12 @@
   - jcgi_disasterdia_info
   params:
   - name: val_disasterdia_serial
+# 定期券情報のチェック
+- apis:
+  - jcgi_check_teiki_data
+  params:
+  - name: val_check_teiki_data
+  - name: val_use_date
 # 共通系2
 - apis:
   - cgi_corp

@@ -124,6 +124,10 @@
       disableProduction: true
       children:
         - name: jcgi_disasterdia_info
+    - comment: 定期券情報をチェックする(k3show専用)
+      disableProduction: true
+      children:
+        - name: jcgi_check_teiki_data
 - category: 管理用
   disableProduction: true
   children:

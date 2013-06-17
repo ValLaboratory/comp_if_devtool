@@ -943,6 +943,7 @@
   - jcgi_expdate
   - cgi_name_renewal
   - jcgi_name_renewal
+  - jcgi_check_teiki_data
   params:
   - name: val_version
   - name: val_jrtrain_timetable_version
@@ -962,6 +963,9 @@
   - name: val_renewalnamelist
   - name: val_renewalteikistationlist
   - name: val_renewalteikiraillist
+  - name: val_restore_teiki_status
+  - name: val_restore_teiki_data
+  - name: val_restore_teiki_route
 #
 # 管理者専用
 #
@@ -1100,6 +1104,7 @@
   - jcgi_disasterdia_info
   - cgi_routedisp
   - cgi_routedisp_h
+  - jcgi_check_teiki_data
   params:
   - name: val_errcode
   - name: val_teiki_errcode
