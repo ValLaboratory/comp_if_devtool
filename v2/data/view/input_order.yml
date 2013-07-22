@@ -127,7 +127,8 @@
   - cgi_diadetails2
   - jcgi_diadetails2
   params:
-  - name: val_cstm[cstmNo]_r[routeNo]_type
+  - name: val_cstm1_r1_type
+    ref: val_cstm[cstmNo]_r[routeNo]_type
   - name: val_cstm1_all_type
     ref: val_cstm[cstmNo]_all_type
     devtoolComment: 本ツールでは1件のみ指定可
