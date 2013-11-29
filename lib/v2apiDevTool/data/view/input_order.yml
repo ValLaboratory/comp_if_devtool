@@ -139,6 +139,12 @@
   - name: val_cstm1_tkcls
     ref: val_cstm[cstmNo]_tkcls
     devtoolComment: 本ツールでは1件のみ指定可
+  - name: val_cstm1_tksystype_seq
+    ref: val_cstm[cstmNo]_tksystype_seq
+    devtoolComment: 本ツールでは1件のみ指定可
+  - name: val_cstm1_tksystype
+    ref: val_cstm[cstmNo]_tksystype
+    devtoolComment: 本ツールでは1件のみ指定可
 - groupComment: 1-7 使用路線の指定
   apis:
   - cgi_details2
