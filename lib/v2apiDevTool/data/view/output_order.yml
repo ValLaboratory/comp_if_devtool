@@ -67,6 +67,7 @@
       - name: val_r[routeNo]_fsect_fare_[fsectNo]
       - name: val_r[routeNo]_fsect_premium_[fsectNo]
       - name: val_r[routeNo]_fsect_discountname_[fsectNo]
+      - name: val_r[routeNo]_fsect_not_correspond_consumption_tax_[fsectNo]
       - name: val_r[routeNo]_fsect_fclassno_[fsectNo]
       - name: val_r[routeNo]_fsect_fclassname_[fsectNo]
       - name: val_r[routeNo]_fsect_ticketsysno_[fsectNo]
@@ -113,6 +114,7 @@
       - name: val_r[routeNo]_csect_to_[csectNo]
       - name: val_r[routeNo]_csect_name_[csectNo]
       - name: val_r[routeNo]_csect_fare_[csectNo]
+      - name: val_r[routeNo]_csect_not_correspond_consumption_tax_[csectNo]
       - name: val_r[routeNo]_csect_surcharge_[csectNo]_cnt
         numberOf: surchargeNo
         countGroupComment: 料金種別
@@ -151,6 +153,7 @@
       - name: val_r[routeNo]_tsect_teiki3_[tsectNo]
       - name: val_r[routeNo]_tsect_teiki6_[tsectNo]
       - name: val_r[routeNo]_tsect_zensen_[tsectNo]
+      - name: val_r[routeNo]_tsect_not_correspond_consumption_tax_[tsectNo]
       - name: val_r[routeNo]_tsect_tkcls_[tsectNo]
       - name: val_r[routeNo]_tsect_tkclslist_[tsectNo]_cnt
         numberOf: tkclsNo
@@ -298,6 +301,7 @@
       - name: val_r[routeNo]_fsect_fare_[fsectNo]
       - name: val_r[routeNo]_fsect_premium_[fsectNo]
       - name: val_r[routeNo]_fsect_discountname_[fsectNo]
+      - name: val_r[routeNo]_fsect_not_correspond_consumption_tax_[fsectNo]
       - name: val_r[routeNo]_fsect_fclassno_[fsectNo]
       - name: val_r[routeNo]_fsect_fclassname_[fsectNo]
       - name: val_r[routeNo]_fsect_ticketsysno_[fsectNo]
@@ -345,6 +349,7 @@
       - name: val_r[routeNo]_csect_to_[csectNo]
       - name: val_r[routeNo]_csect_name_[csectNo]
       - name: val_r[routeNo]_csect_fare_[csectNo]
+      - name: val_r[routeNo]_csect_not_correspond_consumption_tax_[csectNo]
       - name: val_r[routeNo]_csect_surcharge_[csectNo]_cnt
         numberOf: surchargeNo
         countGroupComment: 料金種別
@@ -383,6 +388,7 @@
       - name: val_r[routeNo]_tsect_teiki3_[tsectNo]
       - name: val_r[routeNo]_tsect_teiki6_[tsectNo]
       - name: val_r[routeNo]_tsect_zensen_[tsectNo]
+      - name: val_r[routeNo]_tsect_not_correspond_consumption_tax_[tsectNo]
       - name: val_r[routeNo]_tsect_tkcls_[tsectNo]
       - name: val_r[routeNo]_tsect_tkclslist_[tsectNo]_cnt
         numberOf: tkclsNo
@@ -492,6 +498,7 @@
     - name: val_fsect_fare_[fsectNo]
     - name: val_fsect_premium_[fsectNo]
     - name: val_fsect_discountname_[fsectNo]
+    - name: val_fsect_not_correspond_consumption_tax_[fsectNo]
     - name: val_fsect_fclassno_[fsectNo]
     - name: val_fsect_fclassname_[fsectNo]
     - name: val_fsect_ticketsysno_[fsectNo]
@@ -531,6 +538,7 @@
     - name: val_csect_to_[csectNo]
     - name: val_csect_name_[csectNo]
     - name: val_csect_fare_[csectNo]
+    - name: val_csect_not_correspond_consumption_tax_[csectNo]
     - name: val_csect_surcharge_[csectNo]_cnt
       numberOf: surchargeNo
       countGroupComment: 料金種別
@@ -559,6 +567,7 @@
     - name: val_tsect_teiki3_[tsectNo]
     - name: val_tsect_teiki6_[tsectNo]
     - name: val_tsect_zensen_[tsectNo]
+    - name: val_tsect_not_correspond_consumption_tax_[tsectNo]
     - name: val_tsect_tkcls_[tsectNo]
     - name: val_tsect_tkclslist_[tsectNo]_cnt
       numberOf: tkclsNo
