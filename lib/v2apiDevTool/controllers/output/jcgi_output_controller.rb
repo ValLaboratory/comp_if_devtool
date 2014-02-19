@@ -39,6 +39,7 @@ module V2apiDevTool
             params.each{|key,value|
               array.push("#{key}=#{value}")
             }
+            http.open_timeout = 600
             response = http.post(uri.path, array.join('&'), header)
           }
           response.value  # ステータスコードが200以外の場合、ここで例外発生
