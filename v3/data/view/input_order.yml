@@ -136,6 +136,7 @@
   - name: val_airport_charge
   - name: val_max_result
   - name: val_preferred_ticket_order
+  - name: val_fare_const
 - groupComment: A-7 使用路線の指定
   apis:
   - cgi_details2
