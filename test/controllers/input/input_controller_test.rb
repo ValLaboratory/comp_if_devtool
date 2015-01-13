@@ -118,10 +118,6 @@ class InputControllerTest < Test::Unit::TestCase
     input_param_table = contents.css("#input_param_table")[0]
     trs = input_param_table.css("tr")
 
-    # group_title_rowが出力されて"いない"か
-    group_title_rows = trs.css(".group_title_row")
-    assert_equal(group_title_rows.length,0)
-
     # val_htmbの行
     tr_val_htmb = trs.css(".status_required")[0]
     assert_equal(tr_val_htmb.css("td.name_col").text,"val_htmb")
