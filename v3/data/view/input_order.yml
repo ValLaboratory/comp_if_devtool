@@ -548,3 +548,46 @@
     devtoolComment: 本ツールでは利用不可
   - name: val_encode
   - name: val_upperparam
+# ======== 全API系 ========
+- groupComment: 0-0 アクセスキー
+  apis:
+  - cgi_details2
+  - jcgi_details2
+  - cgi_diadetails2
+  - jcgi_diadetails2
+  - cgi_result2
+  - cgi_result2_h
+  - cgi_diaresult2
+  - cgi_diaresult2_h
+  - cgi_diaassign
+  - cgi_diaassign_h
+  - cgi_corp
+  - jcgi_corp
+  - cgi_rail
+  - jcgi_rail
+  - cgi_stop
+  - jcgi_stop
+  - cgi_station
+  - jcgi_station
+  - cgi_busstop
+  - jcgi_busstop
+  - cgi_fromto_station
+  - jcgi_fromto_station
+  - jcgi_station_from_geopoint
+  - cgi_select_station
+  - jcgi_coupondata_name
+  - jcgi_coupondata_section
+  - jcgi_coupondata_info
+  - cgi_teiki_repay
+  - jcgi_teiki_repay
+  - cgi_version
+  - jcgi_version
+  - cgi_calendar
+  - jcgi_expdate
+  - cgi_name_renewal
+  - jcgi_name_renewal
+  - cgi_routedisp
+  - cgi_routedisp_h
+  params:
+  - name: val_key
+    default: wC4SR9ETBhBcJ3Bv
