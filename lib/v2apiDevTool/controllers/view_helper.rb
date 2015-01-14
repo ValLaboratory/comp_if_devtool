@@ -55,6 +55,13 @@ module V2apiDevTool
 
         return api_data["userParam"]
       end
+
+      #
+      # Webサービスアクセスキー
+      #
+      def webapi_key
+        settings.app_config["webapiKey"]
+      end
     end
   end
 end

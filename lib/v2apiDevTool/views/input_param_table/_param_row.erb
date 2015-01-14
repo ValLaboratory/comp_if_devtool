@@ -48,8 +48,8 @@
     <% else %>
       <% if display_param_data["isStation"] == true %>
         <input type="text" class="api_input_param incsearch_input" name="<%= param_name %>" /><br /><div class="incsearch_result"></div>
-      <% elsif display_param_data["default"].nil? == false %>
-        <input type="text" class="api_input_param" name="<%= param_name %>" value="<%= display_param_data["default"]%>"/>
+      <% elsif param_name == 'val_key' %>
+        <input type="text" class="api_input_param" name="<%= param_name %>" value=<%= webapi_key %> />
       <% else %>
         <input type="text" class="api_input_param" name="<%= param_name %>" />
       <% end %>
