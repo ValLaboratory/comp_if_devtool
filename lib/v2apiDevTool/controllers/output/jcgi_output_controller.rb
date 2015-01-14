@@ -24,7 +24,10 @@ module V2apiDevTool
       def request_jcgi(request_url)
         params = convert_www_form_vars(@request_vars,"utf-8",@encoding)  # リクエスト用にエンコード
         proxys = []
-        proxys = ENV['http_proxy'].sub(/\Ahttp:\/\//, '').split(':') if params['val_v2api_dev_tool_need_proxy'] == 'true'
+        if params['val_v2api_dev_tool_need_proxy'] == 'true'
+          proxy_uri = URI.parse( ENV['http_proxy'] )
+          proxys = [ proxy_uri.host, proxy_uri.port ]
+        end
         params = delete_devtool_param(params)
         begin
           #response = Net::HTTP.Proxy(proxys[0], proxys[1]).post_form(URI.parse(request_url),params)
